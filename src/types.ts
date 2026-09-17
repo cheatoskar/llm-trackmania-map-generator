@@ -6,6 +6,7 @@ export interface BlockData {
   y: number;
   z: number;
   dir: DirectionName;
+  variant?: number;
 }
 
 export interface TrackJsonModel {

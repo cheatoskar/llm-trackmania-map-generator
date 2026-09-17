@@ -26,6 +26,9 @@ public class BlockData
 
     [JsonPropertyName("dir")]
     public string Dir { get; set; } = "North";
+
+    [JsonPropertyName("variant")]
+    public byte? Variant { get; set; }
 }
 
 public class TrackJsonModel
@@ -155,7 +158,8 @@ class Program
                     X = b.Coord.X,
                     Y = b.Coord.Y,
                     Z = b.Coord.Z,
-                    Dir = b.Direction.ToString()
+                    Dir = b.Direction.ToString(),
+                    Variant = b.Variant
                 });
             }
         }
@@ -188,6 +192,12 @@ class Program
         {
             Console.Error.WriteLine($"Template file not found: {templatePath}");
             return 1;
+        }
+
+        string? outDir = Path.GetDirectoryName(outputPath);
+        if (!string.IsNullOrEmpty(outDir) && !Directory.Exists(outDir))
+        {
+            Directory.CreateDirectory(outDir);
         }
 
         string jsonContent = File.ReadAllText(jsonPath);
@@ -235,11 +245,16 @@ class Program
                 dir = parsedDir;
             }
 
+            // In TrackMania Stadium, StadiumRoadMain uses Variant = 3 for continuous road (both ends open).
+            // Variant = 0 adds end-cap guardrails/borders to both ends, leaving gaps between blocks!
+            byte variant = b.Variant ?? (b.Name == "StadiumRoadMain" ? (byte)3 : (byte)0);
+
             map.Blocks.Add(new CGameCtnBlock
             {
                 Name = b.Name,
                 Coord = new Int3(b.X, b.Y, b.Z),
-                Direction = dir
+                Direction = dir,
+                Variant = variant
             });
         }
 
@@ -283,11 +298,7 @@ class Program
         // Synchronize the XML header chunk with the new MapUid, MapName, Author, and Times
         map.Xml = $"<header type=\"challenge\" version=\"TMc.6\" exever=\"2.11.6\"><ident uid=\"{map.MapUid}\" name=\"{map.MapName}\" author=\"{map.AuthorLogin}\"/><desc envir=\"Stadium\" mood=\"Sunset\" type=\"Race\" nblaps=\"0\" price=\"{Math.Max(500, map.Blocks.Count * 25)}\" /><times bronze=\"{bronzeMs}\" silver=\"{silverMs}\" gold=\"{goldMs}\" authortime=\"{authorMs}\" authorscore=\"{authorMs}\"/><deps></deps></header>";
 
-        string? outDir = Path.GetDirectoryName(outputPath);
-        if (!string.IsNullOrEmpty(outDir) && !Directory.Exists(outDir))
-        {
-            Directory.CreateDirectory(outDir);
-        }
+
 
         gbx.Save(outputPath);
         Console.WriteLine($"Successfully generated map '{map.MapName}' with {map.Blocks.Count} blocks at {outputPath}");
@@ -496,7 +507,7 @@ class Program
         Console.WriteLine($"\nFile: {Path.GetFileName(file)} ({gbx.Node.Blocks.Count} blocks)");
         foreach (var b in gbx.Node.Blocks.Take(25))
         {
-            Console.WriteLine($"  ({b.Coord.X,2}, {b.Coord.Y,2}, {b.Coord.Z,2}) dir={b.Direction,-5} : {b.Name}");
+            Console.WriteLine($"  ({b.Coord.X,2}, {b.Coord.Y,2}, {b.Coord.Z,2}) dir={b.Direction,-5} var={b.Variant} : {b.Name}");
         }
         return 0;
     }
