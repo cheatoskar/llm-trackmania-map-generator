@@ -85,6 +85,8 @@ class Program
                     return HandleCreateTemplate(args);
                 case "catalog":
                     return HandleCatalog(args);
+                case "analyze-slopes":
+                    return HandleAnalyzeSlopes(args);
                 case "debug":
                     return HandleDebug(args);
                 default:
@@ -209,11 +211,37 @@ class Program
         if (!string.IsNullOrEmpty(model.Author))
             map.AuthorLogin = model.Author;
 
+        // Generate a brand new unique MapUid to avoid collisions with existing tracks
+        map.MapUid = GenerateMapUid();
+
         // Clear any custom texture mod and embedded thumbnail
         map.ModPackDesc = null;
         map.CustomMusicPackDesc = null;
         map.Thumbnail = null;
         map.HasCustomCamThumbnail = false;
+
+        // Reset author time and medal times so the map is recognized as an unvalidated editable challenge
+        map.AuthorTime = null;
+        map.GoldTime = null;
+        map.SilverTime = null;
+        map.BronzeTime = null;
+        if (map.ChallengeParameters != null)
+        {
+            map.ChallengeParameters.AuthorTime = null;
+            map.ChallengeParameters.GoldTime = null;
+            map.ChallengeParameters.SilverTime = null;
+            map.ChallengeParameters.BronzeTime = null;
+        }
+
+        // Update MapInfo Ident so the game engine and menus sync perfectly
+        map.MapInfo = new Ident(map.MapUid, "Stadium", map.AuthorLogin);
+        // Set game mode to Race and Kind to InProgress (unvalidated editable challenge)
+        map.Mode = CGameCtnChallenge.PlayMode.Race;
+        map.Kind = CGameCtnChallenge.MapKind.InProgress;
+        map.KindInHeader = CGameCtnChallenge.MapKind.InProgress;
+
+        // Synchronize the XML header chunk with the new MapUid, MapName, and Author
+        map.Xml = $"<header type=\"challenge\" version=\"TMc.6\" exever=\"2.11.3\"><ident uid=\"{map.MapUid}\" name=\"{map.MapName}\" author=\"{map.AuthorLogin}\"/><desc envir=\"Stadium\" mood=\"Day\" type=\"Race\" nblaps=\"0\" price=\"1000\" /><times bronze=\"-1\" silver=\"-1\" gold=\"-1\" authortime=\"-1\" authorscore=\"-1\"/><deps></deps></header>";
 
         map.Blocks.Clear();
 
@@ -309,12 +337,31 @@ class Program
         }
 
         gbx.Node.MapName = "Blank Stadium Template";
-        gbx.Node.AuthorLogin = "System";
+        gbx.Node.AuthorLogin = "osaro";
         gbx.Node.Blocks.Clear();
         gbx.Node.ModPackDesc = null;
         gbx.Node.CustomMusicPackDesc = null;
         gbx.Node.Thumbnail = null;
         gbx.Node.HasCustomCamThumbnail = false;
+        gbx.Node.MapUid = GenerateMapUid();
+
+        gbx.Node.AuthorTime = null;
+        gbx.Node.GoldTime = null;
+        gbx.Node.SilverTime = null;
+        gbx.Node.BronzeTime = null;
+        if (gbx.Node.ChallengeParameters != null)
+        {
+            gbx.Node.ChallengeParameters.AuthorTime = null;
+            gbx.Node.ChallengeParameters.GoldTime = null;
+            gbx.Node.ChallengeParameters.SilverTime = null;
+            gbx.Node.ChallengeParameters.BronzeTime = null;
+        }
+
+        gbx.Node.MapInfo = new Ident(gbx.Node.MapUid, "Stadium", gbx.Node.AuthorLogin);
+        gbx.Node.Mode = CGameCtnChallenge.PlayMode.Race;
+        gbx.Node.Kind = CGameCtnChallenge.MapKind.InProgress;
+        gbx.Node.KindInHeader = CGameCtnChallenge.MapKind.InProgress;
+        gbx.Node.Xml = $"<header type=\"challenge\" version=\"TMc.6\" exever=\"2.11.3\"><ident uid=\"{gbx.Node.MapUid}\" name=\"{gbx.Node.MapName}\" author=\"{gbx.Node.AuthorLogin}\"/><desc envir=\"Stadium\" mood=\"Day\" type=\"Race\" nblaps=\"0\" price=\"290\" /><times bronze=\"-1\" silver=\"-1\" gold=\"-1\" authortime=\"-1\" authorscore=\"-1\"/><deps></deps></header>";
 
         string? dir = Path.GetDirectoryName(templatePath);
         if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
@@ -406,36 +453,101 @@ class Program
         return "General";
     }
 
+    static int HandleAnalyzeSlopes(string[] args)
+    {
+        string dir = args.Length > 1 ? args[1] : @"C:\Program Files (x86)\TmNationsForever\GameData\Tracks\Campaigns\Nations";
+        Console.WriteLine($"Analyzing curve sequences in {dir}...");
+
+        foreach (var file in Directory.GetFiles(dir, "*.Challenge.Gbx", SearchOption.AllDirectories))
+        {
+            try
+            {
+                var gbx = Gbx.Parse<CGameCtnChallenge>(file);
+                if (gbx.Node?.Blocks == null) continue;
+
+                var curves = gbx.Node.Blocks.Where(b => b.Name.StartsWith("StadiumRoadMainGTCurve")).ToList();
+                if (curves.Count == 0) continue;
+
+                Console.WriteLine($"\nFile: {Path.GetFileName(file)}");
+                foreach (var c in curves.Take(3))
+                {
+                    Console.WriteLine($"  CURVE: {c.Name} at ({c.Coord.X}, {c.Coord.Y}, {c.Coord.Z}) dir={c.Direction}");
+                    var nearby = gbx.Node.Blocks
+                        .Where(b => b.Name.StartsWith("StadiumRoadMain") && Math.Abs(b.Coord.X - c.Coord.X) <= 3 && Math.Abs(b.Coord.Z - c.Coord.Z) <= 3)
+                        .OrderBy(b => b.Coord.Z).ThenBy(b => b.Coord.X);
+                    foreach (var nb in nearby)
+                    {
+                        Console.WriteLine($"    -> {nb.Name} at ({nb.Coord.X}, {nb.Coord.Y}, {nb.Coord.Z}) dir={nb.Direction}");
+                    }
+                }
+            }
+            catch {}
+        }
+        return 0;
+    }
+
     static int HandleDebug(string[] args)
     {
-        string sample = @"..\data\templates\blank_stadium.Challenge.Gbx";
+        string sample = args.Length > 1 ? args[1] : Path.Combine("data", "templates", "blank_stadium.Challenge.Gbx");
+        if (!File.Exists(sample))
+        {
+            Console.Error.WriteLine($"File not found: {sample}");
+            return 1;
+        }
+
+        Console.WriteLine($"\n=== Inspecting: {sample} ===");
         var gbx = Gbx.Parse<CGameCtnChallenge>(sample);
         var map = gbx.Node;
 
-        Console.WriteLine("=== Template Inspection ===");
         Console.WriteLine($"MapName: {map.MapName}");
         Console.WriteLine($"AuthorLogin: {map.AuthorLogin}");
-        Console.WriteLine($"ModPackDesc: '{map.ModPackDesc}'");
+        Console.WriteLine($"AuthorTime: {map.AuthorTime}");
+        Console.WriteLine($"Mode: {map.Mode} (Type: {map.Mode.GetType().FullName})");
+        Console.WriteLine($"Kind: {map.Kind} (Type: {map.Kind.GetType().FullName})");
+        Console.WriteLine($"Collection: {map.Collection}");
+        Console.WriteLine($"MapUid: {map.MapUid}");
+        Console.WriteLine($"Blocks count: {map.Blocks?.Count ?? 0}");
         Console.WriteLine($"Thumbnail bytes: {map.Thumbnail?.Length ?? 0}");
-
-        Console.WriteLine("\n=== FinishLine in all reference maps ===");
-        var files = Directory.GetFiles(@"..\data\reference_maps", "*.Challenge.Gbx");
-        foreach (var f in files)
+        Console.WriteLine($"ModPack: {map.ModPackDesc?.FilePath} / {map.ModPackDesc?.LocatorUrl}");
+        
+        Console.WriteLine("Map properties:");
+        foreach (var p in map.GetType().GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance))
         {
-            var g = Gbx.Parse<CGameCtnChallenge>(f);
-            var finish = g.Node?.Blocks?.FirstOrDefault(b => b.Name.Contains("FinishLine"));
-            if (finish != null)
+            if (p.PropertyType.IsPrimitive || p.PropertyType == typeof(string) || p.PropertyType.IsEnum || p.PropertyType == typeof(GBX.NET.Ident))
             {
-                var roadIn = g.Node.Blocks.FirstOrDefault(b => b != finish && Math.Abs(b.Coord.Y - finish.Coord.Y) <= 1 && Math.Abs(b.Coord.X - finish.Coord.X) + Math.Abs(b.Coord.Z - finish.Coord.Z) == 1);
-                if (roadIn != null)
+                try
                 {
-                    int dx = finish.Coord.X - roadIn.Coord.X;
-                    int dz = finish.Coord.Z - roadIn.Coord.Z;
-                    Console.WriteLine($"Map: {Path.GetFileNameWithoutExtension(f)}: Road {roadIn.Name} ({roadIn.Coord.X},{roadIn.Coord.Y},{roadIn.Coord.Z}) Dir={roadIn.Direction} --> Finish ({finish.Coord.X},{finish.Coord.Y},{finish.Coord.Z}) Dir={finish.Direction} [Offset to Finish: dx={dx}, dz={dz}]");
+                    var v = p.GetValue(map);
+                    if (v != null) Console.WriteLine($"  {p.Name}: {v}");
+                } catch {}
+            }
+        }
+        
+        Console.WriteLine("Node chunks details:");
+        foreach (var chunk in map.Chunks)
+        {
+            if (chunk.Id == 0x03043003 || chunk.Id == 0x03043005)
+            {
+                Console.WriteLine($"  0x{chunk.Id:X8} ({chunk.GetType().Name}):");
+                foreach (var prop in chunk.GetType().GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance))
+                {
+                    try
+                    {
+                        var val = prop.GetValue(chunk);
+                        Console.WriteLine($"     {prop.Name} ({prop.PropertyType.Name}) = {val}");
+                    }
+                    catch { }
                 }
             }
         }
 
         return 0;
+    }
+
+    static string GenerateMapUid()
+    {
+        const string chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_";
+        var random = new Random();
+        return new string(Enumerable.Repeat(chars, 27).Select(s => s[random.Next(s.Length)]).ToArray());
     }
 }

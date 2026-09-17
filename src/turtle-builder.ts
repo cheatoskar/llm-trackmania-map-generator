@@ -124,9 +124,11 @@ export class TurtleBuilder {
         }
 
         case 'slope_up': {
-          // In Trackmania Stadium, ascending smoothly requires BiSlopeStart -> BiSlopeEnd
+          // Trackmania Stadium BiSlope:
+          // 1. BiSlopeStart (length 2) starts at current Y and transitions to incline
+          // 2. BiSlopeEnd (length 2) starts at Y+1 and transitions to flat road at Y+2
           const vec = DIR_VECTORS[currentDir];
-          // 1. Transition from flat to slope
+          
           currentX += vec.dx;
           currentZ += vec.dz;
           blocks.push({
@@ -136,9 +138,10 @@ export class TurtleBuilder {
             z: currentZ,
             dir: currentDir
           });
-          // 2. Transition from slope to flat at height Y + 1
-          currentX += vec.dx;
-          currentZ += vec.dz;
+
+          // BiSlopeEnd is placed 2 blocks forward and 1 level higher
+          currentX += 2 * vec.dx;
+          currentZ += 2 * vec.dz;
           currentY += 1;
           blocks.push({
             name: 'StadiumRoadMainBiSlopeEnd',
@@ -147,21 +150,23 @@ export class TurtleBuilder {
             z: currentZ,
             dir: currentDir
           });
+
+          // Advance cursor to prepare for the next flat block at height currentY + 1 (total +2 from start)
+          currentX += vec.dx;
+          currentZ += vec.dz;
+          currentY += 1;
           break;
         }
 
         case 'slope_down': {
-          // Descending smoothly
+          // Trackmania Stadium Descending BiSlope:
+          // When descending in direction `currentDir`:
+          // 1. BiSlopeEnd is entered at the high level Y, facing OPPOSITE_DIR
+          // 2. BiSlopeStart is placed 2 blocks forward at Y-1, facing OPPOSITE_DIR
+          // 3. Flat road resumes at Y-2
           const vec = DIR_VECTORS[currentDir];
-          currentX += vec.dx;
-          currentZ += vec.dz;
-          blocks.push({
-            name: 'StadiumRoadMainBiSlopeStart',
-            x: currentX,
-            y: currentY,
-            z: currentZ,
-            dir: currentDir
-          });
+          const oppDir = DIRECTIONS[(DIRECTIONS.indexOf(currentDir) + 2) % 4];
+
           currentX += vec.dx;
           currentZ += vec.dz;
           currentY -= 1;
@@ -170,8 +175,23 @@ export class TurtleBuilder {
             x: currentX,
             y: currentY,
             z: currentZ,
-            dir: currentDir
+            dir: oppDir
           });
+
+          currentX += 2 * vec.dx;
+          currentZ += 2 * vec.dz;
+          currentY -= 1;
+          blocks.push({
+            name: 'StadiumRoadMainBiSlopeStart',
+            x: currentX,
+            y: currentY,
+            z: currentZ,
+            dir: oppDir
+          });
+
+          // Advance cursor to prepare for next flat block at ground level
+          currentX += vec.dx;
+          currentZ += vec.dz;
           break;
         }
 
