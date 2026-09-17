@@ -46,6 +46,15 @@ export class TrackValidator {
       } else {
         coordMap.set(key, index);
       }
+
+      if (block.y < 2 && !name.includes('water') && !name.includes('pool') && !name.includes('dirt')) {
+        issues.push({
+          type: 'warning',
+          message: `Block #${index} ('${block.name}') is at height Y=${block.y}. In TrackMania Stadium, ground level is Y=2. Blocks placed at Y=1 cut into the grass terrain and create void underneath unless placed over a pool/dirt foundation.`,
+          blockIndex: index,
+          coordinate: [block.x, block.y, block.z]
+        });
+      }
     });
 
     if (!hasStart) {

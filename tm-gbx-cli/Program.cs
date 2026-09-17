@@ -485,41 +485,18 @@ class Program
 
     static int HandleAnalyzeSlopes(string[] args)
     {
-        string goodPath = @"C:\Program Files (x86)\TmNationsForever\GameData\Tracks\Campaigns\Nations\White\A01-Race.Challenge.Gbx";
-        string badPath = @"C:\Users\osaro\Documents\TmForever\Tracks\Challenges\My Challenges\AI_Generated\AI_Turtle_Hillclimb.Challenge.Gbx";
-
-        var gGood = Gbx.Parse<CGameCtnChallenge>(goodPath);
-        var gBad = Gbx.Parse<CGameCtnChallenge>(badPath);
-
-        Console.WriteLine("\n=== COMPARING WORKING A01 vs AI_Turtle ===");
-        var props = typeof(CGameCtnChallenge).GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
-        foreach (var p in props)
+        string file = args.Length > 1 ? args[1] : Path.Combine("data", "templates", "blank_stadium.Challenge.Gbx");
+        if (!File.Exists(file))
         {
-            if (p.Name == "Blocks" || p.Name == "Chunks" || p.Name == "Thumbnail") continue;
-            try
-            {
-                var vGood = p.GetValue(gGood.Node);
-                var vBad = p.GetValue(gBad.Node);
-                string sGood = vGood?.ToString() ?? "null";
-                string sBad = vBad?.ToString() ?? "null";
-                if (sGood != sBad)
-                {
-                    Console.WriteLine($"[DIFF] {p.Name}: Good='{sGood}', Bad='{sBad}'");
-                }
-            }
-            catch {}
+            Console.Error.WriteLine($"File not found: {file}");
+            return 1;
         }
-
-        Console.WriteLine("\n=== COMPARING CHUNKS ===");
-        var goodChunkIds = gGood.Node.Chunks.Select(c => c.Id).ToHashSet();
-        var badChunkIds = gBad.Node.Chunks.Select(c => c.Id).ToHashSet();
-        foreach (var id in goodChunkIds.Except(badChunkIds))
+        var gbx = Gbx.Parse<CGameCtnChallenge>(file);
+        if (gbx.Node?.Blocks == null) return 0;
+        Console.WriteLine($"\nFile: {Path.GetFileName(file)} ({gbx.Node.Blocks.Count} blocks)");
+        foreach (var b in gbx.Node.Blocks.Take(25))
         {
-            Console.WriteLine($"Only in Good: 0x{id:X8}");
-        }
-        foreach (var id in badChunkIds.Except(goodChunkIds))
-        {
-            Console.WriteLine($"Only in Bad: 0x{id:X8}");
+            Console.WriteLine($"  ({b.Coord.X,2}, {b.Coord.Y,2}, {b.Coord.Z,2}) dir={b.Direction,-5} : {b.Name}");
         }
         return 0;
     }

@@ -27,9 +27,11 @@ const DIR_VECTORS: Record<DirectionName, HeadingVector> = {
 
 export class TurtleBuilder {
   public static build(spec: TurtleTrackSpec, style: 'Road' | 'Circuit' = 'Road'): TrackJsonModel {
-    // Ground level in Trackmania Stadium is Y = 1!
+    // In Trackmania Stadium, the stadium ground (grass) is at Y = 1.
+    // Road and Circuit tracks MUST be built at Y >= 2 so they sit on/above the ground
+    // and do not cut holes into the grass terrain or reveal the void underneath!
     let currentX = spec.startX ?? 16;
-    let currentY = spec.startY ?? 1;
+    let currentY = spec.startY ?? 2;
     let currentZ = spec.startZ ?? 10;
     let currentDir: DirectionName = spec.initialDirection ?? 'North';
 
@@ -124,9 +126,10 @@ export class TurtleBuilder {
         }
 
         case 'slope_up': {
-          // Trackmania Stadium BiSlope:
-          // 1. BiSlopeStart (length 2) starts at current Y and transitions to incline
-          // 2. BiSlopeEnd (length 2) starts at Y+1 and transitions to flat road at Y+2
+          // Trackmania Stadium BiSlope (Ascending):
+          // 1. BiSlopeStart (length 2) starts at current Y and transitions to incline (spans 2 cells)
+          // 2. BiSlopeEnd (length 2) is placed 2 blocks forward and 1 level higher (Y+1), transitions to flat road at Y+2
+          // 3. Flat road resumes at Y+2
           const vec = DIR_VECTORS[currentDir];
           
           currentX += vec.dx;
@@ -151,21 +154,22 @@ export class TurtleBuilder {
             dir: currentDir
           });
 
-          // Advance cursor to prepare for the next flat block at height currentY + 1 (total +2 from start)
+          // BiSlopeEnd covers 2 cells. Advance cursor by 1 cell so the next action
+          // (which also advances by 1 cell) lands flush at +2 cells from BiSlopeEnd
           currentX += vec.dx;
           currentZ += vec.dz;
-          currentY += 1;
+          currentY += 1; // Flat road height is now currentY + 2
           break;
         }
 
         case 'slope_down': {
-          // Trackmania Stadium Descending BiSlope:
+          // Trackmania Stadium BiSlope (Descending):
           // When descending in direction `currentDir`:
-          // 1. BiSlopeEnd is entered at the high level Y, facing OPPOSITE_DIR
-          // 2. BiSlopeStart is placed 2 blocks forward at Y-1, facing OPPOSITE_DIR
-          // 3. Flat road resumes at Y-2
+          // 1. BiSlopeEnd (length 2) is entered from the higher level, placed at Y-1.
+          //    CRITICAL: In Trackmania (e.g. A03-Race), slopes face the direction of travel (currentDir)!
+          // 2. BiSlopeStart (length 2) is placed 2 blocks forward at Y-2, leveling out to flat road.
+          // 3. Flat road resumes at ground level (currentY - 2).
           const vec = DIR_VECTORS[currentDir];
-          const oppDir = DIRECTIONS[(DIRECTIONS.indexOf(currentDir) + 2) % 4];
 
           currentX += vec.dx;
           currentZ += vec.dz;
@@ -175,7 +179,7 @@ export class TurtleBuilder {
             x: currentX,
             y: currentY,
             z: currentZ,
-            dir: oppDir
+            dir: currentDir
           });
 
           currentX += 2 * vec.dx;
@@ -186,10 +190,10 @@ export class TurtleBuilder {
             x: currentX,
             y: currentY,
             z: currentZ,
-            dir: oppDir
+            dir: currentDir
           });
 
-          // Advance cursor to prepare for next flat block at ground level
+          // Advance cursor by 1 cell so the next action lands flush (+2 cells from BiSlopeStart)
           currentX += vec.dx;
           currentZ += vec.dz;
           break;

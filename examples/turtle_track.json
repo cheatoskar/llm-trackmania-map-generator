@@ -2,7 +2,7 @@
   "mapName": "AI Turtle Hillclimb",
   "author": "Claude AI",
   "startX": 16,
-  "startY": 1,
+  "startY": 2,
   "startZ": 10,
   "initialDirection": "North",
   "steps": [
