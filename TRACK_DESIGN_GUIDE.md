@@ -127,9 +127,91 @@ A 2x2 curve occupies [min(X), min(X)+1] x [min(Z), min(Z)+1]. Its block `dir` is
 
 ---
 
-## 5. Track Flow & Pacing Recommendations
+## 5. Metadata & Customization Options
 
-1. **Launch Runway:** Place 2-4 straight road blocks or a `turbo` right after `start` so the car gains forward momentum before the first curve.
-2. **Transition Buffer:** Do not place a sharp 90-degree curve immediately adjacent to a slope. Provide at least 1-2 straight road blocks at the top and bottom of ramps for car suspension to settle.
-3. **Checkpoint Spacing:** Place a checkpoint every 10-15 seconds of driving time, especially before risky features (bridges, jumps, chicanes).
-4. **Finish Runway:** Provide 1-3 straight road blocks ahead of the finish line for high-speed crossings.
+LLMs and human designers can customize track properties in the JSON specification:
+
+| Field | Type | Options / Format | Effect in Game |
+| :--- | :--- | :--- | :--- |
+| `mood` | `string` | `"Sunrise"`, `"Day"`, `"Sunset"`, `"Night"` | Sets stadium skybox, shadows, car headlights, and stadium floodlights. |
+| `authorTime` | `number` | Seconds (e.g. `36.5`) or Milliseconds | Exact Target Author Medal time displayed in-game. |
+| `goldTime` | `number` | Seconds or Milliseconds | Gold medal threshold. |
+| `silverTime` | `number` | Seconds or Milliseconds | Silver medal threshold. |
+| `bronzeTime` | `number` | Seconds or Milliseconds | Bronze medal threshold. |
+| `laps` | `number` | `1` (Sprint) or `> 1` (Circuit / Laps) | Enables multi-lap race mode with active lap counters. |
+| `comments` | `string` | Free text | Author description shown in TM track info screen. |
+| `mod` | `string` | Texture Pack name (e.g. `"DesertMod"`) | Loads custom texture pack from `Skins\Stadium\Mod\`. |
+| `modUrl` | `string` | Download Locator URL | Auto-downloads mod for multiplayer clients. |
+
+---
+
+## 6. Extended Block Catalog: Dirt, Tilt, Acrobatic & Scenery
+
+### Dirt / Offroad Blocks (Transitions & Drift)
+| Block Name | Purpose | Notes |
+| :--- | :--- | :--- |
+| `StadiumRoadDirtToRoad` | Dirt-to-Road Transition | Connects asphalt road directly to dirt trail |
+| `StadiumRoadDirt` | Dirt Straight | Low-grip offroad surface |
+| `StadiumRoadDirtCheckpoint` | Dirt Checkpoint | Offroad checkpoint gate |
+| `StadiumRoadDirtGTCurve2` | 2x2 Dirt Curve | Wide banked dirt drift turn |
+
+### Tilted Road Blocks (Banked Oval & Speedway)
+| Block Name | Purpose | Notes |
+| :--- | :--- | :--- |
+| `StadiumRoadTiltStraight` | Tilted Straight | 45-degree banked asphalt speedway |
+| `StadiumRoadTiltGTCurve2` | 2x2 Banked Curve | High-speed tilted turn |
+| `StadiumRoadTiltTransition2Left` / `Right` | Tilt Entry/Exit | Smooth transition between flat road and tilt |
+
+### Acrobatic & Looping Blocks
+| Block Name | Dimensions | Purpose |
+| :--- | :--- | :--- |
+| `StadiumLoopLeft` / `Right` | Compound Loop | Full 360-degree vertical loop |
+| `StadiumPlatformLoopStart` | Platform Incline | Enters high-altitude wallride |
+| `StadiumPlatformWall4` / `Wall2` | Wallride Vertical Wall | 90-degree vertical driving surface |
+
+### Scenery & Stadium Design Blocks
+| Block Name | Placement Elevation | Visual Effect |
+| :--- | :--- | :--- |
+| `StadiumControlLight` | $Y \ge 2$ | Massive stadium floodlight tower (blazing in Night mood) |
+| `StadiumInflatablePalmTree` | $Y \ge 2$ | Inflatable palm tree on stadium grass |
+| `StadiumInflatableSnowTree` | $Y \ge 2$ | Inflatable winter snow tree |
+| `StadiumFabricCross3x3Screen`| $Y \ge 2$ | Giant stadium LED video jumbotron |
+| `StadiumControlRoadCamera` | $Y_{road} + 1$ | Overhead TV broadcast camera booth spanning over the road |
+| `StadiumControlRoadGlass` | $Y_{road} + 1$ | Glass skybridge spanning across the race track |
+
+---
+
+## 7. Author Time (AT) Mechanics Explained
+
+### In TrackMania Engine (Vanilla Editor):
+When creating tracks manually in the TMNF editor, the Author Time is recorded when the author clicks **"Validate Track"** and drives the car across the finish line.
+- The game saves the exact elapsed time down to the millisecond (`AuthorScore` / `AuthorTime`).
+- The game embeds the physical driving inputs / replay replay ghost (`ReplayRecordInfo`).
+- When another player beats the author's time, they earn the green Nadeo Author Medal.
+
+### In the AI / GBX Generator:
+Since the LLM designs the layout algorithmically without running a physics simulation in real-time:
+1. **Manual / Custom Times:** The LLM can specify `"authorTime": 36.5` (and gold/silver/bronze). The GBX generator converts this to integer milliseconds (e.g. `36500ms`) and patches both the binary header chunks and the XML manifest.
+2. **Automatic Estimation:** If no times are provided, the CLI computes an estimated target time based on track length and boosters (`blocks.Count * 1.5s`).
+3. **Optional Replay Validation:** If you open an AI-generated map in the TMNF Editor and click "Validate", you can drive a real ghost run to embed your personal replay ghost into the map!
+
+---
+
+## 8. Ready-to-use LLM System Prompt Template
+
+When instructing an LLM (via MCP or directly) to generate TrackMania tracks, use this system prompt:
+
+```markdown
+You are an expert TrackMania Nations Forever track designer.
+Output ONLY valid JSON adhering to the TrackMania Turtle Specification:
+
+Rules:
+1. Start at Y >= 2 (terrain grass is at Y=1, never build at Y=1).
+2. Stadium boundaries are 0 <= X <= 31 and 0 <= Z <= 31.
+3. Use 'turn_right' and 'turn_left' for 90-degree 2x2 curves.
+4. Use 'slope_up' and 'slope_down' for elevation changes (advances 4 blocks, climbs/drops 2 Y levels).
+5. Ensure start runway has at least 2 straights or turbo before the first curve.
+6. Checkpoint spacing should be 4-8 blocks apart.
+7. Available moods: "Sunrise", "Day", "Sunset", "Night".
+8. Include realistic authorTime, goldTime, silverTime, bronzeTime in seconds.
+```

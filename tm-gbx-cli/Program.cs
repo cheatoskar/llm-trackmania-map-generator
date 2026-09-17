@@ -42,6 +42,33 @@ public class TrackJsonModel
     [JsonPropertyName("template")]
     public string? Template { get; set; }
 
+    [JsonPropertyName("mood")]
+    public string? Mood { get; set; }
+
+    [JsonPropertyName("mod")]
+    public string? Mod { get; set; }
+
+    [JsonPropertyName("modUrl")]
+    public string? ModUrl { get; set; }
+
+    [JsonPropertyName("authorTime")]
+    public double? AuthorTime { get; set; }
+
+    [JsonPropertyName("goldTime")]
+    public double? GoldTime { get; set; }
+
+    [JsonPropertyName("silverTime")]
+    public double? SilverTime { get; set; }
+
+    [JsonPropertyName("bronzeTime")]
+    public double? BronzeTime { get; set; }
+
+    [JsonPropertyName("laps")]
+    public int? Laps { get; set; }
+
+    [JsonPropertyName("comments")]
+    public string? Comments { get; set; }
+
     [JsonPropertyName("blocks")]
     public List<BlockData> Blocks { get; set; } = new();
 }
@@ -145,6 +172,13 @@ class Program
         {
             MapName = map.MapName ?? "Unknown",
             Author = map.AuthorLogin ?? "Unknown",
+            Mood = map.Decoration?.Id,
+            AuthorTime = map.AuthorTime?.TotalMilliseconds != null ? Math.Round(map.AuthorTime.Value.TotalMilliseconds / 1000.0, 2) : null,
+            GoldTime = map.GoldTime?.TotalMilliseconds != null ? Math.Round(map.GoldTime.Value.TotalMilliseconds / 1000.0, 2) : null,
+            SilverTime = map.SilverTime?.TotalMilliseconds != null ? Math.Round(map.SilverTime.Value.TotalMilliseconds / 1000.0, 2) : null,
+            BronzeTime = map.BronzeTime?.TotalMilliseconds != null ? Math.Round(map.BronzeTime.Value.TotalMilliseconds / 1000.0, 2) : null,
+            Laps = map.IsLapRace ? map.NbLaps : 1,
+            Comments = map.Comments,
             Blocks = new List<BlockData>()
         };
 
@@ -226,6 +260,7 @@ class Program
 
         // Clear any custom texture mod and embedded thumbnail
         map.ModPackDesc = null;
+
         map.CustomMusicPackDesc = null;
         map.Thumbnail = null;
         map.HasCustomCamThumbnail = false;
@@ -259,15 +294,26 @@ class Program
         }
 
         map.NbCheckpoints = map.Blocks.Count(b => b.Name.Contains("Checkpoint"));
-        map.NbLaps = 3;
-        map.IsLapRace = false;
+        
+        int laps = model.Laps ?? 1;
+        map.NbLaps = laps > 1 ? laps : 3;
+        map.IsLapRace = laps > 1;
 
-        // Set realistic author/medal times so TrackMania Nations Forever recognizes it as a valid raceable track
-        int estimatedSec = Math.Max(12, (int)(model.Blocks.Count * 1.5));
-        int authorMs = estimatedSec * 1000;
-        int goldMs = (int)(authorMs * 1.15);
-        int silverMs = (int)(authorMs * 1.30);
-        int bronzeMs = (int)(authorMs * 1.55);
+        // Determine Author and Medal Times
+        int authorMs;
+        if (model.AuthorTime.HasValue)
+        {
+            authorMs = model.AuthorTime.Value < 500 ? (int)(model.AuthorTime.Value * 1000) : (int)model.AuthorTime.Value;
+        }
+        else
+        {
+            int estimatedSec = Math.Max(12, (int)(model.Blocks.Count * 1.5));
+            authorMs = estimatedSec * 1000;
+        }
+
+        int goldMs = model.GoldTime.HasValue ? (model.GoldTime.Value < 500 ? (int)(model.GoldTime.Value * 1000) : (int)model.GoldTime.Value) : (int)(authorMs * 1.15);
+        int silverMs = model.SilverTime.HasValue ? (model.SilverTime.Value < 500 ? (int)(model.SilverTime.Value * 1000) : (int)model.SilverTime.Value) : (int)(authorMs * 1.30);
+        int bronzeMs = model.BronzeTime.HasValue ? (model.BronzeTime.Value < 500 ? (int)(model.BronzeTime.Value * 1000) : (int)model.BronzeTime.Value) : (int)(authorMs * 1.55);
 
         var authorTime = TimeSpan.FromMilliseconds(authorMs);
         var goldTime = TimeSpan.FromMilliseconds(goldMs);
@@ -289,14 +335,25 @@ class Program
             map.ChallengeParameters.AuthorScore = authorMs;
         }
 
-        // Update MapInfo Ident so the game engine and menus sync perfectly
+        // Mood (Sunrise, Day, Sunset, Night)
+        string mood = "Sunset";
+        if (!string.IsNullOrEmpty(model.Mood))
+        {
+            string rawMood = model.Mood.Trim();
+            if (rawMood.Equals("night", StringComparison.OrdinalIgnoreCase)) mood = "Night";
+            else if (rawMood.Equals("day", StringComparison.OrdinalIgnoreCase)) mood = "Day";
+            else if (rawMood.Equals("sunrise", StringComparison.OrdinalIgnoreCase)) mood = "Sunrise";
+            else if (rawMood.Equals("sunset", StringComparison.OrdinalIgnoreCase)) mood = "Sunset";
+        }
+
         map.MapInfo = new Ident(map.MapUid, "Stadium", map.AuthorLogin);
-        map.Decoration = new Ident("Sunset", "Stadium", "Nadeo");
-        map.Comments = "";
+        map.Decoration = new Ident(mood, "Stadium", "Nadeo");
+        map.Comments = model.Comments ?? string.Empty;
         map.NeedUnlock = false;
 
-        // Synchronize the XML header chunk with the new MapUid, MapName, Author, and Times
-        map.Xml = $"<header type=\"challenge\" version=\"TMc.6\" exever=\"2.11.6\"><ident uid=\"{map.MapUid}\" name=\"{map.MapName}\" author=\"{map.AuthorLogin}\"/><desc envir=\"Stadium\" mood=\"Sunset\" type=\"Race\" nblaps=\"0\" price=\"{Math.Max(500, map.Blocks.Count * 25)}\" /><times bronze=\"{bronzeMs}\" silver=\"{silverMs}\" gold=\"{goldMs}\" authortime=\"{authorMs}\" authorscore=\"{authorMs}\"/><deps></deps></header>";
+        // Synchronize the XML header chunk with the new MapUid, MapName, Author, Mood, and Times
+        int nblapsXml = laps > 1 ? laps : 0;
+        map.Xml = $"<header type=\"challenge\" version=\"TMc.6\" exever=\"2.11.6\"><ident uid=\"{map.MapUid}\" name=\"{map.MapName}\" author=\"{map.AuthorLogin}\"/><desc envir=\"Stadium\" mood=\"{mood}\" type=\"Race\" nblaps=\"{nblapsXml}\" price=\"{Math.Max(500, map.Blocks.Count * 25)}\" /><times bronze=\"{bronzeMs}\" silver=\"{silverMs}\" gold=\"{goldMs}\" authortime=\"{authorMs}\" authorscore=\"{authorMs}\"/><deps></deps></header>";
 
 
 

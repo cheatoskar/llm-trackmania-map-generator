@@ -339,6 +339,15 @@ export class TurtleBuilder {
     return {
       mapName: spec.mapName,
       author: spec.author ?? 'Claude AI',
+      mood: spec.mood,
+      mod: spec.mod,
+      modUrl: spec.modUrl,
+      authorTime: spec.authorTime,
+      goldTime: spec.goldTime,
+      silverTime: spec.silverTime,
+      bronzeTime: spec.bronzeTime,
+      laps: spec.laps,
+      comments: spec.comments,
       blocks
     };
   }

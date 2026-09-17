@@ -1,5 +1,7 @@
 export type DirectionName = 'North' | 'East' | 'South' | 'West';
 
+export type TrackMood = 'Sunrise' | 'Day' | 'Sunset' | 'Night';
+
 export interface BlockData {
   name: string;
   x: number;
@@ -13,6 +15,15 @@ export interface TrackJsonModel {
   mapName: string;
   author: string;
   template?: string;
+  mood?: TrackMood;
+  mod?: string;
+  modUrl?: string;
+  authorTime?: number;
+  goldTime?: number;
+  silverTime?: number;
+  bronzeTime?: number;
+  laps?: number;
+  comments?: string;
   blocks: BlockData[];
 }
 
@@ -43,8 +54,17 @@ export interface TurtleStep {
 export interface TurtleTrackSpec {
   mapName: string;
   author?: string;
+  mood?: TrackMood;
+  mod?: string;
+  modUrl?: string;
+  authorTime?: number;
+  goldTime?: number;
+  silverTime?: number;
+  bronzeTime?: number;
+  laps?: number;
+  comments?: string;
   startX?: number; // default 16
-  startY?: number; // default 9
+  startY?: number; // default 2
   startZ?: number; // default 10
   initialDirection?: DirectionName; // default 'North'
   steps: TurtleStep[];
