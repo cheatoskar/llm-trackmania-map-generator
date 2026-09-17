@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+tm-gbx-cli/bin/
+tm-gbx-cli/obj/
+
+# Temporary generated files
+data/templates/*.json
+examples/*_compiled.json
+examples/*.Challenge.Gbx
+examples/*.Map.Gbx
+
+# Reference maps: Keep folder structure but avoid committing proprietary game maps directly
+data/reference_maps/*.Gbx
+!data/reference_maps/.gitkeep
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

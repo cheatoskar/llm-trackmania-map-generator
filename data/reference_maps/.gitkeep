@@ -1,0 +1,2 @@
+# Place your .Challenge.Gbx or .Map.Gbx reference maps in this directory.
+# Run `npm run cli -- catalog` to automatically index new blocks into data/block_catalog.json.

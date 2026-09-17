@@ -1,0 +1,2279 @@
+[
+  {
+    "name": "StadiumInflatablePillar",
+    "category": "Decoration",
+    "count": 3155,
+    "sampleCoordinates": [
+      "Coord=(6,4,15), Dir=West",
+      "Coord=(6,3,15), Dir=West",
+      "Coord=(6,2,15), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumDirtHill",
+    "category": "General",
+    "count": 2975,
+    "sampleCoordinates": [
+      "Coord=(27,2,15), Dir=South",
+      "Coord=(28,2,15), Dir=South",
+      "Coord=(25,4,17), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumPlatformWallBorder",
+    "category": "Platform",
+    "count": 2529,
+    "sampleCoordinates": [
+      "Coord=(16,5,13), Dir=West",
+      "Coord=(18,7,15), Dir=North",
+      "Coord=(18,7,13), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBase",
+    "category": "General",
+    "count": 1719,
+    "sampleCoordinates": [
+      "Coord=(12,3,7), Dir=East",
+      "Coord=(13,3,7), Dir=East",
+      "Coord=(14,3,7), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumPool",
+    "category": "General",
+    "count": 1463,
+    "sampleCoordinates": [
+      "Coord=(12,0,16), Dir=South",
+      "Coord=(12,0,19), Dir=North",
+      "Coord=(13,0,16), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumDirt",
+    "category": "General",
+    "count": 1455,
+    "sampleCoordinates": [
+      "Coord=(27,0,14), Dir=North",
+      "Coord=(28,0,14), Dir=North",
+      "Coord=(24,2,12), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumTubePillar",
+    "category": "Acrobatic",
+    "count": 1424,
+    "sampleCoordinates": [
+      "Coord=(2,10,11), Dir=East",
+      "Coord=(2,9,11), Dir=East",
+      "Coord=(2,8,11), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumWater",
+    "category": "Scenery/Obstacle",
+    "count": 1302,
+    "sampleCoordinates": [
+      "Coord=(12,0,17), Dir=North",
+      "Coord=(12,0,18), Dir=North",
+      "Coord=(13,0,17), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumDirtBorder",
+    "category": "General",
+    "count": 1204,
+    "sampleCoordinates": [
+      "Coord=(23,0,28), Dir=North",
+      "Coord=(24,0,28), Dir=North",
+      "Coord=(25,0,28), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumInflatableSupport",
+    "category": "Decoration",
+    "count": 562,
+    "sampleCoordinates": [
+      "Coord=(6,5,15), Dir=West",
+      "Coord=(6,5,16), Dir=West",
+      "Coord=(6,5,17), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumTubeV1",
+    "category": "Acrobatic",
+    "count": 557,
+    "sampleCoordinates": [
+      "Coord=(15,1,5), Dir=East",
+      "Coord=(7,16,2), Dir=West",
+      "Coord=(7,16,8), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderStraight",
+    "category": "General",
+    "count": 520,
+    "sampleCoordinates": [
+      "Coord=(12,3,8), Dir=South",
+      "Coord=(13,3,8), Dir=South",
+      "Coord=(14,3,8), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumControlRoadCamera",
+    "category": "Road",
+    "count": 498,
+    "sampleCoordinates": [
+      "Coord=(28,1,9), Dir=North",
+      "Coord=(28,1,10), Dir=North",
+      "Coord=(28,1,11), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumControlRoadGlass",
+    "category": "Road",
+    "count": 409,
+    "sampleCoordinates": [
+      "Coord=(21,7,22), Dir=West",
+      "Coord=(21,8,18), Dir=North",
+      "Coord=(21,8,19), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadMain",
+    "category": "Road",
+    "count": 374,
+    "sampleCoordinates": [
+      "Coord=(10,8,11), Dir=East",
+      "Coord=(13,8,11), Dir=East",
+      "Coord=(13,8,14), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumTube",
+    "category": "Acrobatic",
+    "count": 374,
+    "sampleCoordinates": [
+      "Coord=(2,11,11), Dir=East",
+      "Coord=(7,8,11), Dir=East",
+      "Coord=(12,7,11), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumCircuitSlopeStraight",
+    "category": "Elevation/Transition",
+    "count": 296,
+    "sampleCoordinates": [
+      "Coord=(7,10,7), Dir=East",
+      "Coord=(8,8,7), Dir=East",
+      "Coord=(9,6,7), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumTubeRoad",
+    "category": "Acrobatic",
+    "count": 287,
+    "sampleCoordinates": [
+      "Coord=(8,15,2), Dir=East",
+      "Coord=(6,15,2), Dir=East",
+      "Coord=(6,15,8), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumTubeV8",
+    "category": "Acrobatic",
+    "count": 172,
+    "sampleCoordinates": [
+      "Coord=(15,2,5), Dir=East",
+      "Coord=(7,7,2), Dir=West",
+      "Coord=(7,7,8), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumTubeV4",
+    "category": "Acrobatic",
+    "count": 165,
+    "sampleCoordinates": [
+      "Coord=(16,1,5), Dir=North",
+      "Coord=(0,2,5), Dir=East",
+      "Coord=(19,1,14), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumPlatformLoopStart",
+    "category": "Start",
+    "count": 146,
+    "sampleCoordinates": [
+      "Coord=(19,8,10), Dir=North",
+      "Coord=(20,8,10), Dir=North",
+      "Coord=(21,8,10), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumPlatformRoad",
+    "category": "Road",
+    "count": 139,
+    "sampleCoordinates": [
+      "Coord=(15,3,17), Dir=East",
+      "Coord=(14,3,17), Dir=South",
+      "Coord=(15,3,16), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumCircuitSlopeStart",
+    "category": "Start",
+    "count": 113,
+    "sampleCoordinates": [
+      "Coord=(11,3,7), Dir=East",
+      "Coord=(8,9,20), Dir=East",
+      "Coord=(21,2,21), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumFabricPillarAir",
+    "category": "Decoration",
+    "count": 109,
+    "sampleCoordinates": [
+      "Coord=(17,1,16), Dir=South",
+      "Coord=(17,2,16), Dir=South",
+      "Coord=(17,5,16), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumTubeRoadLightSystem",
+    "category": "Acrobatic",
+    "count": 101,
+    "sampleCoordinates": [
+      "Coord=(14,6,13), Dir=South",
+      "Coord=(14,6,12), Dir=West",
+      "Coord=(15,6,12), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumPlatformWallPub2",
+    "category": "Platform",
+    "count": 97,
+    "sampleCoordinates": [
+      "Coord=(30,2,7), Dir=North",
+      "Coord=(29,2,7), Dir=North",
+      "Coord=(19,7,14), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumGrassClip",
+    "category": "General",
+    "count": 96,
+    "sampleCoordinates": [
+      "Coord=(19,2,3), Dir=North",
+      "Coord=(14,2,3), Dir=North",
+      "Coord=(14,5,3), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumTubePillarBranch",
+    "category": "Acrobatic",
+    "count": 87,
+    "sampleCoordinates": [
+      "Coord=(26,17,13), Dir=West",
+      "Coord=(26,17,12), Dir=West",
+      "Coord=(30,3,6), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderDiagOut",
+    "category": "Turn/Curve",
+    "count": 84,
+    "sampleCoordinates": [
+      "Coord=(14,9,4), Dir=West",
+      "Coord=(17,9,4), Dir=North",
+      "Coord=(14,9,7), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumFabricCross1x1",
+    "category": "General",
+    "count": 82,
+    "sampleCoordinates": [
+      "Coord=(19,13,16), Dir=North",
+      "Coord=(11,13,15), Dir=South",
+      "Coord=(17,9,19), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainTurbo",
+    "category": "Road",
+    "count": 81,
+    "sampleCoordinates": [
+      "Coord=(12,8,11), Dir=West",
+      "Coord=(3,12,11), Dir=West",
+      "Coord=(11,8,11), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumPlatformWall4",
+    "category": "Platform",
+    "count": 77,
+    "sampleCoordinates": [
+      "Coord=(21,12,10), Dir=North",
+      "Coord=(22,12,10), Dir=North",
+      "Coord=(23,12,10), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumPlatformWall2",
+    "category": "Platform",
+    "count": 69,
+    "sampleCoordinates": [
+      "Coord=(23,16,10), Dir=North",
+      "Coord=(22,16,10), Dir=North",
+      "Coord=(21,16,10), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumTubeRoadCross",
+    "category": "Acrobatic",
+    "count": 68,
+    "sampleCoordinates": [
+      "Coord=(7,15,2), Dir=East",
+      "Coord=(7,15,8), Dir=East",
+      "Coord=(11,6,12), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumTubePillarCap",
+    "category": "Acrobatic",
+    "count": 67,
+    "sampleCoordinates": [
+      "Coord=(26,18,13), Dir=West",
+      "Coord=(26,18,12), Dir=West",
+      "Coord=(29,4,6), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumFabricStraight1x1",
+    "category": "General",
+    "count": 63,
+    "sampleCoordinates": [
+      "Coord=(17,8,16), Dir=South",
+      "Coord=(20,8,16), Dir=North",
+      "Coord=(11,8,16), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainSlopeStraight",
+    "category": "Elevation/Transition",
+    "count": 61,
+    "sampleCoordinates": [
+      "Coord=(6,10,11), Dir=East",
+      "Coord=(18,2,7), Dir=East",
+      "Coord=(14,2,21), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumTubeRoadDown",
+    "category": "Acrobatic",
+    "count": 61,
+    "sampleCoordinates": [
+      "Coord=(10,11,14), Dir=South",
+      "Coord=(18,11,14), Dir=South",
+      "Coord=(17,11,14), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainBiSlopeStart",
+    "category": "Start",
+    "count": 58,
+    "sampleCoordinates": [
+      "Coord=(8,8,11), Dir=East",
+      "Coord=(19,1,7), Dir=East",
+      "Coord=(12,1,21), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderDiagIn",
+    "category": "Turn/Curve",
+    "count": 56,
+    "sampleCoordinates": [
+      "Coord=(15,9,4), Dir=North",
+      "Coord=(16,9,4), Dir=East",
+      "Coord=(15,9,1), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumCircuitSlopeEnd",
+    "category": "Elevation/Transition",
+    "count": 54,
+    "sampleCoordinates": [
+      "Coord=(18,7,21), Dir=East",
+      "Coord=(13,12,5), Dir=East",
+      "Coord=(13,12,4), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumControlRoadPub",
+    "category": "Road",
+    "count": 53,
+    "sampleCoordinates": [
+      "Coord=(7,3,0), Dir=East",
+      "Coord=(8,3,0), Dir=East",
+      "Coord=(10,3,0), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumInflatableCactus",
+    "category": "Decoration",
+    "count": 50,
+    "sampleCoordinates": [
+      "Coord=(18,3,13), Dir=North",
+      "Coord=(14,1,16), Dir=West",
+      "Coord=(17,1,25), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumPlatformLoopEnd",
+    "category": "Acrobatic",
+    "count": 48,
+    "sampleCoordinates": [
+      "Coord=(16,9,19), Dir=East",
+      "Coord=(16,9,20), Dir=East",
+      "Coord=(15,9,19), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumInflatableSnowTree",
+    "category": "Decoration",
+    "count": 47,
+    "sampleCoordinates": [
+      "Coord=(24,3,12), Dir=South",
+      "Coord=(26,3,16), Dir=West",
+      "Coord=(16,7,22), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainFinishLine",
+    "category": "Finish",
+    "count": 45,
+    "sampleCoordinates": [
+      "Coord=(10,8,14), Dir=East",
+      "Coord=(22,5,20), Dir=West",
+      "Coord=(0,14,5), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumSculptA",
+    "category": "Decoration",
+    "count": 45,
+    "sampleCoordinates": [
+      "Coord=(18,1,7), Dir=North",
+      "Coord=(18,1,3), Dir=South",
+      "Coord=(16,1,4), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainBiSlopeEnd",
+    "category": "Elevation/Transition",
+    "count": 43,
+    "sampleCoordinates": [
+      "Coord=(4,11,11), Dir=East",
+      "Coord=(16,4,21), Dir=West",
+      "Coord=(5,2,13), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeStraightTop",
+    "category": "Elevation/Transition",
+    "count": 43,
+    "sampleCoordinates": [
+      "Coord=(3,18,8), Dir=East",
+      "Coord=(3,18,9), Dir=East",
+      "Coord=(3,18,10), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderCornerOut",
+    "category": "Turn/Curve",
+    "count": 42,
+    "sampleCoordinates": [
+      "Coord=(1,13,4), Dir=West",
+      "Coord=(1,13,6), Dir=South",
+      "Coord=(2,13,3), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainStartLine",
+    "category": "Start",
+    "count": 41,
+    "sampleCoordinates": [
+      "Coord=(2,12,11), Dir=West",
+      "Coord=(25,7,21), Dir=North",
+      "Coord=(5,11,21), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirt",
+    "category": "Road",
+    "count": 40,
+    "sampleCoordinates": [
+      "Coord=(17,3,12), Dir=West",
+      "Coord=(17,3,18), Dir=North",
+      "Coord=(17,1,21), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainCheckpoint",
+    "category": "Checkpoint",
+    "count": 38,
+    "sampleCoordinates": [
+      "Coord=(8,9,16), Dir=South",
+      "Coord=(11,1,21), Dir=West",
+      "Coord=(14,2,25), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumSculptBridgeSlopeEndMirror",
+    "category": "Elevation/Transition",
+    "count": 35,
+    "sampleCoordinates": [
+      "Coord=(19,26,22), Dir=West",
+      "Coord=(17,26,20), Dir=East",
+      "Coord=(19,7,23), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumInflatableTube",
+    "category": "Acrobatic",
+    "count": 35,
+    "sampleCoordinates": [
+      "Coord=(7,12,6), Dir=North",
+      "Coord=(8,12,6), Dir=North",
+      "Coord=(11,13,6), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumSculptBridgePillar",
+    "category": "Decoration",
+    "count": 33,
+    "sampleCoordinates": [
+      "Coord=(20,1,22), Dir=North",
+      "Coord=(20,1,23), Dir=North",
+      "Coord=(16,1,23), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumSculptBridgeSlopeEnd",
+    "category": "Elevation/Transition",
+    "count": 32,
+    "sampleCoordinates": [
+      "Coord=(17,26,22), Dir=East",
+      "Coord=(19,26,20), Dir=West",
+      "Coord=(19,7,22), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumPlatformWall1",
+    "category": "Platform",
+    "count": 31,
+    "sampleCoordinates": [
+      "Coord=(16,4,13), Dir=East",
+      "Coord=(16,5,13), Dir=South",
+      "Coord=(16,11,13), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderCornerIn",
+    "category": "Turn/Curve",
+    "count": 30,
+    "sampleCoordinates": [
+      "Coord=(14,10,22), Dir=South",
+      "Coord=(12,10,22), Dir=North",
+      "Coord=(9,10,22), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumPlatformSlope2Straight",
+    "category": "Elevation/Transition",
+    "count": 30,
+    "sampleCoordinates": [
+      "Coord=(9,4,22), Dir=North",
+      "Coord=(9,6,23), Dir=North",
+      "Coord=(10,6,23), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderGTCurve2Out",
+    "category": "Turn/Curve",
+    "count": 27,
+    "sampleCoordinates": [
+      "Coord=(30,2,21), Dir=East",
+      "Coord=(12,10,20), Dir=West",
+      "Coord=(13,10,23), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumTubeRoadUp",
+    "category": "Acrobatic",
+    "count": 26,
+    "sampleCoordinates": [
+      "Coord=(9,6,12), Dir=West",
+      "Coord=(9,6,8), Dir=West",
+      "Coord=(17,10,14), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumPlatformGTCurve2Wall1",
+    "category": "Turn/Curve",
+    "count": 25,
+    "sampleCoordinates": [
+      "Coord=(28,15,6), Dir=North",
+      "Coord=(28,16,6), Dir=North",
+      "Coord=(21,15,6), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumCheckpointRingV",
+    "category": "Checkpoint",
+    "count": 24,
+    "sampleCoordinates": [
+      "Coord=(16,6,14), Dir=West",
+      "Coord=(15,6,20), Dir=West",
+      "Coord=(15,10,5), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumPlatformTurbo",
+    "category": "Platform",
+    "count": 24,
+    "sampleCoordinates": [
+      "Coord=(12,2,9), Dir=West",
+      "Coord=(19,3,28), Dir=East",
+      "Coord=(19,3,26), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumHolePillar",
+    "category": "Decoration",
+    "count": 23,
+    "sampleCoordinates": [
+      "Coord=(7,9,20), Dir=South",
+      "Coord=(16,6,20), Dir=East",
+      "Coord=(7,3,25), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumPlatformToRoadMain",
+    "category": "Road",
+    "count": 23,
+    "sampleCoordinates": [
+      "Coord=(6,10,21), Dir=East",
+      "Coord=(1,13,5), Dir=East",
+      "Coord=(14,3,13), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeStraightLeft",
+    "category": "Elevation/Transition",
+    "count": 22,
+    "sampleCoordinates": [
+      "Coord=(7,10,21), Dir=East",
+      "Coord=(9,6,8), Dir=East",
+      "Coord=(10,4,8), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderGTCurve2In",
+    "category": "Turn/Curve",
+    "count": 22,
+    "sampleCoordinates": [
+      "Coord=(28,2,19), Dir=North",
+      "Coord=(28,2,7), Dir=West",
+      "Coord=(25,2,7), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumSculptBridgeStraightSmall",
+    "category": "Decoration",
+    "count": 22,
+    "sampleCoordinates": [
+      "Coord=(18,10,22), Dir=West",
+      "Coord=(18,10,23), Dir=East",
+      "Coord=(12,10,20), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltStraight",
+    "category": "Elevation/Transition",
+    "count": 21,
+    "sampleCoordinates": [
+      "Coord=(9,5,24), Dir=South",
+      "Coord=(9,5,23), Dir=South",
+      "Coord=(13,3,16), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumPlatformToRoad",
+    "category": "Road",
+    "count": 21,
+    "sampleCoordinates": [
+      "Coord=(15,1,19), Dir=East",
+      "Coord=(16,5,20), Dir=West",
+      "Coord=(22,5,20), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeStraightRight",
+    "category": "Elevation/Transition",
+    "count": 20,
+    "sampleCoordinates": [
+      "Coord=(10,4,6), Dir=East",
+      "Coord=(9,6,6), Dir=East",
+      "Coord=(8,8,6), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtFenceStraight",
+    "category": "Road",
+    "count": 20,
+    "sampleCoordinates": [
+      "Coord=(16,7,23), Dir=East",
+      "Coord=(16,3,16), Dir=West",
+      "Coord=(18,3,16), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTCurve3",
+    "category": "Turn/Curve",
+    "count": 20,
+    "sampleCoordinates": [
+      "Coord=(0,4,23), Dir=South",
+      "Coord=(0,4,20), Dir=West",
+      "Coord=(22,1,22), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtToRoad",
+    "category": "Road",
+    "count": 18,
+    "sampleCoordinates": [
+      "Coord=(6,1,11), Dir=East",
+      "Coord=(23,3,19), Dir=South",
+      "Coord=(15,1,15), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumFabricPillarCornerInAir",
+    "category": "Turn/Curve",
+    "count": 18,
+    "sampleCoordinates": [
+      "Coord=(6,1,25), Dir=East",
+      "Coord=(6,1,19), Dir=South",
+      "Coord=(6,2,19), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeStartRight",
+    "category": "Start",
+    "count": 17,
+    "sampleCoordinates": [
+      "Coord=(11,3,6), Dir=East",
+      "Coord=(8,9,19), Dir=East",
+      "Coord=(19,2,4), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTCurve4",
+    "category": "Turn/Curve",
+    "count": 17,
+    "sampleCoordinates": [
+      "Coord=(5,1,18), Dir=South",
+      "Coord=(27,15,12), Dir=East",
+      "Coord=(11,1,6), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumInflatablePalmTree",
+    "category": "Decoration",
+    "count": 17,
+    "sampleCoordinates": [
+      "Coord=(16,3,12), Dir=South",
+      "Coord=(21,1,25), Dir=East",
+      "Coord=(25,1,18), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTCurve2",
+    "category": "Turn/Curve",
+    "count": 15,
+    "sampleCoordinates": [
+      "Coord=(24,7,22), Dir=East",
+      "Coord=(7,9,22), Dir=South",
+      "Coord=(8,9,14), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeStartLeft",
+    "category": "Start",
+    "count": 15,
+    "sampleCoordinates": [
+      "Coord=(11,3,8), Dir=East",
+      "Coord=(8,9,21), Dir=East",
+      "Coord=(19,2,6), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag2x2Mirror",
+    "category": "Turn/Curve",
+    "count": 15,
+    "sampleCoordinates": [
+      "Coord=(7,9,17), Dir=South",
+      "Coord=(8,1,16), Dir=West",
+      "Coord=(16,4,13), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag2x2SlopeMirror",
+    "category": "Elevation/Transition",
+    "count": 15,
+    "sampleCoordinates": [
+      "Coord=(11,2,26), Dir=East",
+      "Coord=(8,2,14), Dir=West",
+      "Coord=(16,5,18), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumPlatformToRoad2Mirror",
+    "category": "Road",
+    "count": 14,
+    "sampleCoordinates": [
+      "Coord=(14,8,14), Dir=West",
+      "Coord=(18,10,5), Dir=West",
+      "Coord=(18,10,6), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeStraightBottom",
+    "category": "Elevation/Transition",
+    "count": 14,
+    "sampleCoordinates": [
+      "Coord=(5,15,15), Dir=East",
+      "Coord=(5,15,16), Dir=East",
+      "Coord=(5,15,14), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumPlatformCheckpoint",
+    "category": "Checkpoint",
+    "count": 14,
+    "sampleCoordinates": [
+      "Coord=(30,2,9), Dir=South",
+      "Coord=(8,7,16), Dir=South",
+      "Coord=(11,2,9), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumHolePillarSlope",
+    "category": "Elevation/Transition",
+    "count": 14,
+    "sampleCoordinates": [
+      "Coord=(20,18,15), Dir=East",
+      "Coord=(9,7,18), Dir=East",
+      "Coord=(8,8,5), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainSlopeBase",
+    "category": "Elevation/Transition",
+    "count": 14,
+    "sampleCoordinates": [
+      "Coord=(2,1,22), Dir=West",
+      "Coord=(4,1,22), Dir=East",
+      "Coord=(18,1,20), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumSculptArchRingEndMirror",
+    "category": "Decoration",
+    "count": 14,
+    "sampleCoordinates": [
+      "Coord=(10,1,17), Dir=South",
+      "Coord=(1,1,15), Dir=South",
+      "Coord=(3,1,7), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumSculptArchRingEnd",
+    "category": "Decoration",
+    "count": 14,
+    "sampleCoordinates": [
+      "Coord=(14,1,17), Dir=South",
+      "Coord=(3,1,11), Dir=West",
+      "Coord=(10,1,9), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHillSlope2",
+    "category": "Elevation/Transition",
+    "count": 13,
+    "sampleCoordinates": [
+      "Coord=(14,7,23), Dir=East",
+      "Coord=(14,1,16), Dir=West",
+      "Coord=(17,1,16), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtToRoadGrass",
+    "category": "Road",
+    "count": 12,
+    "sampleCoordinates": [
+      "Coord=(10,1,16), Dir=West",
+      "Coord=(12,1,16), Dir=East",
+      "Coord=(7,1,22), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumFabricCornerIn",
+    "category": "Turn/Curve",
+    "count": 12,
+    "sampleCoordinates": [
+      "Coord=(6,5,19), Dir=South",
+      "Coord=(6,5,25), Dir=East",
+      "Coord=(24,5,19), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumPlatformBiSlope2Start",
+    "category": "Start",
+    "count": 12,
+    "sampleCoordinates": [
+      "Coord=(9,2,21), Dir=North",
+      "Coord=(15,4,22), Dir=North",
+      "Coord=(14,4,22), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumHolePillarTilt",
+    "category": "Elevation/Transition",
+    "count": 11,
+    "sampleCoordinates": [
+      "Coord=(9,2,11), Dir=West",
+      "Coord=(16,10,15), Dir=West",
+      "Coord=(26,4,20), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltGTCurve2DownRight",
+    "category": "Elevation/Transition",
+    "count": 11,
+    "sampleCoordinates": [
+      "Coord=(8,2,17), Dir=East",
+      "Coord=(2,13,10), Dir=South",
+      "Coord=(19,8,16), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumPlatformGTCurve2Wall2",
+    "category": "Turn/Curve",
+    "count": 10,
+    "sampleCoordinates": [
+      "Coord=(24,12,10), Dir=North",
+      "Coord=(24,12,14), Dir=East",
+      "Coord=(1,5,9), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumGrassCheckpoint",
+    "category": "Checkpoint",
+    "count": 10,
+    "sampleCoordinates": [
+      "Coord=(29,1,13), Dir=West",
+      "Coord=(26,1,7), Dir=East",
+      "Coord=(25,1,11), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRamp",
+    "category": "Elevation/Transition",
+    "count": 10,
+    "sampleCoordinates": [
+      "Coord=(24,1,25), Dir=West",
+      "Coord=(18,2,25), Dir=West",
+      "Coord=(12,2,25), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumHolePillar2Front",
+    "category": "Decoration",
+    "count": 10,
+    "sampleCoordinates": [
+      "Coord=(15,2,25), Dir=East",
+      "Coord=(14,6,20), Dir=West",
+      "Coord=(8,3,25), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumPlatformGTCurve3Wall1",
+    "category": "Turn/Curve",
+    "count": 10,
+    "sampleCoordinates": [
+      "Coord=(28,15,4), Dir=North",
+      "Coord=(28,16,4), Dir=North",
+      "Coord=(20,15,4), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumPlatformBiSlope2End",
+    "category": "Elevation/Transition",
+    "count": 10,
+    "sampleCoordinates": [
+      "Coord=(14,9,14), Dir=East",
+      "Coord=(14,9,13), Dir=East",
+      "Coord=(14,9,12), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumPlatformToRoad2",
+    "category": "Road",
+    "count": 9,
+    "sampleCoordinates": [
+      "Coord=(14,8,11), Dir=West",
+      "Coord=(20,3,7), Dir=West",
+      "Coord=(14,6,19), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumSculptBridgeSuspendSlope2",
+    "category": "Elevation/Transition",
+    "count": 9,
+    "sampleCoordinates": [
+      "Coord=(17,1,2), Dir=West",
+      "Coord=(11,1,8), Dir=East",
+      "Coord=(16,1,19), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHighToRoad",
+    "category": "Road",
+    "count": 9,
+    "sampleCoordinates": [
+      "Coord=(21,3,22), Dir=East",
+      "Coord=(14,1,15), Dir=West",
+      "Coord=(18,1,19), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumSculptBridgePillarMirror",
+    "category": "Decoration",
+    "count": 9,
+    "sampleCoordinates": [
+      "Coord=(31,1,1), Dir=South",
+      "Coord=(31,1,2), Dir=South",
+      "Coord=(27,1,1), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumControlLight",
+    "category": "Decoration",
+    "count": 9,
+    "sampleCoordinates": [
+      "Coord=(20,3,15), Dir=North",
+      "Coord=(10,10,8), Dir=East",
+      "Coord=(9,10,8), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumTubeRoadSoundSystem",
+    "category": "Acrobatic",
+    "count": 9,
+    "sampleCoordinates": [
+      "Coord=(25,4,16), Dir=West",
+      "Coord=(27,4,13), Dir=North",
+      "Coord=(27,4,15), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag2x2Slope",
+    "category": "Elevation/Transition",
+    "count": 9,
+    "sampleCoordinates": [
+      "Coord=(4,11,9), Dir=East",
+      "Coord=(16,8,15), Dir=South",
+      "Coord=(13,8,12), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumDirtClip",
+    "category": "General",
+    "count": 8,
+    "sampleCoordinates": [
+      "Coord=(13,9,23), Dir=North",
+      "Coord=(17,3,7), Dir=North",
+      "Coord=(17,7,23), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumSculptBridgeSuspendSlope2Mirror",
+    "category": "Elevation/Transition",
+    "count": 8,
+    "sampleCoordinates": [
+      "Coord=(17,1,8), Dir=West",
+      "Coord=(11,1,2), Dir=East",
+      "Coord=(10,1,19), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumDirtDeadendSpot",
+    "category": "General",
+    "count": 8,
+    "sampleCoordinates": [
+      "Coord=(16,1,14), Dir=South",
+      "Coord=(17,1,14), Dir=South",
+      "Coord=(13,1,15), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtToRoadDirtHigh",
+    "category": "Road",
+    "count": 8,
+    "sampleCoordinates": [
+      "Coord=(16,1,15), Dir=West",
+      "Coord=(20,3,22), Dir=West",
+      "Coord=(16,1,11), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag3x2Slope",
+    "category": "Elevation/Transition",
+    "count": 8,
+    "sampleCoordinates": [
+      "Coord=(17,19,15), Dir=East",
+      "Coord=(10,4,17), Dir=East",
+      "Coord=(13,9,3), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltTransition2DiagLeft",
+    "category": "Elevation/Transition",
+    "count": 8,
+    "sampleCoordinates": [
+      "Coord=(24,4,18), Dir=East",
+      "Coord=(8,1,22), Dir=West",
+      "Coord=(17,2,20), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRampLow",
+    "category": "Elevation/Transition",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(21,7,23), Dir=West",
+      "Coord=(18,3,17), Dir=West",
+      "Coord=(15,9,16), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumDirtDeadendDoor",
+    "category": "General",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(12,1,15), Dir=East",
+      "Coord=(10,1,17), Dir=West",
+      "Coord=(8,1,18), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumAirship",
+    "category": "General",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(28,12,17), Dir=North",
+      "Coord=(10,3,17), Dir=West",
+      "Coord=(31,4,15), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumControlLightBase",
+    "category": "Decoration",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(28,11,19), Dir=North",
+      "Coord=(12,2,17), Dir=West",
+      "Coord=(31,3,17), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumInflatableAdvert",
+    "category": "Decoration",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(7,5,12), Dir=East",
+      "Coord=(28,5,29), Dir=North",
+      "Coord=(25,3,29), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadStretch",
+    "category": "Road",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(20,2,25), Dir=West",
+      "Coord=(15,6,20), Dir=West",
+      "Coord=(13,11,19), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHillTiltStraight",
+    "category": "Elevation/Transition",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(13,1,22), Dir=South",
+      "Coord=(12,1,22), Dir=South",
+      "Coord=(14,1,22), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltGTCurve2DownLeft",
+    "category": "Elevation/Transition",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(9,4,25), Dir=South",
+      "Coord=(3,12,16), Dir=South",
+      "Coord=(17,17,13), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumSculptArchRingStartMirror",
+    "category": "Start",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(10,1,19), Dir=West",
+      "Coord=(6,1,9), Dir=North",
+      "Coord=(2,1,13), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumSculptArchRingStart",
+    "category": "Start",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(10,1,23), Dir=West",
+      "Coord=(2,1,9), Dir=North",
+      "Coord=(2,1,9), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainCheckpointLeft",
+    "category": "Checkpoint",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(11,3,18), Dir=West",
+      "Coord=(2,14,13), Dir=North",
+      "Coord=(18,9,16), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainSlopeUBottom",
+    "category": "Elevation/Transition",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(7,1,14), Dir=South",
+      "Coord=(8,1,16), Dir=South",
+      "Coord=(8,1,14), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainSlopeBase2",
+    "category": "Elevation/Transition",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(21,9,8), Dir=East",
+      "Coord=(23,7,8), Dir=East",
+      "Coord=(8,1,11), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainCheckpointRight",
+    "category": "Checkpoint",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(21,3,19), Dir=West",
+      "Coord=(18,18,15), Dir=North",
+      "Coord=(23,7,8), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadStretchSlope",
+    "category": "Elevation/Transition",
+    "count": 7,
+    "sampleCoordinates": [
+      "Coord=(27,5,17), Dir=South",
+      "Coord=(21,23,18), Dir=West",
+      "Coord=(21,5,10), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumPlatformGTCurve2Wall4",
+    "category": "Turn/Curve",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(24,14,10), Dir=North",
+      "Coord=(24,14,14), Dir=East",
+      "Coord=(13,10,14), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeEndLeft",
+    "category": "Elevation/Transition",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(13,12,7), Dir=East",
+      "Coord=(18,7,22), Dir=East",
+      "Coord=(16,9,22), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumDirtDeadendTent1",
+    "category": "General",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(12,1,18), Dir=East",
+      "Coord=(15,1,14), Dir=South",
+      "Coord=(13,1,16), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag3x2SlopeMirror",
+    "category": "Elevation/Transition",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(6,8,9), Dir=East",
+      "Coord=(6,2,15), Dir=North",
+      "Coord=(5,9,17), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltCornerDownLeft",
+    "category": "Elevation/Transition",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(6,21,15), Dir=North",
+      "Coord=(7,2,13), Dir=West",
+      "Coord=(22,3,13), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumSculptC",
+    "category": "Decoration",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(19,1,16), Dir=North",
+      "Coord=(17,1,18), Dir=South",
+      "Coord=(28,1,6), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltGTCurve2",
+    "category": "Elevation/Transition",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(12,3,17), Dir=East",
+      "Coord=(11,2,11), Dir=North",
+      "Coord=(25,4,18), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltCornerDownRight",
+    "category": "Elevation/Transition",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(8,2,13), Dir=West",
+      "Coord=(17,10,15), Dir=West",
+      "Coord=(24,7,14), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag2x2",
+    "category": "Turn/Curve",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(17,4,8), Dir=West",
+      "Coord=(4,10,5), Dir=West",
+      "Coord=(16,3,18), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltCornerUpLeft",
+    "category": "Elevation/Transition",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(10,2,13), Dir=East",
+      "Coord=(17,9,16), Dir=West",
+      "Coord=(19,2,14), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumPlatformCheckpointRight",
+    "category": "Checkpoint",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(16,5,16), Dir=North",
+      "Coord=(7,7,9), Dir=South",
+      "Coord=(25,14,28), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumControlCameraPub",
+    "category": "Decoration",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(25,4,20), Dir=North",
+      "Coord=(27,4,20), Dir=North",
+      "Coord=(8,1,2), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumCircuitLoopStart",
+    "category": "Start",
+    "count": 6,
+    "sampleCoordinates": [
+      "Coord=(16,3,2), Dir=South",
+      "Coord=(15,3,2), Dir=South",
+      "Coord=(16,9,1), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeGTCurve2OutRightTop",
+    "category": "Elevation/Transition",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(3,16,6), Dir=East",
+      "Coord=(13,10,1), Dir=South",
+      "Coord=(15,6,3), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumPlatformTurboUp",
+    "category": "Platform",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(10,4,7), Dir=East",
+      "Coord=(17,3,19), Dir=East",
+      "Coord=(17,3,18), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeEndRight",
+    "category": "Elevation/Transition",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(13,12,3), Dir=East",
+      "Coord=(18,7,20), Dir=East",
+      "Coord=(16,9,20), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHillTiltToRoadRight",
+    "category": "Elevation/Transition",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(4,1,12), Dir=West",
+      "Coord=(15,1,22), Dir=South",
+      "Coord=(10,3,13), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHillTiltCornerLeft",
+    "category": "Elevation/Transition",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(4,1,11), Dir=West",
+      "Coord=(8,3,11), Dir=West",
+      "Coord=(19,1,9), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtCheckpoint",
+    "category": "Checkpoint",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(11,1,16), Dir=West",
+      "Coord=(22,1,11), Dir=South",
+      "Coord=(10,3,11), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtGTCurve3",
+    "category": "Turn/Curve",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(21,3,16), Dir=North",
+      "Coord=(17,1,22), Dir=South",
+      "Coord=(20,1,6), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumInflatableCastleDoor",
+    "category": "Decoration",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(22,3,21), Dir=South",
+      "Coord=(16,3,18), Dir=North",
+      "Coord=(17,1,20), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag3x2",
+    "category": "Turn/Curve",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(4,3,10), Dir=South",
+      "Coord=(22,4,10), Dir=South",
+      "Coord=(20,7,16), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumHole",
+    "category": "General",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(22,2,25), Dir=West",
+      "Coord=(8,3,9), Dir=East",
+      "Coord=(1,5,10), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltCornerUpRight",
+    "category": "Elevation/Transition",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(6,21,16), Dir=North",
+      "Coord=(23,2,13), Dir=South",
+      "Coord=(22,3,12), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag2x2Tilt",
+    "category": "Elevation/Transition",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(2,13,14), Dir=South",
+      "Coord=(22,3,18), Dir=West",
+      "Coord=(24,7,7), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumLoopRight",
+    "category": "Acrobatic",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(15,7,15), Dir=East",
+      "Coord=(17,7,13), Dir=West",
+      "Coord=(10,3,14), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumSculptB",
+    "category": "Decoration",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(11,1,21), Dir=South",
+      "Coord=(12,1,15), Dir=North",
+      "Coord=(27,1,15), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainFW",
+    "category": "Road",
+    "count": 5,
+    "sampleCoordinates": [
+      "Coord=(16,1,12), Dir=West",
+      "Coord=(16,1,7), Dir=East",
+      "Coord=(23,4,19), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumPlatformCheckpointLeft",
+    "category": "Checkpoint",
+    "count": 4,
+    "sampleCoordinates": [
+      "Coord=(4,16,10), Dir=North",
+      "Coord=(12,5,23), Dir=West",
+      "Coord=(19,14,14), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumSculptBridgeSuspendSlopeEndMirror",
+    "category": "Elevation/Transition",
+    "count": 4,
+    "sampleCoordinates": [
+      "Coord=(10,1,19), Dir=East",
+      "Coord=(16,1,21), Dir=West",
+      "Coord=(16,1,8), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumSculptBridgeSuspendSlopeEnd",
+    "category": "Elevation/Transition",
+    "count": 4,
+    "sampleCoordinates": [
+      "Coord=(16,1,19), Dir=West",
+      "Coord=(10,1,21), Dir=East",
+      "Coord=(10,1,8), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtToRoadDirtHigh2",
+    "category": "Road",
+    "count": 4,
+    "sampleCoordinates": [
+      "Coord=(11,1,18), Dir=South",
+      "Coord=(11,1,15), Dir=North",
+      "Coord=(16,5,16), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltTransition2Right",
+    "category": "Elevation/Transition",
+    "count": 4,
+    "sampleCoordinates": [
+      "Coord=(12,5,20), Dir=East",
+      "Coord=(20,3,17), Dir=South",
+      "Coord=(6,9,17), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltTransition2CurveLeft",
+    "category": "Elevation/Transition",
+    "count": 4,
+    "sampleCoordinates": [
+      "Coord=(5,2,11), Dir=South",
+      "Coord=(14,10,15), Dir=South",
+      "Coord=(14,1,7), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainSlopeUTop",
+    "category": "Elevation/Transition",
+    "count": 4,
+    "sampleCoordinates": [
+      "Coord=(8,2,15), Dir=South",
+      "Coord=(23,9,13), Dir=North",
+      "Coord=(15,13,24), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainTurboUp",
+    "category": "Road",
+    "count": 4,
+    "sampleCoordinates": [
+      "Coord=(17,2,21), Dir=South",
+      "Coord=(9,4,14), Dir=West",
+      "Coord=(8,8,13), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumHolePillar3",
+    "category": "Decoration",
+    "count": 4,
+    "sampleCoordinates": [
+      "Coord=(1,6,16), Dir=West",
+      "Coord=(21,4,13), Dir=North",
+      "Coord=(28,5,10), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumHolePillar2Line",
+    "category": "Decoration",
+    "count": 4,
+    "sampleCoordinates": [
+      "Coord=(30,3,11), Dir=North",
+      "Coord=(20,3,17), Dir=West",
+      "Coord=(11,1,11), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainTurboDown",
+    "category": "Road",
+    "count": 3,
+    "sampleCoordinates": [
+      "Coord=(7,9,11), Dir=West",
+      "Coord=(7,6,16), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumWaterClip",
+    "category": "Scenery/Obstacle",
+    "count": 3,
+    "sampleCoordinates": [
+      "Coord=(23,2,25), Dir=North",
+      "Coord=(20,3,13), Dir=North",
+      "Coord=(16,3,13), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHighFenceStraight",
+    "category": "Road",
+    "count": 3,
+    "sampleCoordinates": [
+      "Coord=(18,1,15), Dir=East",
+      "Coord=(15,1,15), Dir=West",
+      "Coord=(5,3,10), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumFabricCross3x3",
+    "category": "General",
+    "count": 3,
+    "sampleCoordinates": [
+      "Coord=(20,10,21), Dir=East",
+      "Coord=(16,10,22), Dir=West",
+      "Coord=(12,10,21), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHighGTCurve3",
+    "category": "Turn/Curve",
+    "count": 3,
+    "sampleCoordinates": [
+      "Coord=(16,1,15), Dir=North",
+      "Coord=(17,1,11), Dir=North",
+      "Coord=(5,3,7), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeCornerOutLeftTop",
+    "category": "Elevation/Transition",
+    "count": 3,
+    "sampleCoordinates": [
+      "Coord=(26,5,12), Dir=East",
+      "Coord=(28,6,14), Dir=West",
+      "Coord=(24,8,4), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltTransition2CurveRight",
+    "category": "Elevation/Transition",
+    "count": 3,
+    "sampleCoordinates": [
+      "Coord=(14,3,18), Dir=South",
+      "Coord=(15,3,20), Dir=North",
+      "Coord=(21,3,23), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumPlatformTurboRight",
+    "category": "Platform",
+    "count": 3,
+    "sampleCoordinates": [
+      "Coord=(26,2,14), Dir=North",
+      "Coord=(26,12,12), Dir=East",
+      "Coord=(5,12,15), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumPlatformGTCurve3Wall2",
+    "category": "Turn/Curve",
+    "count": 3,
+    "sampleCoordinates": [
+      "Coord=(27,3,15), Dir=North",
+      "Coord=(1,2,3), Dir=West",
+      "Coord=(21,9,8), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumPlatformGTCurve3Wall4",
+    "category": "Turn/Curve",
+    "count": 3,
+    "sampleCoordinates": [
+      "Coord=(0,5,15), Dir=South",
+      "Coord=(0,9,15), Dir=South",
+      "Coord=(26,11,17), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumPlatformTurboDown",
+    "category": "Platform",
+    "count": 3,
+    "sampleCoordinates": [
+      "Coord=(18,12,13), Dir=East",
+      "Coord=(18,12,12), Dir=East",
+      "Coord=(18,12,11), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeGTCurve2OutLeftTop",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(3,16,20), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumPlatformTurboLeft",
+    "category": "Platform",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(4,16,11), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeGTCurve2InLeftBottom",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(5,12,8), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeGTCurve2InRightBottom",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(5,12,17), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeCornerOutRightBottom",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(7,11,18), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeCornerInRightBottom",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(7,10,19), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtDiagonaleRight",
+    "category": "Turn/Curve",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(7,1,15), Dir=West",
+      "Coord=(8,5,10), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumInflatableCastleBig",
+    "category": "Decoration",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(15,3,17), Dir=East",
+      "Coord=(21,3,19), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtGTCurve2",
+    "category": "Turn/Curve",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(5,1,14), Dir=South",
+      "Coord=(6,7,15), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTCurve5",
+    "category": "Turn/Curve",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(25,3,17), Dir=East",
+      "Coord=(19,5,10), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtToRoadDirtHighBridge",
+    "category": "Road",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(17,1,15), Dir=North",
+      "Coord=(11,1,17), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumInflatableCastle",
+    "category": "Decoration",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(24,1,25), Dir=East",
+      "Coord=(15,17,31), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainCheckpointDown",
+    "category": "Checkpoint",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(22,16,15), Dir=West",
+      "Coord=(8,8,18), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHillTiltToRoadLeft",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(10,1,22), Dir=South",
+      "Coord=(14,5,15), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHighCheckpoint",
+    "category": "Checkpoint",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(18,1,18), Dir=North",
+      "Coord=(8,3,7), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltGTCurve3",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(9,5,20), Dir=West",
+      "Coord=(12,2,14), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag3x2Tilt",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(12,2,13), Dir=North",
+      "Coord=(11,2,21), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag4x3Mirror",
+    "category": "Turn/Curve",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(26,13,9), Dir=North",
+      "Coord=(6,1,4), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltGTCurve2UpRight",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(15,3,20), Dir=West",
+      "Coord=(2,4,17), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumLoopLeft",
+    "category": "Acrobatic",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(21,7,12), Dir=East",
+      "Coord=(23,7,14), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumStretchTilt",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(24,4,18), Dir=West",
+      "Coord=(6,3,7), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumHoleSlope",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(17,4,19), Dir=South",
+      "Coord=(26,7,20), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeCornerInLeftBottom",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(13,6,4), Dir=South",
+      "Coord=(15,2,6), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeCornerInRightTop",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(14,8,3), Dir=South",
+      "Coord=(16,4,5), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeCornerOutRightTop",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(17,4,5), Dir=South",
+      "Coord=(31,8,4), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeGTCurve2OutLeftBottom",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(11,7,3), Dir=South",
+      "Coord=(13,3,5), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag4x3Slope",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(4,6,16), Dir=West",
+      "Coord=(23,25,16), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltGTCurve2UpLeft",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(2,4,13), Dir=North",
+      "Coord=(4,9,16), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumFabricPillarCornerOut",
+    "category": "Turn/Curve",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(16,2,14), Dir=South",
+      "Coord=(16,1,14), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltTransition2DiagRight",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(23,2,13), Dir=East",
+      "Coord=(4,1,12), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumSculptBridgeStraight",
+    "category": "Decoration",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(15,10,18), Dir=North",
+      "Coord=(15,15,29), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltTransition2Left",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(14,2,19), Dir=East",
+      "Coord=(15,9,13), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag3x2Mirror",
+    "category": "Turn/Curve",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(22,3,19), Dir=West",
+      "Coord=(11,2,9), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHillTiltCornerRight",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(19,1,7), Dir=East",
+      "Coord=(21,1,10), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumPlatformCheckpointDown",
+    "category": "Checkpoint",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(21,16,13), Dir=West",
+      "Coord=(29,21,15), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumCircuitRampBig",
+    "category": "Elevation/Transition",
+    "count": 2,
+    "sampleCoordinates": [
+      "Coord=(15,12,22), Dir=South",
+      "Coord=(16,12,22), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumBump1",
+    "category": "General",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(10,4,20), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainStartFinishLine",
+    "category": "Start",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(27,3,16), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHigh",
+    "category": "Road",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(19,1,15), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHillTiltCornerIn",
+    "category": "Elevation/Transition",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(8,3,13), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltTransition1Right",
+    "category": "Elevation/Transition",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(9,2,13), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainTurboRight",
+    "category": "Road",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(10,2,22), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadTiltTransition1Left",
+    "category": "Elevation/Transition",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(13,3,18), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag2x2TiltMirror",
+    "category": "Elevation/Transition",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(25,3,21), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumHoleTilt",
+    "category": "Elevation/Transition",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(23,3,24), Dir=East"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtHillSlopeGT2",
+    "category": "Elevation/Transition",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(6,5,10), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadDirtWave_x2",
+    "category": "Road",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(6,7,13), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag4x3SlopeMirror",
+    "category": "Elevation/Transition",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(9,9,13), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumFabricCross3x3Screen",
+    "category": "General",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(19,6,13), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumFabricCornerOut",
+    "category": "Turn/Curve",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(16,5,13), Dir=South"
+    ]
+  },
+  {
+    "name": "StadiumCircuitBorderSlopeCornerInLeftTop",
+    "category": "Elevation/Transition",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(27,4,14), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumRoadMainGTDiag4x3",
+    "category": "Turn/Curve",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(3,1,13), Dir=West"
+    ]
+  },
+  {
+    "name": "StadiumBump1Slope",
+    "category": "Elevation/Transition",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(16,14,27), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumCircuitTurboLeft",
+    "category": "General",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(15,10,20), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumCircuitTurboRight",
+    "category": "General",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(16,10,20), Dir=North"
+    ]
+  },
+  {
+    "name": "StadiumCircuitPillar1",
+    "category": "Decoration",
+    "count": 1,
+    "sampleCoordinates": [
+      "Coord=(15,9,6), Dir=West"
+    ]
+  }
+]
