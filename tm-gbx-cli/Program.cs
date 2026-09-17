@@ -85,6 +85,8 @@ class Program
                     return HandleCreateTemplate(args);
                 case "catalog":
                     return HandleCatalog(args);
+                case "debug":
+                    return HandleDebug(args);
                 default:
                     Console.Error.WriteLine($"Unknown command: {command}");
                     PrintUsage();
@@ -207,6 +209,12 @@ class Program
         if (!string.IsNullOrEmpty(model.Author))
             map.AuthorLogin = model.Author;
 
+        // Clear any custom texture mod and embedded thumbnail
+        map.ModPackDesc = null;
+        map.CustomMusicPackDesc = null;
+        map.Thumbnail = null;
+        map.HasCustomCamThumbnail = false;
+
         map.Blocks.Clear();
 
         foreach (var b in model.Blocks)
@@ -303,6 +311,10 @@ class Program
         gbx.Node.MapName = "Blank Stadium Template";
         gbx.Node.AuthorLogin = "System";
         gbx.Node.Blocks.Clear();
+        gbx.Node.ModPackDesc = null;
+        gbx.Node.CustomMusicPackDesc = null;
+        gbx.Node.Thumbnail = null;
+        gbx.Node.HasCustomCamThumbnail = false;
 
         string? dir = Path.GetDirectoryName(templatePath);
         if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
@@ -392,5 +404,38 @@ class Program
         if (name.Contains("Water")) return "Scenery/Obstacle";
         if (name.Contains("Inflatable") || name.Contains("Sculpt") || name.Contains("Pillar") || name.Contains("Control")) return "Decoration";
         return "General";
+    }
+
+    static int HandleDebug(string[] args)
+    {
+        string sample = @"..\data\templates\blank_stadium.Challenge.Gbx";
+        var gbx = Gbx.Parse<CGameCtnChallenge>(sample);
+        var map = gbx.Node;
+
+        Console.WriteLine("=== Template Inspection ===");
+        Console.WriteLine($"MapName: {map.MapName}");
+        Console.WriteLine($"AuthorLogin: {map.AuthorLogin}");
+        Console.WriteLine($"ModPackDesc: '{map.ModPackDesc}'");
+        Console.WriteLine($"Thumbnail bytes: {map.Thumbnail?.Length ?? 0}");
+
+        Console.WriteLine("\n=== FinishLine in all reference maps ===");
+        var files = Directory.GetFiles(@"..\data\reference_maps", "*.Challenge.Gbx");
+        foreach (var f in files)
+        {
+            var g = Gbx.Parse<CGameCtnChallenge>(f);
+            var finish = g.Node?.Blocks?.FirstOrDefault(b => b.Name.Contains("FinishLine"));
+            if (finish != null)
+            {
+                var roadIn = g.Node.Blocks.FirstOrDefault(b => b != finish && Math.Abs(b.Coord.Y - finish.Coord.Y) <= 1 && Math.Abs(b.Coord.X - finish.Coord.X) + Math.Abs(b.Coord.Z - finish.Coord.Z) == 1);
+                if (roadIn != null)
+                {
+                    int dx = finish.Coord.X - roadIn.Coord.X;
+                    int dz = finish.Coord.Z - roadIn.Coord.Z;
+                    Console.WriteLine($"Map: {Path.GetFileNameWithoutExtension(f)}: Road {roadIn.Name} ({roadIn.Coord.X},{roadIn.Coord.Y},{roadIn.Coord.Z}) Dir={roadIn.Direction} --> Finish ({finish.Coord.X},{finish.Coord.Y},{finish.Coord.Z}) Dir={finish.Direction} [Offset to Finish: dx={dx}, dz={dz}]");
+                }
+            }
+        }
+
+        return 0;
     }
 }

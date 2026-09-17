@@ -2,11 +2,12 @@
   "mapName": "AI Raw Sprint",
   "author": "Claude AI",
   "blocks": [
-    { "name": "StadiumRoadMainStartLine", "x": 16, "y": 9, "z": 10, "dir": "North" },
-    { "name": "StadiumRoadMain", "x": 16, "y": 9, "z": 11, "dir": "North" },
-    { "name": "StadiumRoadMain", "x": 16, "y": 9, "z": 12, "dir": "North" },
-    { "name": "StadiumCheckpointRingV", "x": 16, "y": 9, "z": 13, "dir": "North" },
-    { "name": "StadiumRoadMain", "x": 16, "y": 9, "z": 14, "dir": "North" },
-    { "name": "StadiumRoadMainFinishLine", "x": 16, "y": 9, "z": 15, "dir": "North" }
+    { "name": "StadiumRoadMainStartLine", "x": 16, "y": 1, "z": 10, "dir": "North" },
+    { "name": "StadiumRoadMain", "x": 16, "y": 1, "z": 11, "dir": "North" },
+    { "name": "StadiumRoadMain", "x": 16, "y": 1, "z": 12, "dir": "North" },
+    { "name": "StadiumRoadMainCheckpoint", "x": 16, "y": 1, "z": 13, "dir": "North" },
+    { "name": "StadiumRoadMain", "x": 16, "y": 1, "z": 14, "dir": "North" },
+    { "name": "StadiumRoadMain", "x": 16, "y": 1, "z": 15, "dir": "North" },
+    { "name": "StadiumRoadMainFinishLine", "x": 16, "y": 1, "z": 16, "dir": "North" }
   ]
 }

@@ -1,0 +1,5971 @@
+{
+  "mapName": "C15-Speed",
+  "author": "Nadeo",
+  "template": null,
+  "blocks": [
+    {
+      "name": "StadiumRoadTiltTransition2DiagLeft",
+      "x": 24,
+      "y": 1,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMainTurbo",
+      "x": 24,
+      "y": 1,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMainStartLine",
+      "x": 24,
+      "y": 1,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 25,
+      "y": 1,
+      "z": 14,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadTiltStraight",
+      "x": 25,
+      "y": 2,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformTurboRight",
+      "x": 26,
+      "y": 2,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 26,
+      "y": 2,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 26,
+      "y": 2,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 27,
+      "y": 4,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 26,
+      "y": 4,
+      "z": 17,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 26,
+      "y": 4,
+      "z": 18,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 27,
+      "y": 4,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 27,
+      "y": 4,
+      "z": 19,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 27,
+      "y": 4,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformCheckpointRight",
+      "x": 27,
+      "y": 4,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 26,
+      "y": 3,
+      "z": 19,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 26,
+      "y": 3,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 26,
+      "y": 3,
+      "z": 21,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 27,
+      "y": 4,
+      "z": 21,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 25,
+      "y": 3,
+      "z": 21,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 25,
+      "y": 3,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 25,
+      "y": 3,
+      "z": 19,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 24,
+      "y": 3,
+      "z": 20,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 27,
+      "y": 4,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 27,
+      "y": 4,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeGTCurve2OutRightTop",
+      "x": 27,
+      "y": 4,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 26,
+      "y": 3,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 26,
+      "y": 3,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 25,
+      "y": 3,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 25,
+      "y": 3,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 24,
+      "y": 3,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 24,
+      "y": 3,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 23,
+      "y": 3,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 23,
+      "y": 3,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 24,
+      "y": 3,
+      "z": 21,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 23,
+      "y": 3,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 22,
+      "y": 3,
+      "z": 22,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 22,
+      "y": 3,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 25,
+      "y": 1,
+      "z": 12,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 25,
+      "y": 1,
+      "z": 13,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 26,
+      "y": 2,
+      "z": 13,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 26,
+      "y": 2,
+      "z": 12,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeStartRight",
+      "x": 26,
+      "y": 3,
+      "z": 24,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderStraight",
+      "x": 25,
+      "y": 3,
+      "z": 24,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitBorderStraight",
+      "x": 24,
+      "y": 3,
+      "z": 24,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitBorderStraight",
+      "x": 23,
+      "y": 3,
+      "z": 24,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitBorderStraight",
+      "x": 22,
+      "y": 3,
+      "z": 24,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 21,
+      "y": 3,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 21,
+      "y": 3,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderStraight",
+      "x": 21,
+      "y": 3,
+      "z": 24,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadMainSlopeStraight",
+      "x": 8,
+      "y": 3,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeEnd",
+      "x": 6,
+      "y": 4,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 2,
+      "y": 4,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 5,
+      "y": 4,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 4,
+      "y": 4,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 3,
+      "y": 4,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 1,
+      "y": 4,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformToRoadMain",
+      "x": 20,
+      "y": 3,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformToRoadMain",
+      "x": 19,
+      "y": 3,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 18,
+      "y": 2,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 17,
+      "y": 2,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 16,
+      "y": 2,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 0,
+      "y": 4,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 0,
+      "y": 4,
+      "z": 22,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 0,
+      "y": 4,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 1,
+      "y": 4,
+      "z": 22,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 2,
+      "y": 4,
+      "z": 22,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 1,
+      "y": 4,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 0,
+      "y": 4,
+      "z": 20,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 0,
+      "y": 4,
+      "z": 19,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 3,
+      "y": 4,
+      "z": 22,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 2,
+      "y": 4,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 1,
+      "y": 4,
+      "z": 20,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumHolePillar2Front",
+      "x": 9,
+      "y": 3,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainSlopeBase",
+      "x": 10,
+      "y": 3,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainSlopeStraight",
+      "x": 11,
+      "y": 3,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeStart",
+      "x": 12,
+      "y": 2,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 15,
+      "y": 2,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 14,
+      "y": 2,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 0,
+      "y": 4,
+      "z": 18,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 1,
+      "y": 4,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 2,
+      "y": 4,
+      "z": 20,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 3,
+      "y": 4,
+      "z": 21,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 4,
+      "y": 4,
+      "z": 22,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 0,
+      "y": 4,
+      "z": 17,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 1,
+      "y": 5,
+      "z": 18,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 1,
+      "y": 5,
+      "z": 17,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 1,
+      "y": 4,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 0,
+      "y": 4,
+      "z": 16,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 0,
+      "y": 4,
+      "z": 15,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 1,
+      "y": 4,
+      "z": 15,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformCheckpoint",
+      "x": 1,
+      "y": 4,
+      "z": 14,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 26,
+      "y": 2,
+      "z": 11,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformTurbo",
+      "x": 1,
+      "y": 4,
+      "z": 13,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformToRoadMain",
+      "x": 1,
+      "y": 4,
+      "z": 11,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumHole",
+      "x": 1,
+      "y": 5,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformToRoad",
+      "x": 1,
+      "y": 5,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformLoopStart",
+      "x": 1,
+      "y": 5,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformLoopStart",
+      "x": 2,
+      "y": 5,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformTurbo",
+      "x": 1,
+      "y": 4,
+      "z": 12,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWall1",
+      "x": 1,
+      "y": 9,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWall1",
+      "x": 2,
+      "y": 9,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformLoopEnd",
+      "x": 2,
+      "y": 12,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformLoopEnd",
+      "x": 1,
+      "y": 12,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWall1",
+      "x": 1,
+      "y": 11,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWall1",
+      "x": 2,
+      "y": 11,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformLoopEnd",
+      "x": 2,
+      "y": 12,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCheckpointRingV",
+      "x": 2,
+      "y": 14,
+      "z": 9,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWall4",
+      "x": 2,
+      "y": 8,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWall2",
+      "x": 2,
+      "y": 5,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 2,
+      "y": 0,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 2,
+      "y": 0,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 2,
+      "y": 0,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 2,
+      "y": 0,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 7,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 2,
+      "y": 0,
+      "z": 4,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 3,
+      "y": 0,
+      "z": 4,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 4,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 5,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 6,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 2,
+      "y": 0,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 2,
+      "y": 0,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 3,
+      "y": 0,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 3,
+      "y": 0,
+      "z": 3,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 3,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 5,
+      "y": 0,
+      "z": 3,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 6,
+      "y": 0,
+      "z": 3,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 7,
+      "y": 0,
+      "z": 3,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformLoopStart",
+      "x": 2,
+      "y": 1,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 4,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 5,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 6,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 7,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 8,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 3,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 2,
+      "y": 2,
+      "z": 3,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 5,
+      "y": 2,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 2,
+      "z": 4,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 5,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 6,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 7,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 1,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 3,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 4,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 2,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 4,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 4,
+      "y": 2,
+      "z": 2,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 1,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 2,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 2,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 2,
+      "y": 2,
+      "z": 2,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 5,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 5,
+      "y": 2,
+      "z": 2,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 2,
+      "z": 2,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 8,
+      "y": 0,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 8,
+      "y": 0,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 9,
+      "y": 0,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 8,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 9,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 10,
+      "y": 0,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 11,
+      "y": 0,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 10,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 11,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 2,
+      "z": 2,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 2,
+      "z": 4,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 2,
+      "z": 2,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 8,
+      "y": 0,
+      "z": 3,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 2,
+      "z": 4,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 2,
+      "z": 2,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 9,
+      "y": 0,
+      "z": 3,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 2,
+      "z": 4,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 2,
+      "z": 2,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 10,
+      "y": 0,
+      "z": 3,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 2,
+      "z": 4,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadMainCheckpoint",
+      "x": 7,
+      "y": 1,
+      "z": 3,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 6,
+      "y": 1,
+      "z": 3,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeStart",
+      "x": 8,
+      "y": 1,
+      "z": 3,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 11,
+      "y": 0,
+      "z": 3,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMainTurboUp",
+      "x": 10,
+      "y": 2,
+      "z": 3,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainSlopeStraight",
+      "x": 11,
+      "y": 3,
+      "z": 3,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainGTDiag3x2SlopeMirror",
+      "x": 12,
+      "y": 4,
+      "z": 3,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainSlopeStraight",
+      "x": 16,
+      "y": 8,
+      "z": 4,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeEnd",
+      "x": 17,
+      "y": 9,
+      "z": 4,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 28,
+      "y": 5,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 29,
+      "y": 5,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 30,
+      "y": 5,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 30,
+      "y": 5,
+      "z": 5,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 29,
+      "y": 5,
+      "z": 5,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 30,
+      "y": 5,
+      "z": 6,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 31,
+      "y": 5,
+      "z": 6,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 31,
+      "y": 5,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 31,
+      "y": 5,
+      "z": 5,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 31,
+      "y": 5,
+      "z": 7,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 31,
+      "y": 5,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 31,
+      "y": 8,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 31,
+      "y": 10,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 30,
+      "y": 10,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 30,
+      "y": 8,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 29,
+      "y": 10,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformTurboUp",
+      "x": 31,
+      "y": 6,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 31,
+      "y": 12,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 30,
+      "y": 12,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 29,
+      "y": 12,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 28,
+      "y": 12,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformCheckpointRight",
+      "x": 27,
+      "y": 12,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformTurboRight",
+      "x": 26,
+      "y": 12,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 25,
+      "y": 12,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 24,
+      "y": 12,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 23,
+      "y": 12,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 22,
+      "y": 10,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 23,
+      "y": 10,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 21,
+      "y": 8,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 22,
+      "y": 8,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 21,
+      "y": 6,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 20,
+      "y": 6,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 20,
+      "y": 4,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 19,
+      "y": 4,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 18,
+      "y": 2,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 19,
+      "y": 2,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 17,
+      "y": 1,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 16,
+      "y": 1,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 15,
+      "y": 1,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 12,
+      "y": 0,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 12,
+      "y": 0,
+      "z": 3,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 12,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 2,
+      "z": 7,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 7,
+      "y": 0,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 7,
+      "y": 0,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 6,
+      "y": 0,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 6,
+      "y": 0,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 24,
+      "y": 10,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 23,
+      "y": 8,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 22,
+      "y": 6,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 21,
+      "y": 4,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 20,
+      "y": 2,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 18,
+      "y": 1,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 19,
+      "y": 1,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 13,
+      "y": 0,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 14,
+      "y": 0,
+      "z": 6,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 13,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 14,
+      "y": 0,
+      "z": 0,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 14,
+      "y": 0,
+      "z": 1,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 14,
+      "y": 0,
+      "z": 2,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 14,
+      "y": 0,
+      "z": 3,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 14,
+      "y": 0,
+      "z": 4,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 14,
+      "y": 0,
+      "z": 5,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 2,
+      "z": 4,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 2,
+      "z": 4,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 2,
+      "z": 4,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 2,
+      "z": 5,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 2,
+      "z": 2,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 2,
+      "z": 2,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 2,
+      "z": 1,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 2,
+      "z": 2,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 2,
+      "z": 3,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 2,
+      "z": 7,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 2,
+      "z": 7,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 2,
+      "z": 8,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 4,
+      "y": 2,
+      "z": 5,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 5,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 5,
+      "y": 0,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 6,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 4,
+      "y": 2,
+      "z": 6,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 5,
+      "y": 0,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 5,
+      "y": 0,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 5,
+      "y": 0,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 5,
+      "y": 0,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 4,
+      "z": 8,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 4,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 19,
+      "y": 1,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 18,
+      "y": 1,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 17,
+      "y": 1,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 16,
+      "y": 1,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 15,
+      "y": 1,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 15,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 16,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 17,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 19,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 18,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 19,
+      "y": 3,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 17,
+      "y": 3,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 15,
+      "y": 3,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 9,
+      "y": 0,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 2,
+      "z": 7,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 2,
+      "z": 8,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 4,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 4,
+      "z": 9,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 8,
+      "y": 0,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 2,
+      "z": 9,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 2,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 2,
+      "z": 9,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 4,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 4,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 4,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 7,
+      "y": 0,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 6,
+      "y": 0,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 2,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 4,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 31,
+      "y": 6,
+      "z": 6,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 31,
+      "y": 6,
+      "z": 7,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 31,
+      "y": 6,
+      "z": 3,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 30,
+      "y": 6,
+      "z": 3,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 29,
+      "y": 6,
+      "z": 3,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 28,
+      "y": 6,
+      "z": 3,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 31,
+      "y": 7,
+      "z": 3,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 30,
+      "y": 7,
+      "z": 3,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 22,
+      "y": 13,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 21,
+      "y": 11,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 20,
+      "y": 9,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 19,
+      "y": 7,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 18,
+      "y": 5,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 17,
+      "y": 3,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 16,
+      "y": 3,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 15,
+      "y": 3,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 20,
+      "y": 3,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 21,
+      "y": 5,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 22,
+      "y": 7,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 23,
+      "y": 9,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 24,
+      "y": 11,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMainSlopeStraight",
+      "x": 15,
+      "y": 7,
+      "z": 4,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeEnd",
+      "x": 21,
+      "y": 9,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMainSlopeStraight",
+      "x": 24,
+      "y": 7,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeStart",
+      "x": 25,
+      "y": 6,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 27,
+      "y": 5,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 27,
+      "y": 6,
+      "z": 3,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadMainSlopeStraight",
+      "x": 23,
+      "y": 8,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 19,
+      "y": 10,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 20,
+      "y": 10,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 11,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 2,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 2,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 2,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 13,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 13,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 7,
+      "y": 2,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 6,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 12,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 5,
+      "y": 2,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 2,
+      "z": 12,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 14,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 13,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 2,
+      "y": 2,
+      "z": 11,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 13,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 5,
+      "y": 2,
+      "z": 13,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 5,
+      "y": 2,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 2,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 4,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 4,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 4,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 2,
+      "y": 4,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 2,
+      "y": 4,
+      "z": 13,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 4,
+      "z": 13,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 4,
+      "z": 13,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumGrassCheckpoint",
+      "x": 4,
+      "y": 1,
+      "z": 13,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 15,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 5,
+      "y": 0,
+      "z": 15,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 15,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 6,
+      "y": 0,
+      "z": 15,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 16,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 5,
+      "y": 0,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 6,
+      "y": 0,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 7,
+      "y": 0,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 17,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 5,
+      "y": 0,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 6,
+      "y": 0,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 7,
+      "y": 0,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 8,
+      "y": 0,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 9,
+      "y": 0,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 14,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 15,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 16,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 2,
+      "y": 2,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 14,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 18,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 8,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 9,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 10,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 11,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 12,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 17,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 2,
+      "y": 4,
+      "z": 15,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 2,
+      "y": 4,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 19,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 18,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 1,
+      "y": 2,
+      "z": 19,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 2,
+      "y": 2,
+      "z": 19,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 2,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 2,
+      "z": 14,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 2,
+      "z": 15,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 2,
+      "z": 15,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 2,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 4,
+      "z": 13,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 4,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 4,
+      "z": 14,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 4,
+      "z": 15,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 4,
+      "z": 15,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 2,
+      "z": 16,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 2,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 2,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 6,
+      "z": 11,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 6,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 6,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 6,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 6,
+      "z": 13,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 6,
+      "z": 11,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 6,
+      "z": 13,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 8,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 11,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 12,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 13,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 8,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 9,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 10,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 5,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 6,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 7,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 2,
+      "y": 0,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 2,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 3,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 4,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 20,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 0,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 1,
+      "y": 0,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 1,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 8,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 9,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 2,
+      "y": 4,
+      "z": 17,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 14,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 15,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 14,
+      "y": 0,
+      "z": 7,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 14,
+      "y": 0,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 15,
+      "y": 0,
+      "z": 7,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 15,
+      "y": 0,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 2,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 2,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 14,
+      "y": 2,
+      "z": 9,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 15,
+      "y": 2,
+      "z": 9,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 15,
+      "y": 2,
+      "z": 10,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 15,
+      "y": 2,
+      "z": 11,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 15,
+      "y": 2,
+      "z": 12,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 4,
+      "z": 10,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 12,
+      "y": 4,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 4,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 14,
+      "y": 4,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 14,
+      "y": 4,
+      "z": 11,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 14,
+      "y": 4,
+      "z": 12,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 14,
+      "y": 4,
+      "z": 13,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 6,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 6,
+      "z": 12,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 11,
+      "y": 6,
+      "z": 13,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 6,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 6,
+      "z": 12,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 12,
+      "y": 6,
+      "z": 13,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 6,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 6,
+      "z": 12,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 6,
+      "z": 13,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 4,
+      "z": 15,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 4,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 12,
+      "y": 4,
+      "z": 15,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 4,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 16,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 16,
+      "y": 0,
+      "z": 7,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 16,
+      "y": 0,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 16,
+      "y": 0,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 16,
+      "y": 0,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 16,
+      "y": 0,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 16,
+      "y": 0,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 17,
+      "y": 0,
+      "z": 21,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 21,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 17,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 19,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 17,
+      "y": 0,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 17,
+      "y": 0,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 17,
+      "y": 0,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 17,
+      "y": 0,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 17,
+      "y": 0,
+      "z": 13,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 10,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 11,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 12,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 13,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 14,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 17,
+      "y": 0,
+      "z": 7,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 17,
+      "y": 0,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 7,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtBorder",
+      "x": 18,
+      "y": 0,
+      "z": 8,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 14,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 15,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 15,
+      "y": 2,
+      "z": 13,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 16,
+      "y": 2,
+      "z": 13,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 10,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 11,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 12,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 4,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 14,
+      "y": 4,
+      "z": 14,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 15,
+      "y": 4,
+      "z": 14,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 6,
+      "z": 14,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 6,
+      "z": 15,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 14,
+      "y": 6,
+      "z": 15,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeStraightTop",
+      "x": 28,
+      "y": 6,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeStraightTop",
+      "x": 28,
+      "y": 6,
+      "z": 21,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeStraightTop",
+      "x": 28,
+      "y": 6,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeStraightTop",
+      "x": 28,
+      "y": 6,
+      "z": 19,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeStraightTop",
+      "x": 28,
+      "y": 6,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeStraightTop",
+      "x": 28,
+      "y": 6,
+      "z": 17,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeStraightTop",
+      "x": 28,
+      "y": 6,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeStraightTop",
+      "x": 28,
+      "y": 6,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 25,
+      "y": 2,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 25,
+      "y": 2,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 25,
+      "y": 3,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 25,
+      "y": 3,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 25,
+      "y": 1,
+      "z": 19,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 25,
+      "y": 2,
+      "z": 19,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 24,
+      "y": 2,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 24,
+      "y": 1,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 23,
+      "y": 2,
+      "z": 21,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 23,
+      "y": 1,
+      "z": 21,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 22,
+      "y": 2,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 22,
+      "y": 1,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 21,
+      "y": 1,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 21,
+      "y": 2,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 18,
+      "y": 1,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 20,
+      "y": 2,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 19,
+      "y": 2,
+      "z": 22,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 25,
+      "y": 4,
+      "z": 17,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 25,
+      "y": 4,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 23,
+      "y": 3,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeEnd",
+      "x": 22,
+      "y": 3,
+      "z": 21,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 22,
+      "y": 2,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 21,
+      "y": 2,
+      "z": 21,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 21,
+      "y": 2,
+      "z": 20,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 20,
+      "y": 2,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumCircuitSlopeStraight",
+      "x": 24,
+      "y": 2,
+      "z": 17,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitSlopeStart",
+      "x": 23,
+      "y": 1,
+      "z": 17,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 26,
+      "y": 3,
+      "z": 11,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeCornerInLeftTop",
+      "x": 27,
+      "y": 4,
+      "z": 14,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeCornerOutLeftTop",
+      "x": 28,
+      "y": 6,
+      "z": 14,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeStraightTop",
+      "x": 27,
+      "y": 4,
+      "z": 13,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderSlopeStraightTop",
+      "x": 27,
+      "y": 4,
+      "z": 12,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderStraight",
+      "x": 24,
+      "y": 1,
+      "z": 14,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderStraight",
+      "x": 24,
+      "y": 1,
+      "z": 13,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumCircuitBorderStraight",
+      "x": 24,
+      "y": 1,
+      "z": 12,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 6,
+      "z": 19,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 7,
+      "z": 19,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 6,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 7,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 6,
+      "z": 17,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 7,
+      "z": 17,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 7,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 6,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 6,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 7,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 5,
+      "z": 14,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 6,
+      "z": 14,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 5,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 1,
+      "y": 5,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 2,
+      "y": 5,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 4,
+      "y": 5,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 3,
+      "y": 5,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 5,
+      "y": 5,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 6,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 1,
+      "y": 6,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 2,
+      "y": 6,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 0,
+      "y": 7,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 1,
+      "y": 7,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 3,
+      "y": 6,
+      "z": 24,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 5,
+      "y": 1,
+      "z": 23,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 5,
+      "y": 2,
+      "z": 23,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 5,
+      "y": 3,
+      "z": 23,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 0,
+      "y": 3,
+      "z": 23,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 0,
+      "y": 1,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 0,
+      "y": 2,
+      "z": 23,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 0,
+      "y": 1,
+      "z": 22,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 0,
+      "y": 2,
+      "z": 22,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 0,
+      "y": 3,
+      "z": 22,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV4",
+      "x": 2,
+      "y": 16,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV4",
+      "x": 2,
+      "y": 16,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 2,
+      "y": 19,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 2,
+      "y": 18,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeRoadCross",
+      "x": 2,
+      "y": 20,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumTubeRoadCross",
+      "x": 2,
+      "y": 20,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumTubeRoadCross",
+      "x": 2,
+      "y": 20,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumSculptBridgeSuspendSlope2",
+      "x": 9,
+      "y": 1,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumSculptBridgeSuspendSlope2Mirror",
+      "x": 9,
+      "y": 1,
+      "z": 24,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 11,
+      "y": 5,
+      "z": 23,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumSculptA",
+      "x": 5,
+      "y": 1,
+      "z": 6,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV8",
+      "x": 28,
+      "y": 1,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV8",
+      "x": 29,
+      "y": 1,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 28,
+      "y": 9,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 29,
+      "y": 9,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 29,
+      "y": 10,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 29,
+      "y": 11,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 28,
+      "y": 11,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 28,
+      "y": 10,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV8",
+      "x": 23,
+      "y": 1,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV4",
+      "x": 23,
+      "y": 1,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 23,
+      "y": 5,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 23,
+      "y": 6,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 23,
+      "y": 7,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 23,
+      "y": 9,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV8",
+      "x": 23,
+      "y": 1,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 23,
+      "y": 9,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 23,
+      "y": 10,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 23,
+      "y": 11,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV8",
+      "x": 24,
+      "y": 1,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 24,
+      "y": 9,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV8",
+      "x": 29,
+      "y": 1,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 29,
+      "y": 9,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV8",
+      "x": 30,
+      "y": 1,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV8",
+      "x": 31,
+      "y": 1,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV8",
+      "x": 31,
+      "y": 1,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV8",
+      "x": 30,
+      "y": 1,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV4",
+      "x": 31,
+      "y": 1,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 31,
+      "y": 9,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 30,
+      "y": 9,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 30,
+      "y": 10,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 30,
+      "y": 11,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 31,
+      "y": 11,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 31,
+      "y": 10,
+      "z": 12,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 31,
+      "y": 9,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 30,
+      "y": 9,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 31,
+      "y": 7,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 31,
+      "y": 6,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 31,
+      "y": 5,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 30,
+      "y": 5,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 30,
+      "y": 7,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 30,
+      "y": 6,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV4",
+      "x": 30,
+      "y": 1,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV8",
+      "x": 22,
+      "y": 1,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV4",
+      "x": 22,
+      "y": 1,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV4",
+      "x": 22,
+      "y": 1,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV4",
+      "x": 21,
+      "y": 1,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV4",
+      "x": 20,
+      "y": 1,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV4",
+      "x": 21,
+      "y": 1,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 22,
+      "y": 5,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 22,
+      "y": 7,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 22,
+      "y": 6,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 22,
+      "y": 9,
+      "z": 11,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 21,
+      "y": 7,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 21,
+      "y": 6,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 21,
+      "y": 5,
+      "z": 10,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 22,
+      "y": 5,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 21,
+      "y": 5,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 20,
+      "y": 5,
+      "z": 9,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 21,
+      "y": 3,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 21,
+      "y": 2,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 21,
+      "y": 1,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 20,
+      "y": 1,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 20,
+      "y": 2,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 20,
+      "y": 3,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 20,
+      "y": 1,
+      "z": 7,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 19,
+      "y": 1,
+      "z": 7,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 19,
+      "y": 1,
+      "z": 8,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 19,
+      "y": 2,
+      "z": 8,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 19,
+      "y": 3,
+      "z": 8,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 5,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumSculptA",
+      "x": 4,
+      "y": 1,
+      "z": 20,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 24,
+      "y": 1,
+      "z": 17,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 26,
+      "y": 3,
+      "z": 17,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 26,
+      "y": 2,
+      "z": 17,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 26,
+      "y": 1,
+      "z": 17,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 1,
+      "z": 18,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 3,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 1,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 1,
+      "z": 22,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 2,
+      "z": 22,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 3,
+      "z": 22,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 1,
+      "z": 15,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 2,
+      "z": 15,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 3,
+      "z": 15,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 26,
+      "y": 1,
+      "z": 12,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 26,
+      "y": 1,
+      "z": 13,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 16,
+      "y": 2,
+      "z": 20,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 17,
+      "y": 2,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 16,
+      "y": 2,
+      "z": 14,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 17,
+      "y": 2,
+      "z": 14,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 17,
+      "y": 2,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 17,
+      "y": 2,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 15,
+      "y": 4,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 16,
+      "y": 4,
+      "z": 15,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 28,
+      "y": 12,
+      "z": 11,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 27,
+      "y": 12,
+      "z": 11,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 26,
+      "y": 12,
+      "z": 11,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 25,
+      "y": 12,
+      "z": 11,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 25,
+      "y": 11,
+      "z": 11,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallBorder",
+      "x": 28,
+      "y": 11,
+      "z": 11,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 2,
+      "z": 18,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallPub2",
+      "x": 31,
+      "y": 6,
+      "z": 4,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformWallPub2",
+      "x": 31,
+      "y": 6,
+      "z": 5,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformWallPub2",
+      "x": 0,
+      "y": 6,
+      "z": 23,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallPub2",
+      "x": 0,
+      "y": 6,
+      "z": 22,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallPub2",
+      "x": 0,
+      "y": 6,
+      "z": 21,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumPlatformWallPub2",
+      "x": 0,
+      "y": 6,
+      "z": 20,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 27,
+      "y": 3,
+      "z": 18,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 7,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 7,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 5,
+      "y": 2,
+      "z": 7,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 2,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 2,
+      "z": 6,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumInflatableSnowTree",
+      "x": 6,
+      "y": 1,
+      "z": 15,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumInflatableSnowTree",
+      "x": 7,
+      "y": 3,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumInflatableSnowTree",
+      "x": 8,
+      "y": 1,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumInflatableSnowTree",
+      "x": 2,
+      "y": 3,
+      "z": 14,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 6,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 6,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 14,
+      "y": 4,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 14,
+      "y": 2,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 14,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 14,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 15,
+      "y": 4,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 2,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 13,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 13,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 15,
+      "y": 2,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 15,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 15,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 16,
+      "y": 4,
+      "z": 16,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainTurbo",
+      "x": 11,
+      "y": 1,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 10,
+      "y": 1,
+      "z": 18,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 9,
+      "y": 1,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 16,
+      "y": 2,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 16,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 16,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 17,
+      "y": 2,
+      "z": 17,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 17,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 17,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 2,
+      "y": 4,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 17,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 19,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 4,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 5,
+      "y": 2,
+      "z": 18,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 5,
+      "y": 2,
+      "z": 19,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformWallPub2",
+      "x": 4,
+      "y": 2,
+      "z": 17,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubePillarBranch",
+      "x": 4,
+      "y": 3,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 4,
+      "y": 2,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 4,
+      "y": 1,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumTubePillarCap",
+      "x": 4,
+      "y": 4,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 7,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 3,
+      "y": 2,
+      "z": 8,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumDirtHill",
+      "x": 4,
+      "y": 2,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirt",
+      "x": 4,
+      "y": 0,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallPub2",
+      "x": 5,
+      "y": 2,
+      "z": 8,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumTubePillarBranch",
+      "x": 4,
+      "y": 3,
+      "z": 8,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumTubePillarCap",
+      "x": 4,
+      "y": 4,
+      "z": 8,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 4,
+      "y": 2,
+      "z": 8,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 4,
+      "y": 1,
+      "z": 8,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitBorderStraight",
+      "x": 26,
+      "y": 2,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 26,
+      "y": 1,
+      "z": 11,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 22,
+      "y": 14,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 21,
+      "y": 12,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 21,
+      "y": 13,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 20,
+      "y": 10,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 20,
+      "y": 11,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 19,
+      "y": 8,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 19,
+      "y": 9,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 22,
+      "y": 15,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 18,
+      "y": 6,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 18,
+      "y": 7,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 17,
+      "y": 4,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 17,
+      "y": 5,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 16,
+      "y": 4,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 16,
+      "y": 3,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 17,
+      "y": 4,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 17,
+      "y": 5,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 16,
+      "y": 4,
+      "z": 5,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 20,
+      "y": 4,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 20,
+      "y": 5,
+      "z": 6,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 21,
+      "y": 6,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 21,
+      "y": 7,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 22,
+      "y": 8,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 22,
+      "y": 9,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 23,
+      "y": 10,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 23,
+      "y": 11,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 24,
+      "y": 12,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumCircuitBase",
+      "x": 24,
+      "y": 13,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumSculptA",
+      "x": 19,
+      "y": 1,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumSculptA",
+      "x": 19,
+      "y": 1,
+      "z": 19,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMainFinishLine",
+      "x": 25,
+      "y": 2,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainSlopeUBottom",
+      "x": 24,
+      "y": 1,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeStart",
+      "x": 14,
+      "y": 1,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainTurbo",
+      "x": 13,
+      "y": 1,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainTurbo",
+      "x": 12,
+      "y": 1,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeEnd",
+      "x": 16,
+      "y": 2,
+      "z": 18,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 18,
+      "y": 3,
+      "z": 18,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumPlatformLoopEnd",
+      "x": 1,
+      "y": 12,
+      "z": 10,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumPlatformWallPub2",
+      "x": 1,
+      "y": 10,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumPlatformWallPub2",
+      "x": 1,
+      "y": 8,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumGrassClip",
+      "x": 5,
+      "y": 5,
+      "z": 23,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumGrassClip",
+      "x": 25,
+      "y": 2,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumGrassClip",
+      "x": 27,
+      "y": 6,
+      "z": 4,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumGrassClip",
+      "x": 11,
+      "y": 2,
+      "z": 23,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumGrassClip",
+      "x": 10,
+      "y": 13,
+      "z": 23,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumGrassClip",
+      "x": 10,
+      "y": 16,
+      "z": 23,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumGrassClip",
+      "x": 9,
+      "y": 24,
+      "z": 23,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumGrassClip",
+      "x": 23,
+      "y": 2,
+      "z": 18,
+      "dir": "North"
+    }
+  ]
+}
