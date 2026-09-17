@@ -280,9 +280,15 @@ class Program
                 dir = parsedDir;
             }
 
-            // In TrackMania Stadium, StadiumRoadMain uses Variant = 3 for continuous road (both ends open).
-            // Variant = 0 adds end-cap guardrails/borders to both ends, leaving gaps between blocks!
-            byte variant = b.Variant ?? (b.Name == "StadiumRoadMain" ? (byte)3 : (byte)0);
+            // In TrackMania Stadium, road blocks need Variant = 3 for continuous open ends.
+            // Variant = 0 adds end-cap guardrails/borders to both ends, leaving visible gaps between blocks!
+            // This applies to both asphalt (StadiumRoadMain) and dirt (StadiumRoadDirt) road types.
+            var roadBlocksNeedingVariant3 = new HashSet<string> {
+                "StadiumRoadMain",
+                "StadiumRoadDirt",
+                "StadiumRoadDirtHigh",
+            };
+            byte variant = b.Variant ?? (roadBlocksNeedingVariant3.Contains(b.Name) ? (byte)3 : (byte)0);
 
             map.Blocks.Add(new CGameCtnBlock
             {

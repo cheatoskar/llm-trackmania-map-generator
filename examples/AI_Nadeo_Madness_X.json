@@ -101,331 +101,331 @@
     },
     {
       "name": "StadiumRoadDirtGTCurve2",
-      "x": 18,
-      "y": 2,
-      "z": 12,
-      "dir": "East"
-    },
-    {
-      "name": "StadiumRoadDirt",
-      "x": 18,
+      "x": 17,
       "y": 2,
       "z": 11,
       "dir": "South"
     },
     {
       "name": "StadiumRoadDirt",
-      "x": 18,
+      "x": 17,
       "y": 2,
       "z": 10,
       "dir": "South"
     },
     {
-      "name": "StadiumRoadDirtToRoad",
-      "x": 18,
+      "name": "StadiumRoadDirt",
+      "x": 17,
       "y": 2,
       "z": 9,
       "dir": "South"
     },
     {
-      "name": "StadiumRoadMainTurbo",
-      "x": 18,
+      "name": "StadiumRoadDirtToRoad",
+      "x": 17,
       "y": 2,
       "z": 8,
       "dir": "South"
     },
     {
-      "name": "StadiumRoadMainGTCurve2",
-      "x": 18,
+      "name": "StadiumRoadMainTurbo",
+      "x": 17,
       "y": 2,
-      "z": 6,
+      "z": 7,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadMainGTCurve2",
+      "x": 17,
+      "y": 2,
+      "z": 5,
       "dir": "West"
     },
     {
       "name": "StadiumRoadMain",
+      "x": 19,
+      "y": 2,
+      "z": 5,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadTiltStraight",
       "x": 20,
       "y": 2,
-      "z": 6,
+      "z": 5,
       "dir": "West"
     },
     {
       "name": "StadiumRoadTiltStraight",
       "x": 21,
       "y": 2,
-      "z": 6,
-      "dir": "West"
-    },
-    {
-      "name": "StadiumRoadTiltStraight",
-      "x": 22,
-      "y": 2,
-      "z": 6,
+      "z": 5,
       "dir": "West"
     },
     {
       "name": "StadiumRoadMainCheckpoint",
-      "x": 23,
+      "x": 22,
       "y": 2,
-      "z": 6,
+      "z": 5,
       "dir": "West"
     },
     {
       "name": "StadiumRoadMainBiSlopeStart",
-      "x": 24,
+      "x": 23,
       "y": 2,
-      "z": 6,
+      "z": 5,
       "dir": "West"
     },
     {
       "name": "StadiumRoadMainBiSlopeEnd",
-      "x": 26,
+      "x": 25,
       "y": 3,
-      "z": 6,
+      "z": 5,
       "dir": "West"
     },
     {
       "name": "StadiumRoadMainTurbo",
-      "x": 28,
+      "x": 27,
       "y": 4,
-      "z": 6,
+      "z": 5,
       "dir": "West"
     },
     {
       "name": "StadiumRoadMainGTCurve2",
-      "x": 29,
+      "x": 28,
       "y": 4,
-      "z": 6,
+      "z": 5,
       "dir": "North"
     },
     {
       "name": "StadiumRoadMain",
-      "x": 30,
+      "x": 29,
+      "y": 4,
+      "z": 7,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 29,
       "y": 4,
       "z": 8,
       "dir": "North"
     },
     {
       "name": "StadiumRoadMain",
-      "x": 30,
+      "x": 29,
       "y": 4,
       "z": 9,
       "dir": "North"
     },
     {
       "name": "StadiumRoadMain",
-      "x": 30,
+      "x": 29,
       "y": 4,
       "z": 10,
       "dir": "North"
     },
     {
-      "name": "StadiumRoadMain",
-      "x": 30,
+      "name": "StadiumRoadMainCheckpoint",
+      "x": 29,
       "y": 4,
       "z": 11,
       "dir": "North"
     },
     {
-      "name": "StadiumRoadMainCheckpoint",
-      "x": 30,
+      "name": "StadiumRoadMain",
+      "x": 29,
       "y": 4,
       "z": 12,
       "dir": "North"
     },
     {
       "name": "StadiumRoadMain",
-      "x": 30,
+      "x": 29,
       "y": 4,
       "z": 13,
       "dir": "North"
     },
     {
       "name": "StadiumRoadMain",
-      "x": 30,
+      "x": 29,
       "y": 4,
       "z": 14,
       "dir": "North"
     },
     {
-      "name": "StadiumRoadMain",
-      "x": 30,
-      "y": 4,
-      "z": 15,
-      "dir": "North"
-    },
-    {
       "name": "StadiumRoadMainGTCurve2",
-      "x": 29,
-      "y": 4,
-      "z": 16,
-      "dir": "East"
-    },
-    {
-      "name": "StadiumRoadMain",
       "x": 28,
       "y": 4,
-      "z": 17,
+      "z": 15,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMain",
       "x": 27,
       "y": 4,
-      "z": 17,
+      "z": 16,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMain",
       "x": 26,
       "y": 4,
-      "z": 17,
+      "z": 16,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMain",
       "x": 25,
       "y": 4,
-      "z": 17,
-      "dir": "East"
-    },
-    {
-      "name": "StadiumRoadMainTurbo",
-      "x": 24,
-      "y": 4,
-      "z": 17,
+      "z": 16,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMain",
+      "x": 24,
+      "y": 4,
+      "z": 16,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMainTurbo",
       "x": 23,
       "y": 4,
-      "z": 17,
+      "z": 16,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMain",
       "x": 22,
       "y": 4,
-      "z": 17,
+      "z": 16,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMain",
       "x": 21,
       "y": 4,
-      "z": 17,
+      "z": 16,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMain",
       "x": 20,
       "y": 4,
-      "z": 17,
-      "dir": "East"
-    },
-    {
-      "name": "StadiumRoadMainCheckpoint",
-      "x": 19,
-      "y": 4,
-      "z": 17,
+      "z": 16,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMain",
+      "x": 19,
+      "y": 4,
+      "z": 16,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMainCheckpoint",
       "x": 18,
       "y": 4,
-      "z": 17,
+      "z": 16,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMain",
       "x": 17,
       "y": 4,
-      "z": 17,
+      "z": 16,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMain",
       "x": 16,
       "y": 4,
-      "z": 17,
+      "z": 16,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 15,
+      "y": 4,
+      "z": 16,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMainGTCurve2",
-      "x": 14,
-      "y": 4,
-      "z": 16,
-      "dir": "South"
-    },
-    {
-      "name": "StadiumRoadMain",
-      "x": 14,
+      "x": 13,
       "y": 4,
       "z": 15,
       "dir": "South"
     },
     {
       "name": "StadiumRoadMain",
-      "x": 14,
+      "x": 13,
       "y": 4,
       "z": 14,
       "dir": "South"
     },
     {
+      "name": "StadiumRoadMain",
+      "x": 13,
+      "y": 4,
+      "z": 13,
+      "dir": "South"
+    },
+    {
       "name": "StadiumRoadMainBiSlopeEnd",
-      "x": 14,
+      "x": 13,
       "y": 3,
-      "z": 12,
+      "z": 11,
       "dir": "North"
     },
     {
       "name": "StadiumRoadMainBiSlopeStart",
-      "x": 14,
+      "x": 13,
       "y": 2,
-      "z": 10,
+      "z": 9,
       "dir": "North"
     },
     {
       "name": "StadiumRoadMainTurbo",
-      "x": 14,
-      "y": 2,
-      "z": 9,
-      "dir": "South"
-    },
-    {
-      "name": "StadiumRoadMain",
-      "x": 14,
+      "x": 13,
       "y": 2,
       "z": 8,
       "dir": "South"
     },
     {
       "name": "StadiumRoadMain",
-      "x": 14,
+      "x": 13,
       "y": 2,
       "z": 7,
       "dir": "South"
     },
     {
-      "name": "StadiumRoadMainCheckpoint",
-      "x": 14,
+      "name": "StadiumRoadMain",
+      "x": 13,
       "y": 2,
       "z": 6,
       "dir": "South"
     },
     {
-      "name": "StadiumRoadMain",
-      "x": 14,
+      "name": "StadiumRoadMainCheckpoint",
+      "x": 13,
       "y": 2,
       "z": 5,
       "dir": "South"
     },
     {
-      "name": "StadiumRoadMainFinishLine",
-      "x": 14,
+      "name": "StadiumRoadMain",
+      "x": 13,
       "y": 2,
       "z": 4,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadMainFinishLine",
+      "x": 13,
+      "y": 2,
+      "z": 3,
       "dir": "South"
     },
     {

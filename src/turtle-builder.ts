@@ -217,7 +217,11 @@ export class TurtleBuilder {
 
         case 'turn_right': {
           const newDir = getTurnDir(currentDir, 'right');
-          if (step.customBlock || style === 'Circuit') {
+          // Check if the customBlock is a 2x2 GTCurve2 variant (dirt, tilt, etc.)
+          // These blocks have the same 2x2 footprint and anchor math as StadiumRoadMainGTCurve2
+          const isGTCurve2 = !step.customBlock || step.customBlock.includes('GTCurve2') || step.customBlock.includes('GTCurve3');
+          if (step.customBlock && !isGTCurve2) {
+            // 1x1 custom block (e.g. a simple platform block)
             const vec = DIR_VECTORS[currentDir];
             currentX += vec.dx;
             currentZ += vec.dz;
@@ -230,6 +234,8 @@ export class TurtleBuilder {
             });
             currentDir = newDir;
           } else {
+            // 2x2 curve block – use proper anchor math
+            const curveName = step.customBlock ?? 'StadiumRoadMainGTCurve2';
             let anchorX = currentX;
             let anchorZ = currentZ;
             let nextCursorX = currentX;
@@ -258,7 +264,7 @@ export class TurtleBuilder {
             }
 
             blocks.push({
-              name: 'StadiumRoadMainGTCurve2',
+              name: curveName,
               x: anchorX,
               y: currentY,
               z: anchorZ,
@@ -274,7 +280,10 @@ export class TurtleBuilder {
 
         case 'turn_left': {
           const newDir = getTurnDir(currentDir, 'left');
-          if (step.customBlock || style === 'Circuit') {
+          // Check if the customBlock is a 2x2 GTCurve2 variant (dirt, tilt, etc.)
+          const isGTCurve2L = !step.customBlock || step.customBlock.includes('GTCurve2') || step.customBlock.includes('GTCurve3');
+          if (step.customBlock && !isGTCurve2L) {
+            // 1x1 custom block
             const vec = DIR_VECTORS[currentDir];
             currentX += vec.dx;
             currentZ += vec.dz;
@@ -287,6 +296,8 @@ export class TurtleBuilder {
             });
             currentDir = newDir;
           } else {
+            // 2x2 curve block – use proper anchor math
+            const curveName = step.customBlock ?? 'StadiumRoadMainGTCurve2';
             let anchorX = currentX;
             let anchorZ = currentZ;
             let nextCursorX = currentX;
@@ -320,7 +331,7 @@ export class TurtleBuilder {
             }
 
             blocks.push({
-              name: 'StadiumRoadMainGTCurve2',
+              name: curveName,
               x: anchorX,
               y: currentY,
               z: anchorZ,
