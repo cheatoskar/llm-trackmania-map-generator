@@ -88,14 +88,14 @@
     },
     {
       "name": "StadiumRoadMainBiSlopeStart",
-      "x": 17,
+      "x": 16,
       "y": 2,
       "z": 13,
       "dir": "East"
     },
     {
       "name": "StadiumRoadMainBiSlopeEnd",
-      "x": 15,
+      "x": 14,
       "y": 3,
       "z": 13,
       "dir": "East"
@@ -210,7 +210,7 @@
       "x": 19,
       "y": 2,
       "z": 5,
-      "dir": "South"
+      "dir": "East"
     },
     {
       "name": "StadiumRoadMain",
@@ -231,7 +231,7 @@
       "x": 19,
       "y": 2,
       "z": 1,
-      "dir": "East"
+      "dir": "North"
     },
     {
       "name": "StadiumRoadMainTurbo",
@@ -273,7 +273,7 @@
       "x": 12,
       "y": 2,
       "z": 1,
-      "dir": "North"
+      "dir": "West"
     },
     {
       "name": "StadiumRoadMain",

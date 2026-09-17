@@ -167,14 +167,14 @@
       "name": "StadiumRoadMainBiSlopeEnd",
       "x": 17,
       "y": 5,
-      "z": 20,
+      "z": 19,
       "dir": "North"
     },
     {
       "name": "StadiumRoadMainBiSlopeStart",
       "x": 17,
       "y": 4,
-      "z": 18,
+      "z": 17,
       "dir": "North"
     },
     {

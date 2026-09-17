@@ -144,76 +144,74 @@ export class TurtleBuilder {
 
         case 'slope_up': {
           // Trackmania Stadium BiSlope (Ascending):
-          // 1. BiSlopeStart (length 2) starts at current Y and transitions to incline (spans 2 cells)
-          // 2. BiSlopeEnd (length 2) is placed 2 blocks forward and 1 level higher (Y+1), transitions to flat road at Y+2
-          // 3. Flat road resumes at Y+2
+          // Each BiSlope block spans 2 cells along the travel axis.
+          // Because GBX coordinates are always minimum grid cell (minX, minZ):
+          // In positive direction (+Z North, +X West):
+          //   Block 1 (BiSlopeStart): offset +1
+          //   Block 2 (BiSlopeEnd):   offset +3
+          //   Exit cursor:            offset +4
+          // In negative direction (-Z South, -X East):
+          //   Block 1 (BiSlopeStart): offset -2
+          //   Block 2 (BiSlopeEnd):   offset -4
+          //   Exit cursor:            offset -4
           const vec = DIR_VECTORS[currentDir];
-          
-          currentX += vec.dx;
-          currentZ += vec.dz;
+          const isNegative = (vec.dx < 0 || vec.dz < 0);
+          const startOffset = isNegative ? 2 : 1;
+          const endOffset = isNegative ? 4 : 3;
+          const exitOffset = 4;
+
           blocks.push({
             name: 'StadiumRoadMainBiSlopeStart',
-            x: currentX,
+            x: currentX + (vec.dx !== 0 ? vec.dx * startOffset : 0),
             y: currentY,
-            z: currentZ,
+            z: currentZ + (vec.dz !== 0 ? vec.dz * startOffset : 0),
             dir: currentDir
           });
 
-          // BiSlopeEnd is placed 2 blocks forward and 1 level higher
-          currentX += 2 * vec.dx;
-          currentZ += 2 * vec.dz;
-          currentY += 1;
           blocks.push({
             name: 'StadiumRoadMainBiSlopeEnd',
-            x: currentX,
-            y: currentY,
-            z: currentZ,
+            x: currentX + (vec.dx !== 0 ? vec.dx * endOffset : 0),
+            y: currentY + 1,
+            z: currentZ + (vec.dz !== 0 ? vec.dz * endOffset : 0),
             dir: currentDir
           });
 
-          // BiSlopeEnd covers 2 cells. Advance cursor by 1 cell so the next action
-          // (which also advances by 1 cell) lands flush at +2 cells from BiSlopeEnd
-          currentX += vec.dx;
-          currentZ += vec.dz;
-          currentY += 1; // Flat road height is now currentY + 2
+          currentX += vec.dx * exitOffset;
+          currentZ += vec.dz * exitOffset;
+          currentY += 2; // Flat road resumes 2 levels higher
           break;
         }
 
         case 'slope_down': {
           // Trackmania Stadium BiSlope (Descending):
-          // When descending in direction `currentDir`:
-          // 1. BiSlopeEnd (length 2) is entered from the higher level, placed at Y-1.
-          //    CRITICAL: In Trackmania (e.g. A03-Race), slopes face the direction of travel (currentDir)!
-          // 2. BiSlopeStart (length 2) is placed 2 blocks forward at Y-2, leveling out to flat road.
-          // 3. Flat road resumes at ground level (currentY - 2).
+          // When descending, both ramp blocks are rotated 180 degrees (oppDir)
+          // so the ramp slopes downwards in the direction of driving.
           const vec = DIR_VECTORS[currentDir];
           const oppDir = DIRECTIONS[(DIRECTIONS.indexOf(currentDir) + 2) % 4];
+          const isNegative = (vec.dx < 0 || vec.dz < 0);
+          const endOffset = isNegative ? 2 : 1;
+          const startOffset = isNegative ? 4 : 3;
+          const exitOffset = 4;
 
-          currentX += vec.dx;
-          currentZ += vec.dz;
-          currentY -= 1;
           blocks.push({
             name: 'StadiumRoadMainBiSlopeEnd',
-            x: currentX,
-            y: currentY,
-            z: currentZ,
+            x: currentX + (vec.dx !== 0 ? vec.dx * endOffset : 0),
+            y: currentY - 1,
+            z: currentZ + (vec.dz !== 0 ? vec.dz * endOffset : 0),
             dir: oppDir
           });
 
-          currentX += 2 * vec.dx;
-          currentZ += 2 * vec.dz;
-          currentY -= 1;
           blocks.push({
             name: 'StadiumRoadMainBiSlopeStart',
-            x: currentX,
-            y: currentY,
-            z: currentZ,
+            x: currentX + (vec.dx !== 0 ? vec.dx * startOffset : 0),
+            y: currentY - 2,
+            z: currentZ + (vec.dz !== 0 ? vec.dz * startOffset : 0),
             dir: oppDir
           });
 
-          // Advance cursor by 1 cell so the next action lands flush (+2 cells from BiSlopeStart)
-          currentX += vec.dx;
-          currentZ += vec.dz;
+          currentX += vec.dx * exitOffset;
+          currentZ += vec.dz * exitOffset;
+          currentY -= 2; // Flat road resumes 2 levels lower
           break;
         }
 
@@ -293,27 +291,32 @@ export class TurtleBuilder {
             let anchorZ = currentZ;
             let nextCursorX = currentX;
             let nextCursorZ = currentZ;
+            let curveDir: DirectionName = 'North';
 
             if (currentDir === 'North') {
               anchorX = currentX;
               anchorZ = currentZ + 1;
               nextCursorX = currentX + 1;
               nextCursorZ = currentZ + 2;
+              curveDir = 'South';
             } else if (currentDir === 'East') {
               anchorX = currentX - 2;
               anchorZ = currentZ;
               nextCursorX = currentX - 2;
               nextCursorZ = currentZ + 1;
+              curveDir = 'West';
             } else if (currentDir === 'South') {
               anchorX = currentX - 1;
               anchorZ = currentZ - 2;
               nextCursorX = currentX - 1;
               nextCursorZ = currentZ - 2;
+              curveDir = 'North';
             } else if (currentDir === 'West') {
               anchorX = currentX + 1;
               anchorZ = currentZ - 1;
               nextCursorX = currentX + 2;
               nextCursorZ = currentZ - 1;
+              curveDir = 'East';
             }
 
             blocks.push({
@@ -321,7 +324,7 @@ export class TurtleBuilder {
               x: anchorX,
               y: currentY,
               z: anchorZ,
-              dir: newDir
+              dir: curveDir
             });
 
             currentX = nextCursorX;
