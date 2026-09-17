@@ -220,28 +220,10 @@ class Program
         map.Thumbnail = null;
         map.HasCustomCamThumbnail = false;
 
-        // Reset author time and medal times so the map is recognized as an unvalidated editable challenge
-        map.AuthorTime = null;
-        map.GoldTime = null;
-        map.SilverTime = null;
-        map.BronzeTime = null;
-        if (map.ChallengeParameters != null)
-        {
-            map.ChallengeParameters.AuthorTime = null;
-            map.ChallengeParameters.GoldTime = null;
-            map.ChallengeParameters.SilverTime = null;
-            map.ChallengeParameters.BronzeTime = null;
-        }
-
-        // Update MapInfo Ident so the game engine and menus sync perfectly
-        map.MapInfo = new Ident(map.MapUid, "Stadium", map.AuthorLogin);
-        // Set game mode to Race and Kind to InProgress (unvalidated editable challenge)
+        // Set game mode to Race and Kind to Multi (Official playable race map)
         map.Mode = CGameCtnChallenge.PlayMode.Race;
-        map.Kind = CGameCtnChallenge.MapKind.InProgress;
-        map.KindInHeader = CGameCtnChallenge.MapKind.InProgress;
-
-        // Synchronize the XML header chunk with the new MapUid, MapName, and Author
-        map.Xml = $"<header type=\"challenge\" version=\"TMc.6\" exever=\"2.11.3\"><ident uid=\"{map.MapUid}\" name=\"{map.MapName}\" author=\"{map.AuthorLogin}\"/><desc envir=\"Stadium\" mood=\"Day\" type=\"Race\" nblaps=\"0\" price=\"1000\" /><times bronze=\"-1\" silver=\"-1\" gold=\"-1\" authortime=\"-1\" authorscore=\"-1\"/><deps></deps></header>";
+        map.Kind = CGameCtnChallenge.MapKind.Multi;
+        map.KindInHeader = CGameCtnChallenge.MapKind.Multi;
 
         map.Blocks.Clear();
 
@@ -260,6 +242,46 @@ class Program
                 Direction = dir
             });
         }
+
+        map.NbCheckpoints = map.Blocks.Count(b => b.Name.Contains("Checkpoint"));
+        map.NbLaps = 3;
+        map.IsLapRace = false;
+
+        // Set realistic author/medal times so TrackMania Nations Forever recognizes it as a valid raceable track
+        int estimatedSec = Math.Max(12, (int)(model.Blocks.Count * 1.5));
+        int authorMs = estimatedSec * 1000;
+        int goldMs = (int)(authorMs * 1.15);
+        int silverMs = (int)(authorMs * 1.30);
+        int bronzeMs = (int)(authorMs * 1.55);
+
+        var authorTime = TimeSpan.FromMilliseconds(authorMs);
+        var goldTime = TimeSpan.FromMilliseconds(goldMs);
+        var silverTime = TimeSpan.FromMilliseconds(silverMs);
+        var bronzeTime = TimeSpan.FromMilliseconds(bronzeMs);
+
+        map.AuthorTime = authorTime;
+        map.GoldTime = goldTime;
+        map.SilverTime = silverTime;
+        map.BronzeTime = bronzeTime;
+        map.AuthorScore = authorMs;
+
+        if (map.ChallengeParameters != null)
+        {
+            map.ChallengeParameters.AuthorTime = authorTime;
+            map.ChallengeParameters.GoldTime = goldTime;
+            map.ChallengeParameters.SilverTime = silverTime;
+            map.ChallengeParameters.BronzeTime = bronzeTime;
+            map.ChallengeParameters.AuthorScore = authorMs;
+        }
+
+        // Update MapInfo Ident so the game engine and menus sync perfectly
+        map.MapInfo = new Ident(map.MapUid, "Stadium", map.AuthorLogin);
+        map.Decoration = new Ident("Sunset", "Stadium", "Nadeo");
+        map.Comments = "";
+        map.NeedUnlock = false;
+
+        // Synchronize the XML header chunk with the new MapUid, MapName, Author, and Times
+        map.Xml = $"<header type=\"challenge\" version=\"TMc.6\" exever=\"2.11.6\"><ident uid=\"{map.MapUid}\" name=\"{map.MapName}\" author=\"{map.AuthorLogin}\"/><desc envir=\"Stadium\" mood=\"Sunset\" type=\"Race\" nblaps=\"0\" price=\"{Math.Max(500, map.Blocks.Count * 25)}\" /><times bronze=\"{bronzeMs}\" silver=\"{silverMs}\" gold=\"{goldMs}\" authortime=\"{authorMs}\" authorscore=\"{authorMs}\"/><deps></deps></header>";
 
         string? outDir = Path.GetDirectoryName(outputPath);
         if (!string.IsNullOrEmpty(outDir) && !Directory.Exists(outDir))
@@ -345,23 +367,31 @@ class Program
         gbx.Node.HasCustomCamThumbnail = false;
         gbx.Node.MapUid = GenerateMapUid();
 
-        gbx.Node.AuthorTime = null;
-        gbx.Node.GoldTime = null;
-        gbx.Node.SilverTime = null;
-        gbx.Node.BronzeTime = null;
+        var authorTime = TimeSpan.FromMilliseconds(15000);
+        var goldTime = TimeSpan.FromMilliseconds(17000);
+        var silverTime = TimeSpan.FromMilliseconds(20000);
+        var bronzeTime = TimeSpan.FromMilliseconds(25000);
+
+        gbx.Node.AuthorTime = authorTime;
+        gbx.Node.GoldTime = goldTime;
+        gbx.Node.SilverTime = silverTime;
+        gbx.Node.BronzeTime = bronzeTime;
+        gbx.Node.AuthorScore = 15000;
         if (gbx.Node.ChallengeParameters != null)
         {
-            gbx.Node.ChallengeParameters.AuthorTime = null;
-            gbx.Node.ChallengeParameters.GoldTime = null;
-            gbx.Node.ChallengeParameters.SilverTime = null;
-            gbx.Node.ChallengeParameters.BronzeTime = null;
+            gbx.Node.ChallengeParameters.AuthorTime = authorTime;
+            gbx.Node.ChallengeParameters.GoldTime = goldTime;
+            gbx.Node.ChallengeParameters.SilverTime = silverTime;
+            gbx.Node.ChallengeParameters.BronzeTime = bronzeTime;
+            gbx.Node.ChallengeParameters.AuthorScore = 15000;
         }
 
         gbx.Node.MapInfo = new Ident(gbx.Node.MapUid, "Stadium", gbx.Node.AuthorLogin);
         gbx.Node.Mode = CGameCtnChallenge.PlayMode.Race;
-        gbx.Node.Kind = CGameCtnChallenge.MapKind.InProgress;
-        gbx.Node.KindInHeader = CGameCtnChallenge.MapKind.InProgress;
-        gbx.Node.Xml = $"<header type=\"challenge\" version=\"TMc.6\" exever=\"2.11.3\"><ident uid=\"{gbx.Node.MapUid}\" name=\"{gbx.Node.MapName}\" author=\"{gbx.Node.AuthorLogin}\"/><desc envir=\"Stadium\" mood=\"Day\" type=\"Race\" nblaps=\"0\" price=\"290\" /><times bronze=\"-1\" silver=\"-1\" gold=\"-1\" authortime=\"-1\" authorscore=\"-1\"/><deps></deps></header>";
+        gbx.Node.Kind = CGameCtnChallenge.MapKind.Multi;
+        gbx.Node.KindInHeader = CGameCtnChallenge.MapKind.Multi;
+        gbx.Node.Decoration = new Ident("Sunset", "Stadium", "Nadeo");
+        gbx.Node.Xml = $"<header type=\"challenge\" version=\"TMc.6\" exever=\"2.11.6\"><ident uid=\"{gbx.Node.MapUid}\" name=\"{gbx.Node.MapName}\" author=\"{gbx.Node.AuthorLogin}\"/><desc envir=\"Stadium\" mood=\"Sunset\" type=\"Race\" nblaps=\"0\" price=\"500\" /><times bronze=\"25000\" silver=\"20000\" gold=\"17000\" authortime=\"15000\" authorscore=\"15000\"/><deps></deps></header>";
 
         string? dir = Path.GetDirectoryName(templatePath);
         if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
@@ -455,33 +485,41 @@ class Program
 
     static int HandleAnalyzeSlopes(string[] args)
     {
-        string dir = args.Length > 1 ? args[1] : @"C:\Program Files (x86)\TmNationsForever\GameData\Tracks\Campaigns\Nations";
-        Console.WriteLine($"Analyzing curve sequences in {dir}...");
+        string goodPath = @"C:\Program Files (x86)\TmNationsForever\GameData\Tracks\Campaigns\Nations\White\A01-Race.Challenge.Gbx";
+        string badPath = @"C:\Users\osaro\Documents\TmForever\Tracks\Challenges\My Challenges\AI_Generated\AI_Turtle_Hillclimb.Challenge.Gbx";
 
-        foreach (var file in Directory.GetFiles(dir, "*.Challenge.Gbx", SearchOption.AllDirectories))
+        var gGood = Gbx.Parse<CGameCtnChallenge>(goodPath);
+        var gBad = Gbx.Parse<CGameCtnChallenge>(badPath);
+
+        Console.WriteLine("\n=== COMPARING WORKING A01 vs AI_Turtle ===");
+        var props = typeof(CGameCtnChallenge).GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
+        foreach (var p in props)
         {
+            if (p.Name == "Blocks" || p.Name == "Chunks" || p.Name == "Thumbnail") continue;
             try
             {
-                var gbx = Gbx.Parse<CGameCtnChallenge>(file);
-                if (gbx.Node?.Blocks == null) continue;
-
-                var curves = gbx.Node.Blocks.Where(b => b.Name.StartsWith("StadiumRoadMainGTCurve")).ToList();
-                if (curves.Count == 0) continue;
-
-                Console.WriteLine($"\nFile: {Path.GetFileName(file)}");
-                foreach (var c in curves.Take(3))
+                var vGood = p.GetValue(gGood.Node);
+                var vBad = p.GetValue(gBad.Node);
+                string sGood = vGood?.ToString() ?? "null";
+                string sBad = vBad?.ToString() ?? "null";
+                if (sGood != sBad)
                 {
-                    Console.WriteLine($"  CURVE: {c.Name} at ({c.Coord.X}, {c.Coord.Y}, {c.Coord.Z}) dir={c.Direction}");
-                    var nearby = gbx.Node.Blocks
-                        .Where(b => b.Name.StartsWith("StadiumRoadMain") && Math.Abs(b.Coord.X - c.Coord.X) <= 3 && Math.Abs(b.Coord.Z - c.Coord.Z) <= 3)
-                        .OrderBy(b => b.Coord.Z).ThenBy(b => b.Coord.X);
-                    foreach (var nb in nearby)
-                    {
-                        Console.WriteLine($"    -> {nb.Name} at ({nb.Coord.X}, {nb.Coord.Y}, {nb.Coord.Z}) dir={nb.Direction}");
-                    }
+                    Console.WriteLine($"[DIFF] {p.Name}: Good='{sGood}', Bad='{sBad}'");
                 }
             }
             catch {}
+        }
+
+        Console.WriteLine("\n=== COMPARING CHUNKS ===");
+        var goodChunkIds = gGood.Node.Chunks.Select(c => c.Id).ToHashSet();
+        var badChunkIds = gBad.Node.Chunks.Select(c => c.Id).ToHashSet();
+        foreach (var id in goodChunkIds.Except(badChunkIds))
+        {
+            Console.WriteLine($"Only in Good: 0x{id:X8}");
+        }
+        foreach (var id in badChunkIds.Except(goodChunkIds))
+        {
+            Console.WriteLine($"Only in Bad: 0x{id:X8}");
         }
         return 0;
     }
@@ -523,21 +561,31 @@ class Program
             }
         }
         
-        Console.WriteLine("Node chunks details:");
+        Console.WriteLine("Inspecting Chunk03043011:");
+        var c11 = map.Chunks.FirstOrDefault(c => c.Id == 0x03043011);
+        if (c11 != null)
+        {
+            Console.WriteLine($"  Type: {c11.GetType().FullName}");
+            foreach (var p in c11.GetType().GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance))
+            {
+                try
+                {
+                    var val = p.GetValue(c11);
+                    if (val != null) Console.WriteLine($"   {p.Name} = {val}");
+                } catch {}
+            }
+        }
         foreach (var chunk in map.Chunks)
         {
-            if (chunk.Id == 0x03043003 || chunk.Id == 0x03043005)
+            Console.WriteLine($"  0x{chunk.Id:X8} ({chunk.GetType().Name})");
+            foreach (var p in chunk.GetType().GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance))
             {
-                Console.WriteLine($"  0x{chunk.Id:X8} ({chunk.GetType().Name}):");
-                foreach (var prop in chunk.GetType().GetProperties(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance))
+                if (p.Name == "Node" || p.Name == "Id" || p.Name == "GameVersion" || p.Name == "IsHeavy" || p.Name == "Ignore") continue;
+                try
                 {
-                    try
-                    {
-                        var val = prop.GetValue(chunk);
-                        Console.WriteLine($"     {prop.Name} ({prop.PropertyType.Name}) = {val}");
-                    }
-                    catch { }
-                }
+                    var val = p.GetValue(chunk);
+                    if (val != null) Console.WriteLine($"     {p.Name} = {val}");
+                } catch {}
             }
         }
 
