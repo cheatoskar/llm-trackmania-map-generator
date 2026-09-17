@@ -26,6 +26,7 @@ export interface CatalogEntry {
 export type TurtleAction = 
   | 'start'
   | 'forward'
+  | 'turbo'
   | 'turn_left'
   | 'turn_right'
   | 'slope_up'

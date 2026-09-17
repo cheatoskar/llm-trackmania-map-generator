@@ -3,7 +3,10 @@ import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
-  Tool
+  ListPromptsRequestSchema,
+  GetPromptRequestSchema,
+  Tool,
+  Prompt
 } from '@modelcontextprotocol/sdk/types.js';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -35,6 +38,7 @@ const server = new Server(
   {
     capabilities: {
       tools: {},
+      prompts: {},
     },
   }
 );
@@ -98,11 +102,11 @@ const TOOLS: Tool[] = [
             properties: {
               action: {
                 type: 'string',
-                enum: ['start', 'forward', 'turn_left', 'turn_right', 'slope_up', 'slope_down', 'checkpoint', 'finish']
+                enum: ['start', 'forward', 'turbo', 'turn_left', 'turn_right', 'slope_up', 'slope_down', 'checkpoint', 'finish']
               },
               count: {
                 type: 'number',
-                description: 'Number of blocks for "forward" (default 1)'
+                description: 'Number of blocks for "forward" or "turbo" (default 1)'
               },
               customBlock: {
                 type: 'string',
@@ -403,6 +407,158 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       content: [{ type: 'text', text: `Error executing ${name}: ${err.message}` }]
     };
   }
+});
+
+const PROMPTS: Prompt[] = [
+  {
+    name: 'trackmania_designer',
+    description: 'Master system instructions for an AI model on how to design valid, playable, and exciting TrackMania Nations Forever tracks.',
+    arguments: []
+  },
+  {
+    name: 'generate_track',
+    description: 'Template prompt requesting the generation of a complete TrackMania track with custom parameters.',
+    arguments: [
+      {
+        name: 'name',
+        description: 'Name of the track (e.g. "Alpine Ridge Circuit")',
+        required: true
+      },
+      {
+        name: 'style',
+        description: 'Track style: "Road" (asphalt with curves & slopes) or "Circuit" (flat platform grid)',
+        required: false
+      },
+      {
+        name: 'difficulty',
+        description: 'Difficulty level: "Easy", "Medium", "Hard", or "Expert"',
+        required: false
+      },
+      {
+        name: 'features',
+        description: 'Desired elements (e.g. "turbos, high-elevation flyover, multi-lap, chicanes")',
+        required: false
+      }
+    ]
+  }
+];
+
+server.setRequestHandler(ListPromptsRequestSchema, async () => {
+  return {
+    prompts: PROMPTS
+  };
+});
+
+server.setRequestHandler(GetPromptRequestSchema, async (request) => {
+  const { name, arguments: args } = request.params;
+
+  if (name === 'trackmania_designer') {
+    return {
+      messages: [
+        {
+          role: 'user',
+          content: {
+            type: 'text',
+            text: `# TrackMania Nations Forever Track Design Manual for LLMs
+
+You are an expert TrackMania Nations Forever track designer. You can generate and build real, drivable TrackMania maps (.Challenge.Gbx) using the available MCP tools.
+
+## 1. Grid & Coordinate System
+- TrackMania Stadium is a 3D grid with coordinates (X, Y, Z):
+  - X: 0 to 31 (West = +X, East = -X)
+  - Z: 0 to 31 (North = +Z, South = -Z)
+  - Y: Elevation levels (0 = water/sub-ground, 1 = stadium grass ground, 2+ = above ground)
+- Headings / Directions: 'North', 'East', 'South', 'West'.
+
+## 2. Fundamental Engineering Rules
+1. **CRITICAL Ground Height Rule ($Y \\ge 2$):**
+   - The stadium grass floor is at $Y = 1$.
+   - Never place road or platform blocks at $Y = 1$, because they carve holes into the stadium grass and expose empty void underneath!
+   - All tracks sitting on the ground MUST start and stay at $Y \\ge 2$.
+2. **Road Connectivity Bitmask (Variant = 3):**
+   - Straight road blocks (\`StadiumRoadMain\`) use a 2-bit connection variant.
+   - \`variant = 3\` produces an open, seamless through-road.
+   - \`variant = 0\` creates cross-track end-barriers on both ends (blocking cars and looking disconnected).
+   - The builder automatically applies \`variant = 3\` to \`StadiumRoadMain\`.
+3. **Slope Strides & 180° Inversion:**
+   - Slopes use two 2x1 blocks: \`StadiumRoadMainBiSlopeStart\` and \`StadiumRoadMainBiSlopeEnd\`.
+   - **Ascending (slope_up):**
+     - \`BiSlopeStart\` at current $Y$, facing travel direction.
+     - Advance +2 cells forward, +1 $Y$.
+     - \`BiSlopeEnd\` at $Y+1$, facing travel direction.
+     - Advance +2 cells forward to flat road at $Y+2$.
+   - **Descending (slope_down):**
+     - \`BiSlopeEnd\` at $Y-1$, facing **OPPOSITE** direction (180° rotated)!
+     - Advance +2 cells forward, -1 $Y$.
+     - \`BiSlopeStart\` at $Y-2$, facing **OPPOSITE** direction (180° rotated)!
+     - Advance +2 cells forward to flat road at $Y-2$.
+
+## 3. Block Catalog & Footprints
+- **1x1 Blocks:**
+  - \`StadiumRoadMain\`: Straight asphalt road
+  - \`StadiumRoadMainTurbo\`: Boost strip giving immediate acceleration
+  - \`StadiumRoadMainCheckpoint\`: Checkpoint archway (road surface)
+  - \`StadiumRoadMainStartLine\`: Race starting grid
+  - \`StadiumRoadMainFinishLine\`: Race finish arch
+- **2x1 Blocks (Stride 2):**
+  - \`StadiumRoadMainBiSlopeStart\` / \`StadiumRoadMainBiSlopeEnd\`
+- **2x2 Blocks:**
+  - \`StadiumRoadMainGTCurve2\`: Banked asphalt road curve (90-degree turn).
+
+## 4. Recommended Generation Strategy: Turtle Builder
+Unless you need custom complex off-grid architecture, ALWAYS use \`build_track_turtle\`. It automatically calculates all 3D coordinates, applies 2x1 slope strides, handles 180° downhill rotations, and sets up 2x2 curve anchors.
+
+### Turtle Actions:
+- \`start\`: Starting block
+- \`forward\` with \`count\`: Straight road blocks
+- \`turbo\` with \`count\`: Boost accelerator blocks
+- \`turn_right\`: Banked 2x2 right curve
+- \`turn_left\`: Banked 2x2 left curve
+- \`slope_up\`: Smooth 2-level climb
+- \`slope_down\`: Smooth 2-level descent
+- \`checkpoint\`: Mid-track respawn gate
+- \`finish\`: Finish line block
+
+## 5. Track Design & Pacing Guidelines
+- **Launch:** Give the player 2-4 straight blocks (or 1 turbo) right after the start line to build up speed.
+- **Corners:** After high-speed descents or long turbo straights, give at least 1-2 straight blocks before a 90-degree curve to allow braking/drifting.
+- **Checkpoints:** Place a checkpoint before every major elevation climb or technical chicane so players can respawn easily.
+- **Finish:** Give 1-2 straight blocks before the finish line for a clean crossing.`
+          }
+        }
+      ]
+    };
+  }
+
+  if (name === 'generate_track') {
+    const trackName = (args?.name as string) || 'AI Track';
+    const style = (args?.style as string) || 'Road';
+    const difficulty = (args?.difficulty as string) || 'Medium';
+    const features = (args?.features as string) || 'turbos, elevation changes, and technical curves';
+
+    return {
+      messages: [
+        {
+          role: 'user',
+          content: {
+            type: 'text',
+            text: `Please design and build a TrackMania Nations Forever track named "${trackName}" with the following specifications:
+- Style: ${style}
+- Difficulty: ${difficulty}
+- Key Features: ${features}
+
+Ensure the track follows all engineering rules:
+1. Minimum elevation Y >= 2 (do not punch holes into stadium grass).
+2. Start with a StartLine and end with a FinishLine.
+3. Include at least 1-2 checkpoints spaced throughout the layout.
+4. Use the \`build_track_turtle\` tool with exportToGame=true so the player can test it immediately.`
+          }
+        }
+      ]
+    };
+  }
+
+  throw new Error(`Unknown prompt: ${name}`);
 });
 
 async function run() {

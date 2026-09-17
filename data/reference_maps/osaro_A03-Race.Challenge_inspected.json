@@ -1,0 +1,2551 @@
+{
+  "mapName": "A03-Race",
+  "author": "Nadeo",
+  "template": null,
+  "blocks": [
+    {
+      "name": "StadiumSculptBridgeSuspendSlope2Mirror",
+      "x": 20,
+      "y": 1,
+      "z": 22,
+      "dir": "West",
+      "variant": 0
+    },
+    {
+      "name": "StadiumSculptBridgeSuspendSlope2",
+      "x": 20,
+      "y": 1,
+      "z": 20,
+      "dir": "West",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 21,
+      "y": 16,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 21,
+      "y": 13,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMainCheckpoint",
+      "x": 11,
+      "y": 1,
+      "z": 21,
+      "dir": "West",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeStart",
+      "x": 12,
+      "y": 1,
+      "z": 21,
+      "dir": "West",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMainGTCurve5",
+      "x": 25,
+      "y": 3,
+      "z": 17,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 29,
+      "y": 3,
+      "z": 16,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 29,
+      "y": 3,
+      "z": 15,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumTube",
+      "x": 5,
+      "y": 3,
+      "z": 9,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubePillar",
+      "x": 5,
+      "y": 2,
+      "z": 9,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubePillar",
+      "x": 5,
+      "y": 1,
+      "z": 9,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 22,
+      "y": 5,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMainSlopeStraight",
+      "x": 14,
+      "y": 2,
+      "z": 21,
+      "dir": "West",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMainSlopeStraight",
+      "x": 15,
+      "y": 3,
+      "z": 21,
+      "dir": "West",
+      "variant": 0
+    },
+    {
+      "name": "StadiumSculptBridgeSuspendSlope2Mirror",
+      "x": 12,
+      "y": 1,
+      "z": 20,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeEnd",
+      "x": 16,
+      "y": 4,
+      "z": 21,
+      "dir": "West",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMainGTCurve4",
+      "x": 5,
+      "y": 1,
+      "z": 18,
+      "dir": "South",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 9,
+      "y": 1,
+      "z": 21,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 10,
+      "y": 1,
+      "z": 21,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeStart",
+      "x": 5,
+      "y": 1,
+      "z": 15,
+      "dir": "South",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 5,
+      "y": 1,
+      "z": 17,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeEnd",
+      "x": 5,
+      "y": 2,
+      "z": 13,
+      "dir": "South",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMainGTDiag3x2",
+      "x": 4,
+      "y": 3,
+      "z": 10,
+      "dir": "South",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMainStartLine",
+      "x": 4,
+      "y": 3,
+      "z": 9,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 3,
+      "y": 4,
+      "z": 8,
+      "dir": "North",
+      "variant": 1
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 3,
+      "y": 4,
+      "z": 9,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 3,
+      "y": 4,
+      "z": 10,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 3,
+      "y": 4,
+      "z": 11,
+      "dir": "South",
+      "variant": 2
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 4,
+      "y": 4,
+      "z": 11,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 5,
+      "y": 4,
+      "z": 11,
+      "dir": "East",
+      "variant": 2
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 5,
+      "y": 4,
+      "z": 10,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 5,
+      "y": 4,
+      "z": 9,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 5,
+      "y": 4,
+      "z": 8,
+      "dir": "North",
+      "variant": 1
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeEnd",
+      "x": 19,
+      "y": 4,
+      "z": 21,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 18,
+      "y": 5,
+      "z": 21,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMainBiSlopeStart",
+      "x": 21,
+      "y": 3,
+      "z": 21,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 23,
+      "y": 3,
+      "z": 21,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 24,
+      "y": 3,
+      "z": 21,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumSculptBridgeSuspendSlope2",
+      "x": 12,
+      "y": 1,
+      "z": 22,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 16,
+      "y": 13,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 16,
+      "y": 16,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumSculptBridgeSlopeEnd",
+      "x": 17,
+      "y": 26,
+      "z": 22,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumSculptBridgeSlopeEnd",
+      "x": 19,
+      "y": 26,
+      "z": 20,
+      "dir": "West",
+      "variant": 0
+    },
+    {
+      "name": "StadiumSculptBridgeSlopeEndMirror",
+      "x": 19,
+      "y": 26,
+      "z": 22,
+      "dir": "West",
+      "variant": 0
+    },
+    {
+      "name": "StadiumSculptBridgeSlopeEndMirror",
+      "x": 17,
+      "y": 26,
+      "z": 20,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 20,
+      "y": 24,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 17,
+      "y": 24,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 19,
+      "y": 29,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 18,
+      "y": 29,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumTube",
+      "x": 5,
+      "y": 3,
+      "z": 8,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubePillar",
+      "x": 5,
+      "y": 2,
+      "z": 8,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubePillar",
+      "x": 5,
+      "y": 1,
+      "z": 8,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTube",
+      "x": 3,
+      "y": 3,
+      "z": 11,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubePillar",
+      "x": 3,
+      "y": 2,
+      "z": 11,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubePillar",
+      "x": 3,
+      "y": 1,
+      "z": 11,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTube",
+      "x": 3,
+      "y": 3,
+      "z": 8,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubePillar",
+      "x": 3,
+      "y": 2,
+      "z": 8,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubePillar",
+      "x": 3,
+      "y": 1,
+      "z": 8,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 15,
+      "y": 5,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMainFinishLine",
+      "x": 29,
+      "y": 1,
+      "z": 8,
+      "dir": "South",
+      "variant": 0
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 29,
+      "y": 3,
+      "z": 14,
+      "dir": "North",
+      "variant": 1
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 29,
+      "y": 1,
+      "z": 9,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 29,
+      "y": 1,
+      "z": 10,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 29,
+      "y": 1,
+      "z": 11,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 29,
+      "y": 1,
+      "z": 12,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 29,
+      "y": 1,
+      "z": 13,
+      "dir": "South",
+      "variant": 1
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 28,
+      "y": 1,
+      "z": 9,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 28,
+      "y": 1,
+      "z": 10,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 28,
+      "y": 1,
+      "z": 11,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 28,
+      "y": 1,
+      "z": 12,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 28,
+      "y": 1,
+      "z": 13,
+      "dir": "South",
+      "variant": 1
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 28,
+      "y": 2,
+      "z": 11,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 28,
+      "y": 2,
+      "z": 10,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 30,
+      "y": 1,
+      "z": 13,
+      "dir": "South",
+      "variant": 1
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 30,
+      "y": 1,
+      "z": 9,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 30,
+      "y": 2,
+      "z": 11,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 30,
+      "y": 2,
+      "z": 10,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 28,
+      "y": 2,
+      "z": 9,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 30,
+      "y": 2,
+      "z": 9,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 28,
+      "y": 1,
+      "z": 8,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 28,
+      "y": 1,
+      "z": 7,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 28,
+      "y": 1,
+      "z": 6,
+      "dir": "North",
+      "variant": 1
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 28,
+      "y": 2,
+      "z": 8,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 28,
+      "y": 2,
+      "z": 12,
+      "dir": "South",
+      "variant": 1
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 30,
+      "y": 2,
+      "z": 12,
+      "dir": "South",
+      "variant": 1
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 30,
+      "y": 1,
+      "z": 8,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 30,
+      "y": 1,
+      "z": 7,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 30,
+      "y": 1,
+      "z": 6,
+      "dir": "North",
+      "variant": 1
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 30,
+      "y": 2,
+      "z": 8,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 30,
+      "y": 2,
+      "z": 7,
+      "dir": "North",
+      "variant": 2
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 29,
+      "y": 2,
+      "z": 7,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 28,
+      "y": 2,
+      "z": 7,
+      "dir": "West",
+      "variant": 2
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 22,
+      "y": 2,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumTubeRoad",
+      "x": 15,
+      "y": 2,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumWater",
+      "x": 12,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 12,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 13,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 13,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 14,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 14,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 15,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 15,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 16,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 16,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 17,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 17,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 18,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 18,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 19,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 19,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 20,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 20,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 21,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 21,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 22,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 22,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 23,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 23,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 24,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 24,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 25,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 25,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 26,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 26,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 12,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 12,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 13,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 13,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 14,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 14,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 15,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 15,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 16,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 17,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 18,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 19,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 20,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 21,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 22,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 22,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 23,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 23,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 24,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 24,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 25,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 26,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumWater",
+      "x": 12,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 12,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 13,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 13,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 14,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 14,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 15,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 15,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 16,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 16,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 17,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 17,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 18,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 18,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 19,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 19,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 20,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 20,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 21,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 21,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 22,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 22,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 23,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 23,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 24,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 24,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 25,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 25,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 26,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 26,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 12,
+      "y": 0,
+      "z": 23,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 12,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 13,
+      "y": 0,
+      "z": 23,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 13,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 14,
+      "y": 0,
+      "z": 23,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 14,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 15,
+      "y": 0,
+      "z": 23,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 15,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 16,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 17,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 18,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 19,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 20,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 21,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 22,
+      "y": 0,
+      "z": 23,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 22,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 23,
+      "y": 0,
+      "z": 23,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 23,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 24,
+      "y": 0,
+      "z": 23,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 24,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 25,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 26,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumWater",
+      "x": 20,
+      "y": 0,
+      "z": 20,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 20,
+      "y": 0,
+      "z": 21,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 20,
+      "y": 0,
+      "z": 22,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 20,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 20,
+      "y": 0,
+      "z": 23,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 21,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 21,
+      "y": 0,
+      "z": 20,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 21,
+      "y": 0,
+      "z": 21,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 21,
+      "y": 0,
+      "z": 22,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 21,
+      "y": 0,
+      "z": 23,
+      "dir": "West",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 16,
+      "y": 0,
+      "z": 19,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 16,
+      "y": 0,
+      "z": 20,
+      "dir": "East",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 16,
+      "y": 0,
+      "z": 21,
+      "dir": "East",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 16,
+      "y": 0,
+      "z": 22,
+      "dir": "East",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 16,
+      "y": 0,
+      "z": 23,
+      "dir": "South",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 18,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 18,
+      "y": 0,
+      "z": 20,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 18,
+      "y": 0,
+      "z": 21,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 18,
+      "y": 0,
+      "z": 22,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 18,
+      "y": 0,
+      "z": 23,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 19,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 19,
+      "y": 0,
+      "z": 20,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 19,
+      "y": 0,
+      "z": 21,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 19,
+      "y": 0,
+      "z": 22,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 19,
+      "y": 0,
+      "z": 23,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 17,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 17,
+      "y": 0,
+      "z": 20,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 17,
+      "y": 0,
+      "z": 21,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 17,
+      "y": 0,
+      "z": 22,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 17,
+      "y": 0,
+      "z": 23,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 29,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 29,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 29,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 29,
+      "y": 0,
+      "z": 20,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 29,
+      "y": 0,
+      "z": 21,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 29,
+      "y": 0,
+      "z": 22,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 29,
+      "y": 0,
+      "z": 23,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 29,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 29,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 27,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumWater",
+      "x": 27,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 27,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 27,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 27,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 27,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 28,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumWater",
+      "x": 28,
+      "y": 0,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 28,
+      "y": 0,
+      "z": 18,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 28,
+      "y": 0,
+      "z": 24,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 28,
+      "y": 0,
+      "z": 25,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 28,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 29,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 29,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 30,
+      "y": 0,
+      "z": 16,
+      "dir": "South",
+      "variant": 9
+    },
+    {
+      "name": "StadiumPool",
+      "x": 30,
+      "y": 0,
+      "z": 17,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 30,
+      "y": 0,
+      "z": 18,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 30,
+      "y": 0,
+      "z": 19,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 30,
+      "y": 0,
+      "z": 20,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 30,
+      "y": 0,
+      "z": 21,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 30,
+      "y": 0,
+      "z": 22,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 30,
+      "y": 0,
+      "z": 23,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 30,
+      "y": 0,
+      "z": 24,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 30,
+      "y": 0,
+      "z": 25,
+      "dir": "West",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 30,
+      "y": 0,
+      "z": 26,
+      "dir": "West",
+      "variant": 9
+    },
+    {
+      "name": "StadiumWater",
+      "x": 27,
+      "y": 0,
+      "z": 20,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 27,
+      "y": 0,
+      "z": 21,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 27,
+      "y": 0,
+      "z": 22,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 27,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 27,
+      "y": 0,
+      "z": 23,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 28,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 28,
+      "y": 0,
+      "z": 20,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 28,
+      "y": 0,
+      "z": 21,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 28,
+      "y": 0,
+      "z": 22,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 28,
+      "y": 0,
+      "z": 23,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 26,
+      "y": 0,
+      "z": 20,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 26,
+      "y": 0,
+      "z": 21,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 26,
+      "y": 0,
+      "z": 22,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 26,
+      "y": 0,
+      "z": 23,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 25,
+      "y": 0,
+      "z": 19,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 25,
+      "y": 0,
+      "z": 20,
+      "dir": "East",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 25,
+      "y": 0,
+      "z": 21,
+      "dir": "East",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 25,
+      "y": 0,
+      "z": 22,
+      "dir": "East",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 25,
+      "y": 0,
+      "z": 23,
+      "dir": "South",
+      "variant": 0
+    },
+    {
+      "name": "StadiumWater",
+      "x": 26,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumPool",
+      "x": 11,
+      "y": 0,
+      "z": 17,
+      "dir": "East",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 11,
+      "y": 0,
+      "z": 18,
+      "dir": "East",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 11,
+      "y": 0,
+      "z": 19,
+      "dir": "North",
+      "variant": 9
+    },
+    {
+      "name": "StadiumPool",
+      "x": 11,
+      "y": 0,
+      "z": 16,
+      "dir": "East",
+      "variant": 9
+    },
+    {
+      "name": "StadiumPool",
+      "x": 11,
+      "y": 0,
+      "z": 23,
+      "dir": "East",
+      "variant": 9
+    },
+    {
+      "name": "StadiumPool",
+      "x": 11,
+      "y": 0,
+      "z": 24,
+      "dir": "East",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 11,
+      "y": 0,
+      "z": 25,
+      "dir": "East",
+      "variant": 5
+    },
+    {
+      "name": "StadiumPool",
+      "x": 11,
+      "y": 0,
+      "z": 26,
+      "dir": "North",
+      "variant": 9
+    },
+    {
+      "name": "StadiumAirship",
+      "x": 28,
+      "y": 12,
+      "z": 17,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumControlLightBase",
+      "x": 28,
+      "y": 11,
+      "z": 19,
+      "dir": "North",
+      "variant": 0
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 13,
+      "y": 1,
+      "z": 22,
+      "dir": "East",
+      "variant": 1
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 12,
+      "y": 1,
+      "z": 22,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 11,
+      "y": 1,
+      "z": 22,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 10,
+      "y": 1,
+      "z": 22,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 9,
+      "y": 1,
+      "z": 22,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 8,
+      "y": 1,
+      "z": 22,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 7,
+      "y": 1,
+      "z": 22,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 6,
+      "y": 1,
+      "z": 22,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 5,
+      "y": 1,
+      "z": 22,
+      "dir": "West",
+      "variant": 1
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 5,
+      "y": 2,
+      "z": 22,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubeV1",
+      "x": 10,
+      "y": 2,
+      "z": 22,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 10,
+      "y": 3,
+      "z": 22,
+      "dir": "East",
+      "variant": 1
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 9,
+      "y": 3,
+      "z": 22,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 8,
+      "y": 3,
+      "z": 22,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 6,
+      "y": 3,
+      "z": 22,
+      "dir": "East",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 5,
+      "y": 3,
+      "z": 22,
+      "dir": "West",
+      "variant": 1
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 7,
+      "y": 3,
+      "z": 22,
+      "dir": "East",
+      "variant": 4
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 7,
+      "y": 3,
+      "z": 21,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 7,
+      "y": 3,
+      "z": 20,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadGlass",
+      "x": 7,
+      "y": 3,
+      "z": 19,
+      "dir": "North",
+      "variant": 1
+    },
+    {
+      "name": "StadiumTube",
+      "x": 7,
+      "y": 2,
+      "z": 19,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumTubePillar",
+      "x": 7,
+      "y": 1,
+      "z": 19,
+      "dir": "East",
+      "variant": 0
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 30,
+      "y": 1,
+      "z": 10,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 30,
+      "y": 1,
+      "z": 11,
+      "dir": "North",
+      "variant": 3
+    },
+    {
+      "name": "StadiumControlRoadCamera",
+      "x": 30,
+      "y": 1,
+      "z": 12,
+      "dir": "North",
+      "variant": 3
+    }
+  ]
+}

@@ -16,7 +16,9 @@ Powered by **[GBX.NET](https://github.com/BigBang1112/gbx-net)** and a custom **
 - **Dual-Mode Workflow:**
   - **Interactive MCP Server:** Connect Claude Desktop, Cursor, or Antigravity via MCP. Claude designs maps interactively, queries block catalogs, validates geometry, and writes `.Gbx` files directly into your game folder.
   - **Standalone CLI:** Don't have MCP? Just ask your LLM for JSON/DSL and run `node dist/cli.js build track.json --export`.
-- **Turtle Track Builder (Relative DSL):** Prevents coordinate hallucinations by allowing sequential actions (`start -> forward(3) -> slope_up -> checkpoint -> slope_down -> finish`). Directions, rotations, and 3D grid vectors are computed deterministically.
+- **Turtle Track Builder (Relative DSL):** Prevents coordinate hallucinations by allowing sequential actions (`start -> forward(3) -> turbo -> turn_right -> slope_up -> checkpoint -> slope_down -> finish`). Features authentic 2x2 banked asphalt road curves (`StadiumRoadMainGTCurve2`), automatic 180° downhill ramp rotations, and seamless `Variant = 3` road connectivity.
+- **MCP Prompts Ready:** Exposes `trackmania_designer` (comprehensive LLM track architect instructions) and `generate_track` (customized generation request).
+- **Comprehensive LLM Design Guide:** See [`TRACK_DESIGN_GUIDE.md`](./TRACK_DESIGN_GUIDE.md) for full coordinate, footprint, slope stride, and pacing reference.
 - **Built-in Track Validator:** Verifies Start/Finish integrity, warns of coordinate overlaps/collisions, and checks checkpoint pacing.
 - **Pre-indexed Block Catalog:** Includes 236 indexed Stadium block types extracted from official Nadeo tracks with categories and frequency stats.
 - **Reference Map Scraper:** Drop any `.Challenge.Gbx` or `.Map.Gbx` into `data/reference_maps/` and run `npm run cli -- catalog` to expand the block catalog.

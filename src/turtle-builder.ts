@@ -97,6 +97,23 @@ export class TurtleBuilder {
           break;
         }
 
+        case 'turbo': {
+          const count = step.count ?? 1;
+          const vec = DIR_VECTORS[currentDir];
+          for (let c = 0; c < count; c++) {
+            currentX += vec.dx;
+            currentZ += vec.dz;
+            blocks.push({
+              name: step.customBlock ?? (style === 'Circuit' ? 'StadiumPlatformTurboUp' : 'StadiumRoadMainTurbo'),
+              x: currentX,
+              y: currentY,
+              z: currentZ,
+              dir: currentDir
+            });
+          }
+          break;
+        }
+
         case 'checkpoint': {
           const vec = DIR_VECTORS[currentDir];
           currentX += vec.dx;
@@ -170,6 +187,7 @@ export class TurtleBuilder {
           // 2. BiSlopeStart (length 2) is placed 2 blocks forward at Y-2, leveling out to flat road.
           // 3. Flat road resumes at ground level (currentY - 2).
           const vec = DIR_VECTORS[currentDir];
+          const oppDir = DIRECTIONS[(DIRECTIONS.indexOf(currentDir) + 2) % 4];
 
           currentX += vec.dx;
           currentZ += vec.dz;
@@ -179,7 +197,7 @@ export class TurtleBuilder {
             x: currentX,
             y: currentY,
             z: currentZ,
-            dir: currentDir
+            dir: oppDir
           });
 
           currentX += 2 * vec.dx;
@@ -190,7 +208,7 @@ export class TurtleBuilder {
             x: currentX,
             y: currentY,
             z: currentZ,
-            dir: currentDir
+            dir: oppDir
           });
 
           // Advance cursor by 1 cell so the next action lands flush (+2 cells from BiSlopeStart)
@@ -201,33 +219,115 @@ export class TurtleBuilder {
 
         case 'turn_right': {
           const newDir = getTurnDir(currentDir, 'right');
-          const vec = DIR_VECTORS[currentDir];
-          currentX += vec.dx;
-          currentZ += vec.dz;
-          blocks.push({
-            name: getRoadBlockName('turn_right', step.customBlock),
-            x: currentX,
-            y: currentY,
-            z: currentZ,
-            dir: currentDir
-          });
-          currentDir = newDir;
+          if (step.customBlock || style === 'Circuit') {
+            const vec = DIR_VECTORS[currentDir];
+            currentX += vec.dx;
+            currentZ += vec.dz;
+            blocks.push({
+              name: getRoadBlockName('turn_right', step.customBlock),
+              x: currentX,
+              y: currentY,
+              z: currentZ,
+              dir: currentDir
+            });
+            currentDir = newDir;
+          } else {
+            let anchorX = currentX;
+            let anchorZ = currentZ;
+            let nextCursorX = currentX;
+            let nextCursorZ = currentZ;
+
+            if (currentDir === 'North') {
+              anchorX = currentX - 1;
+              anchorZ = currentZ + 1;
+              nextCursorX = currentX - 1;
+              nextCursorZ = currentZ + 2;
+            } else if (currentDir === 'East') {
+              anchorX = currentX - 2;
+              anchorZ = currentZ - 1;
+              nextCursorX = currentX - 2;
+              nextCursorZ = currentZ - 1;
+            } else if (currentDir === 'South') {
+              anchorX = currentX;
+              anchorZ = currentZ - 2;
+              nextCursorX = currentX + 1;
+              nextCursorZ = currentZ - 2;
+            } else if (currentDir === 'West') {
+              anchorX = currentX + 1;
+              anchorZ = currentZ;
+              nextCursorX = currentX + 2;
+              nextCursorZ = currentZ + 1;
+            }
+
+            blocks.push({
+              name: 'StadiumRoadMainGTCurve2',
+              x: anchorX,
+              y: currentY,
+              z: anchorZ,
+              dir: newDir
+            });
+
+            currentX = nextCursorX;
+            currentZ = nextCursorZ;
+            currentDir = newDir;
+          }
           break;
         }
 
         case 'turn_left': {
           const newDir = getTurnDir(currentDir, 'left');
-          const vec = DIR_VECTORS[currentDir];
-          currentX += vec.dx;
-          currentZ += vec.dz;
-          blocks.push({
-            name: getRoadBlockName('turn_left', step.customBlock),
-            x: currentX,
-            y: currentY,
-            z: currentZ,
-            dir: currentDir
-          });
-          currentDir = newDir;
+          if (step.customBlock || style === 'Circuit') {
+            const vec = DIR_VECTORS[currentDir];
+            currentX += vec.dx;
+            currentZ += vec.dz;
+            blocks.push({
+              name: getRoadBlockName('turn_left', step.customBlock),
+              x: currentX,
+              y: currentY,
+              z: currentZ,
+              dir: currentDir
+            });
+            currentDir = newDir;
+          } else {
+            let anchorX = currentX;
+            let anchorZ = currentZ;
+            let nextCursorX = currentX;
+            let nextCursorZ = currentZ;
+
+            if (currentDir === 'North') {
+              anchorX = currentX;
+              anchorZ = currentZ + 1;
+              nextCursorX = currentX + 1;
+              nextCursorZ = currentZ + 2;
+            } else if (currentDir === 'East') {
+              anchorX = currentX - 2;
+              anchorZ = currentZ;
+              nextCursorX = currentX - 2;
+              nextCursorZ = currentZ + 1;
+            } else if (currentDir === 'South') {
+              anchorX = currentX - 1;
+              anchorZ = currentZ - 2;
+              nextCursorX = currentX - 1;
+              nextCursorZ = currentZ - 2;
+            } else if (currentDir === 'West') {
+              anchorX = currentX + 1;
+              anchorZ = currentZ - 1;
+              nextCursorX = currentX + 2;
+              nextCursorZ = currentZ - 1;
+            }
+
+            blocks.push({
+              name: 'StadiumRoadMainGTCurve2',
+              x: anchorX,
+              y: currentY,
+              z: anchorZ,
+              dir: newDir
+            });
+
+            currentX = nextCursorX;
+            currentZ = nextCursorZ;
+            currentDir = newDir;
+          }
           break;
         }
       }
