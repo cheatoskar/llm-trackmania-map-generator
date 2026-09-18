@@ -459,71 +459,133 @@ server.setRequestHandler(GetPromptRequestSchema, async (request) => {
           role: 'user',
           content: {
             type: 'text',
-            text: `# TrackMania Nations Forever Track Design Manual for LLMs
+            text: `# TrackMania Nations Forever – Complete Track Design Manual for LLMs
 
-You are an expert TrackMania Nations Forever track designer. You can generate and build real, drivable TrackMania maps (.Challenge.Gbx) using the available MCP tools.
+You are an expert TrackMania Nations Forever track designer. You generate drivable TrackMania maps (.Challenge.Gbx) using the MCP tools.
 
 ## 1. Grid & Coordinate System
-- TrackMania Stadium is a 3D grid with coordinates (X, Y, Z):
-  - X: 0 to 31 (West = +X, East = -X)
-  - Z: 0 to 31 (North = +Z, South = -Z)
-  - Y: Elevation levels (0 = water/sub-ground, 1 = stadium grass ground, 2+ = above ground)
-- Headings / Directions: 'North', 'East', 'South', 'West'.
+- Stadium grid: X (0-31), Y (height), Z (0-31)
+- Directions: North (+Z), South (-Z), East (-X), West (+X)
+- Y=1 is grass terrain. ALL road blocks must be at Y >= 2.
 
 ## 2. Fundamental Engineering Rules
-1. **CRITICAL Ground Height Rule ($Y \\ge 2$):**
-   - The stadium grass floor is at $Y = 1$.
-   - Never place road or platform blocks at $Y = 1$, because they carve holes into the stadium grass and expose empty void underneath!
-   - All tracks sitting on the ground MUST start and stay at $Y \\ge 2$.
-2. **Road Connectivity Bitmask (Variant = 3):**
-   - Straight road blocks (\`StadiumRoadMain\`) use a 2-bit connection variant.
-   - \`variant = 3\` produces an open, seamless through-road.
-   - \`variant = 0\` creates cross-track end-barriers on both ends (blocking cars and looking disconnected).
-   - The builder automatically applies \`variant = 3\` to \`StadiumRoadMain\`.
-3. **Slope Strides & 180° Inversion:**
-   - Slopes use two 2x1 blocks: \`StadiumRoadMainBiSlopeStart\` and \`StadiumRoadMainBiSlopeEnd\`.
-   - **Ascending (slope_up):**
-     - \`BiSlopeStart\` at current $Y$, facing travel direction.
-     - Advance +2 cells forward, +1 $Y$.
-     - \`BiSlopeEnd\` at $Y+1$, facing travel direction.
-     - Advance +2 cells forward to flat road at $Y+2$.
-   - **Descending (slope_down):**
-     - \`BiSlopeEnd\` at $Y-1$, facing **OPPOSITE** direction (180° rotated)!
-     - Advance +2 cells forward, -1 $Y$.
-     - \`BiSlopeStart\` at $Y-2$, facing **OPPOSITE** direction (180° rotated)!
-     - Advance +2 cells forward to flat road at $Y-2$.
+1. **Ground Height Y >= 2:** Never place road blocks at Y=1 (creates void holes in stadium grass).
+2. **Road Connectivity (Variant = 3):** StadiumRoadMain and StadiumRoadDirt need variant=3 for seamless connections. The builder applies this automatically.
+3. **Slope Mechanics:** slope_up/slope_down each advance 4 cells and change Y by ±2. Both use two 2x1 blocks (BiSlopeStart + BiSlopeEnd). Downhill blocks are auto-rotated 180°.
+4. **2x2 Curves:** turn_right/turn_left use StadiumRoadMainGTCurve2 with proper anchor math. Custom GTCurve2 blocks (dirt, tilt) also get correct 2x2 placement automatically.
 
-## 3. Block Catalog & Footprints
-- **1x1 Blocks:**
-  - \`StadiumRoadMain\`: Straight asphalt road
-  - \`StadiumRoadMainTurbo\`: Boost strip giving immediate acceleration
-  - \`StadiumRoadMainCheckpoint\`: Checkpoint archway (road surface)
-  - \`StadiumRoadMainStartLine\`: Race starting grid
-  - \`StadiumRoadMainFinishLine\`: Race finish arch
-- **2x1 Blocks (Stride 2):**
-  - \`StadiumRoadMainBiSlopeStart\` / \`StadiumRoadMainBiSlopeEnd\`
-- **2x2 Blocks:**
-  - \`StadiumRoadMainGTCurve2\`: Banked asphalt road curve (90-degree turn).
+## 3. Block Catalog
 
-## 4. Recommended Generation Strategy: Turtle Builder
-Unless you need custom complex off-grid architecture, ALWAYS use \`build_track_turtle\`. It automatically calculates all 3D coordinates, applies 2x1 slope strides, handles 180° downhill rotations, and sets up 2x2 curve anchors.
+### Standard Road (1x1)
+| Block | Purpose |
+|---|---|
+| StadiumRoadMain | Straight asphalt road |
+| StadiumRoadMainTurbo | Speed boost strip |
+| StadiumRoadMainCheckpoint | Checkpoint archway |
+| StadiumRoadMainStartLine | Race start grid |
+| StadiumRoadMainFinishLine | Race finish arch |
 
-### Turtle Actions:
-- \`start\`: Starting block
-- \`forward\` with \`count\`: Straight road blocks
-- \`turbo\` with \`count\`: Boost accelerator blocks
-- \`turn_right\`: Banked 2x2 right curve
-- \`turn_left\`: Banked 2x2 left curve
-- \`slope_up\`: Smooth 2-level climb
-- \`slope_down\`: Smooth 2-level descent
-- \`checkpoint\`: Mid-track respawn gate
-- \`finish\`: Finish line block
+### Dirt / Offroad (1x1)
+| Block | Purpose |
+|---|---|
+| StadiumRoadDirtToRoad | Transition from asphalt to dirt |
+| StadiumRoadDirt | Dirt straight (low grip, drifty) |
+| StadiumRoadDirtCheckpoint | Dirt checkpoint |
+| StadiumRoadDirtGTCurve2 | 2x2 banked dirt curve (use with turn_right/turn_left customBlock) |
 
-## 5. Track Design & Pacing Guidelines
-- **Launch:** Give the player 2-4 straight blocks (or 1 turbo) right after the start line to build up speed.
-- **Corners:** After high-speed descents or long turbo straights, give at least 1-2 straight blocks before a 90-degree curve to allow braking/drifting.
-- **Checkpoints:** Place a checkpoint before every major elevation climb or technical chicane so players can respawn easily.
-- **Finish:** Give 1-2 straight blocks before the finish line for a clean crossing.`
+### Tilted / Banked Road
+| Block | Purpose |
+|---|---|
+| StadiumRoadTiltTransition2Right | Flat-to-tilt transition (right bank) |
+| StadiumRoadTiltTransition2Left | Flat-to-tilt transition (left bank) |
+| StadiumRoadTiltStraight | Tilted 45° banked road |
+| StadiumRoadTiltGTCurve2 | 2x2 tilted curve |
+**Tilt Sequence:** Road → TiltTransition2Right → TiltStraight (repeat) → TiltTransition2Left → Road
+
+### Slope Blocks (2x1)
+| Block | Purpose |
+|---|---|
+| StadiumRoadMainBiSlopeStart | Lower slope entry (auto-placed by slope_up/slope_down) |
+| StadiumRoadMainBiSlopeEnd | Upper slope exit |
+
+### Curves (2x2)
+| Block | Purpose |
+|---|---|
+| StadiumRoadMainGTCurve2 | Standard 90° banked curve |
+| StadiumRoadMainGTCurve3 | Large 3x3 sweeping curve |
+| StadiumRoadMainGTCurve4 | Extra large 4x4 curve |
+
+### Acrobatic Blocks
+| Block | Height | Purpose |
+|---|---|---|
+| StadiumLoopLeft / LoopRight | Y >= 3 | Complete 360° vertical loop (paired: entry + exit) |
+| StadiumPlatformLoopStart | Y = base | Ramp entering wallride/loop (tilts car onto wall) |
+| StadiumPlatformWall4 | Y = base+4 | 4-unit-high vertical driving surface |
+| StadiumPlatformWall2 | Y = base+8 | 2-unit-high ceiling/top section |
+| StadiumPlatformLoopEnd | Y = base+8 | Ceiling crossover for full loop |
+| StadiumPlatformToRoad | any | Transition between platform and road blocks |
+| StadiumPlatformToRoadMain | any | Platform-to-asphalt transition |
+| StadiumRamp / StadiumRampLow | Y >= 2 | Jump ramp (creates gap + airtime) |
+
+**Loop Sequence (full architectural loop):**
+TurboTurbo → PlatformToRoad → PlatformLoopStart → Wall4 → LoopEnd (ceiling) → reverse LoopEnd → reverse Wall4 → reverse PlatformLoopStart → PlatformToRoad
+
+**Simple Loop:** Just place StadiumLoopLeft or StadiumLoopRight pair (entry+exit). Need 2+ turbos before entry!
+
+### Scenery & Decoration
+| Block | Purpose |
+|---|---|
+| StadiumControlLight | Stadium floodlight tower (bright in Night mood) |
+| StadiumControlRoadCamera | Overhead TV camera booth |
+| StadiumControlRoadGlass | Glass skybridge spanning over road |
+| StadiumFabricCross3x3Screen | Giant LED video jumbotron |
+| StadiumInflatablePalmTree | Inflatable palm tree |
+| StadiumInflatableSnowTree | Inflatable winter tree |
+| StadiumInflatableCactus | Inflatable cactus |
+| StadiumInflatableCastle | Inflatable castle |
+| StadiumTube / StadiumTubePillar | Structural support column (TubePillar stacks vertically) |
+| StadiumPool / StadiumWater | Decorative water basin |
+
+## 4. Map Metadata & Customization
+| Field | Type | Options |
+|---|---|---|
+| mood | string | "Sunrise", "Day", "Sunset", "Night" |
+| authorTime | number | Target time in seconds (e.g. 36.5) |
+| goldTime | number | Gold medal threshold (seconds) |
+| silverTime | number | Silver medal threshold |
+| bronzeTime | number | Bronze medal threshold |
+| laps | number | 1 = sprint, >1 = multi-lap circuit |
+| comments | string | Track description shown in-game |
+
+## 5. Track Design Strategy: Turtle Builder
+Use build_track_turtle for most tracks. It handles all coordinate math.
+
+### Turtle Actions
+| Action | Effect |
+|---|---|
+| start | Place starting block |
+| forward (count) | Straight road blocks |
+| turbo (count) | Boost blocks |
+| turn_right | 2x2 banked right curve |
+| turn_left | 2x2 banked left curve |
+| slope_up | Climb +2 Y levels (4 cells forward) |
+| slope_down | Descend -2 Y levels (4 cells forward) |
+| checkpoint | Checkpoint gate |
+| finish | Finish line |
+
+### CustomBlock Override
+Any action can include a customBlock field to swap the default block:
+- forward with customBlock: "StadiumRoadDirt" → places dirt instead of asphalt
+- turn_right with customBlock: "StadiumRoadDirtGTCurve2" → dirt curve with correct 2x2 anchor
+
+## 6. Pacing Guidelines
+1. **Launch Runway:** 2-4 straights or 1 turbo after start before first curve.
+2. **Pre-Curve Buffer:** 1-2 straights before curves after long turbos or descents.
+3. **Checkpoint Spacing:** Every 4-8 blocks, especially before elevation changes.
+4. **Tilt Transitions:** Always use TiltTransition2Right/Left before and after TiltStraight sections.
+5. **Loop Preparation:** Place 2+ turbos before any loop entry for sufficient speed.
+6. **Finish Runway:** 1-2 straights before finish for clean crossing.
+7. **Scenery:** Add StadiumControlLight for night tracks, palms/cacti for decoration, glass bridges for visual drama.`
           }
         }
       ]

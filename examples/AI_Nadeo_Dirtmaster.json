@@ -1,0 +1,362 @@
+{
+  "mapName": "AI Nadeo Dirtmaster",
+  "author": "Claude AI & Antigravity",
+  "mood": "Sunrise",
+  "authorTime": 30,
+  "goldTime": 34,
+  "silverTime": 38,
+  "bronzeTime": 45,
+  "comments": "Offroad drift rally through the stadium! Dirt curves, hills, and checkpoints.",
+  "blocks": [
+    {
+      "name": "StadiumRoadMainStartLine",
+      "x": 8,
+      "y": 2,
+      "z": 8,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 8,
+      "y": 2,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMainTurbo",
+      "x": 8,
+      "y": 2,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 8,
+      "y": 2,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 8,
+      "y": 2,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadDirtToRoad",
+      "x": 8,
+      "y": 2,
+      "z": 13,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": 8,
+      "y": 2,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": 8,
+      "y": 2,
+      "z": 15,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": 8,
+      "y": 2,
+      "z": 16,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadDirtCheckpoint",
+      "x": 8,
+      "y": 2,
+      "z": 17,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": 8,
+      "y": 2,
+      "z": 18,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": 8,
+      "y": 2,
+      "z": 19,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadDirtGTCurve2",
+      "x": 7,
+      "y": 2,
+      "z": 20,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": 6,
+      "y": 2,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": 5,
+      "y": 2,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": 4,
+      "y": 2,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": 3,
+      "y": 2,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadDirtCheckpoint",
+      "x": 2,
+      "y": 2,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": 1,
+      "y": 2,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": 0,
+      "y": 2,
+      "z": 21,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumRoadDirtGTCurve2",
+      "x": -2,
+      "y": 2,
+      "z": 20,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": -2,
+      "y": 2,
+      "z": 19,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": -2,
+      "y": 2,
+      "z": 18,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": -2,
+      "y": 2,
+      "z": 17,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadDirt",
+      "x": -2,
+      "y": 2,
+      "z": 16,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadDirtToRoad",
+      "x": -2,
+      "y": 2,
+      "z": 15,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadMainTurbo",
+      "x": -2,
+      "y": 2,
+      "z": 14,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadMainCheckpoint",
+      "x": -2,
+      "y": 2,
+      "z": 13,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": -2,
+      "y": 2,
+      "z": 12,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": -2,
+      "y": 2,
+      "z": 11,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumRoadMainGTCurve2",
+      "x": -2,
+      "y": 2,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 0,
+      "y": 2,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 1,
+      "y": 2,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainTurbo",
+      "x": 2,
+      "y": 2,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 3,
+      "y": 2,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 4,
+      "y": 2,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainCheckpoint",
+      "x": 5,
+      "y": 2,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 6,
+      "y": 2,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 7,
+      "y": 2,
+      "z": 9,
+      "dir": "West"
+    },
+    {
+      "name": "StadiumRoadMainGTCurve2",
+      "x": 8,
+      "y": 2,
+      "z": 9,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 9,
+      "y": 2,
+      "z": 11,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 9,
+      "y": 2,
+      "z": 12,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMainTurbo",
+      "x": 9,
+      "y": 2,
+      "z": 13,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMain",
+      "x": 9,
+      "y": 2,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumRoadMainFinishLine",
+      "x": 9,
+      "y": 2,
+      "z": 15,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumInflatableCactus",
+      "x": 10,
+      "y": 2,
+      "z": 14,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumInflatableCactus",
+      "x": 12,
+      "y": 2,
+      "z": 16,
+      "dir": "East"
+    },
+    {
+      "name": "StadiumInflatableCactus",
+      "x": 6,
+      "y": 2,
+      "z": 14,
+      "dir": "South"
+    },
+    {
+      "name": "StadiumInflatablePalmTree",
+      "x": 6,
+      "y": 2,
+      "z": 10,
+      "dir": "North"
+    },
+    {
+      "name": "StadiumDirtDeadendTent1",
+      "x": 10,
+      "y": 2,
+      "z": 18,
+      "dir": "North"
+    }
+  ]
+}
